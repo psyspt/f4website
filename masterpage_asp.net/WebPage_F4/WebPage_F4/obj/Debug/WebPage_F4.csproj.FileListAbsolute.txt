@@ -1,0 +1,5 @@
+E:\Visual_Studio_2008\Semester07\WebPage_F4\WebPage_F4\bin\WebPage_F4.dll
+E:\Visual_Studio_2008\Semester07\WebPage_F4\WebPage_F4\bin\WebPage_F4.pdb
+E:\Visual_Studio_2008\Semester07\WebPage_F4\WebPage_F4\obj\Debug\ResolveAssemblyReference.cache
+E:\Visual_Studio_2008\Semester07\WebPage_F4\WebPage_F4\obj\Debug\WebPage_F4.dll
+E:\Visual_Studio_2008\Semester07\WebPage_F4\WebPage_F4\obj\Debug\WebPage_F4.pdb

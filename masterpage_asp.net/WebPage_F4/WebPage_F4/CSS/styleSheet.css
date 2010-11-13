@@ -1,0 +1,354 @@
+@charset "utf-8";
+body{
+	background:#FFF;
+	font-family:Arial, Helvetica, sans-serif;
+}
+/*===========outer div ======================*/
+div#outerdiv{
+	width:1200px;
+	margin:0 auto;
+}
+/*===============header=====================*/
+div#header{
+	position:relative;
+	width: 1200px;
+	height:200px;
+	/*border:#006 solid 1px;*/
+}
+
+#header #leftHeader{
+	float:left;
+	width:102px;
+	height:200px;
+	padding:0;
+	margin:0;
+	background:#FFF url(../images/leftHeader.jpg) no-repeat;
+}
+
+#header #logoHeader{
+	float:left;
+	width: 126px;
+	height:200px;
+	padding:0;
+	margin:0;
+	background:#FFF url(../images/logoHeader.jpg) no-repeat;
+}
+
+#header #namePage{
+	float:left;
+	width:271px;
+	height:200px;
+	padding:0;
+	margin:0;
+	background:#FFF url(../images/namePage.jpg) no-repeat;
+}
+
+#header #spaceHeader{
+	float:left;
+	width:184px;
+	height:200px;
+	background:#FFF url(../images/spaceHeader.jpg) no-repeat;
+}
+
+#header #noticedHeader{
+	float:left;
+	width:417px;
+	height:200px;
+	background:#FFF url(../images/noticedHeader.jpg) no-repeat;
+
+}
+
+#noticedHeader p{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	font-weight:bold;
+	margin-top: 30px;
+}
+
+#header #rightHeader{
+	float:left;
+	width:100px;
+	height:200px;
+	background:#FFF url(../images/rightHeader.jpg) no-repeat;
+}
+/*================Menu===========================*/
+div#menu{
+	position:relative;
+	width: 1200px;
+	height:44px;
+	background:#FFF url(../images/backgroundMenu.jpg) no-repeat;
+}
+
+#menu ul{
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+
+#menu li{
+	float:left;
+	margin:0;
+	padding:0;
+}
+
+#menu #mainmenu{
+	position:absolute;
+	width:898px;
+	height:44px;
+	margin-left:150px;
+}
+
+#mainmenu li a:link , #menu li a:visited{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:19px;
+	display:block;
+	color:#FFF;
+	text-decoration:none;
+	padding:0 15px 0px 15px;
+	line-height:45px;
+	border:none;
+	margin-left:0;
+}
+
+#mainmenu li a:hover, #mainmenu li a:active{
+	background:#FFF url(../images/coverMenu.jpg) no-repeat;
+}
+
+#mainmenu a.current{
+	background:#FFF url(../images/coverMenu.jpg) no-repeat;
+}
+
+/*======== this is the banner ========*/
+#banner {
+	position:relative;
+	width:1200px;
+	height:386px;
+	background:#FFF url(../images/banner.jpg);
+}
+#banner #bannercontent{
+	position:absolute;
+	left: 130px;
+	top: 20px;
+}
+
+#bannercontent p{
+	font-size: 24px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:lighter;
+	color:#454142;
+}
+
+#banner #textboxLogin{
+	position: absolute;
+	bottom:0;
+	right: 110px;
+	width:521px;
+	height: 50px;
+}
+
+.inputBox{
+	font-size: 18px;
+	font-family:Verdana, Geneva, sans-serif;
+	color:#000;
+	width:236px;
+	height:25px;
+	margin-top: 14px;
+	border:none;
+}
+
+.inputBoxMarginLeft1{
+	margin-left:0;
+}
+
+.inputBoxMarginLeft2{
+	margin-left: 25px;
+}
+
+.inputBoxWith1{
+	width:236px;
+}
+
+.inputBoxWith2{
+	width:140px;
+}
+
+/*======== this is the conntent =====*/
+#maincontent #backgroundmaincontent{
+	position:relative;
+	width: 1200px;
+	height: 1083px;
+	background:#FFF url(../images/maincontent.jpg);
+}
+/*====== this is the left bar =====================*/
+#maincontent #leftSideBar{
+	float:left;
+	width:100px;
+	height:470px;
+	padding:0px;
+	margin:30px 0 0;
+/*	border:#0F9 solid 1px;*/
+}
+/*======= the middle content ======================*/
+#maincontent #middleContent{
+	float:left;
+	width: 625px;
+	height:470px;
+	padding-left: 20px;
+	margin: 30px 0 0;
+/*	border:#0F6 solid 1px;*/
+}
+
+/*====== this is the right side bar ================*/
+#backgroundmaincontent #rightSideBar{
+	float:left;
+	width: 325px;
+	height:470px;
+	padding-left:20px;
+	margin: 30px 0px 0px;
+/*	border: solid #033 1px;*/
+}
+
+#rightSideBar p{
+	font-family:Arial, Helvetica, sans-serif;
+	color:#0F6;
+	margin-right: 20px;
+}
+
+#righSideBar img{
+	margin: 0;
+}
+/*================tieu diem====================*/
+#backgroundmaincontent #tieudiembar{
+	float:left;
+	padding: 0;
+	margin: 0;
+	width: 1200px;
+	height: 71px;
+}
+
+#tieudiembar img{
+	margin: 0 120px;
+}
+
+#backgroundmaincontent #tieudiem{
+	float:left;
+	width: 980px;
+	height:470px;
+	margin-left: 110px;
+}
+
+#tieudiem #tieudiemFirst{
+	float: left;
+	width: 290px;
+	height: 390px;
+	margin-top: 30px;
+	margin-left:15px;
+}
+
+#tieudiem #tieudiemSecond{
+	float:left;
+	width: 290px;
+	height: 390px;
+	margin-top:30px;
+	margin-left: 30px;
+}
+
+#tieudiem #tieudiemThird{
+	float:left;
+	width:290px;
+	height: 390px;
+	margin-top: 30px;
+	margin-left: 30px;
+}
+
+img.tieudiemPicture{
+	padding: 5px;
+	border-top-style:ridge;
+}
+
+h1.tieudiemTitle{
+	font:Arial, Helvetica, sans-serif;
+	font-size:24px;
+	color:#67ad08;
+	margin: 10px;
+}
+
+p.tieudiemParagraph{
+	font-family:Arial, Helvetica, sans-serif;
+	color:#878788;
+	margin:10px;
+	font-size:18px;
+}
+/*=========== chi tiet button===========================*/
+.chitietButton{
+	float:right;
+	padding-bottom: 5px;
+	padding-right: 3px;
+}
+
+.chitietButton a:link , .chitietButton a:visited{
+	width: 90px;
+	height:28px;
+	display:block;
+	color: #FFF;
+	text-indent: -1000em;
+	background:#FFF url(../images/chitietButton.jpg) no-repeat left top;
+}
+
+.chitietButton a:hover, .chitietButton a:active{
+	background:#FFF url(../images/overChitietButton.jpg) no-repeat;
+}
+
+/*=======this is the footer =============================*/
+
+#footer #footercontent{
+	position:relative;
+	width: 1200px;
+	height: 137px;
+	background:#FFF url(../images/footer.jpg);
+}
+
+
+/*==========Main content Subpage================*/
+#maincontentsubpage{
+	position:relative;
+	width:1200px;
+	height:1164px;
+	padding:0;
+	margin:0;
+}
+
+#maincontentsubpage #leftcontent {
+	float:left;
+	width:105px;
+	height:1164px;
+	background:#FFF url(../images/leftContent.jpg) no-repeat;
+}
+
+#maincontentsubpage #contentinfo{
+	float:left;
+	width:668px;
+	height:1164px;
+	background:#FFF url(../images/contentInfo.jpg) no-repeat;
+}
+
+#contentinfo p{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:18px;
+	color:#936;
+	margin-left: 30px;
+}
+
+#maincontentsubpage #sidebarcontent{
+	float:left;
+	width:327px;
+	height:1164px;
+	background:#FFF url(../images/sidebarcontent.jpg) no-repeat;
+}
+
+#maincontentsubpage #rightcontent{
+	float:left;
+	width:97px;
+	height:1164px;
+	background:#FFF url(../images/rightcontent.jpg) no-repeat;
+}
