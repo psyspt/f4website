@@ -1,0 +1,18 @@
+﻿body
+{
+	background-color: White;
+	
+	background-image: url(../images/Hearder_5.jpg);
+	background-repeat: repeat;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 0.7em;
+	color: #FFFFFF;
+}
+
+.mainclass
+{
+	background-color: White;
+}

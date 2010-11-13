@@ -1,0 +1,5 @@
+C:\Users\LTB\Documents\Visual Studio 2008\Projects\Web\F4Website\F4Website\bin\F4Website.dll
+C:\Users\LTB\Documents\Visual Studio 2008\Projects\Web\F4Website\F4Website\bin\F4Website.pdb
+C:\Users\LTB\Documents\Visual Studio 2008\Projects\Web\F4Website\F4Website\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\LTB\Documents\Visual Studio 2008\Projects\Web\F4Website\F4Website\obj\Debug\F4Website.dll
+C:\Users\LTB\Documents\Visual Studio 2008\Projects\Web\F4Website\F4Website\obj\Debug\F4Website.pdb

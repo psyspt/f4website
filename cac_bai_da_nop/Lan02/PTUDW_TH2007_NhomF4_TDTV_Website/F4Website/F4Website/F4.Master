@@ -1,0 +1,67 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="F4.master.cs" Inherits="F4Website.F4" %>
+
+
+
+<%@ Register src="UserControl/Header.ascx" tagname="Header" tagprefix="uc1" %>
+<%@ Register src="UserControl/Menu.ascx" tagname="Menu" tagprefix="uc2" %>
+<%@ Register src="UserControl/Footer.ascx" tagname="Footer" tagprefix="uc3" %>
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    
+    <style type="text/css">
+        .style1
+        {
+            width: 1191px;
+        }
+    </style>
+    
+</head>
+<body class ="mainclass">
+    <form id="form1" runat="server">
+    <table >
+        <tr>
+            <td>
+                <uc1:Header ID="Header1" runat="server" />
+            </td>
+           
+        </tr>
+        
+        <tr>
+            <td> 
+                <uc2:Menu ID="Menu1" runat="server" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                 
+                </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <uc3:Footer ID="Footer1" runat="server" />
+            </td>
+            <td>
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td>
+                <asp:ObjectDataSource ID="ThemeDataSource" SelectMethod="GetThemes" TypeName="F4Website.ThemeManager" runat="server">
+                </asp:ObjectDataSource>
+                <asp:RadioButtonList ID="choiceTheme" ForeColor="Black" DataTextField="name" DataValueField="name" AutoPostBack="true" runat="server" OnDataBound="choiceTheme_DataBound" OnSelectedIndexChanged="choiceTheme_SelectedIndexChanged" RepeatDirection="Horizontal" ValidationGroup="choice" DataSourceID="ThemeDataSource">                    
+                </asp:RadioButtonList>
+            </td>
+        </tr>
+    </table>
+    </form>
+    </body>
+</html>
