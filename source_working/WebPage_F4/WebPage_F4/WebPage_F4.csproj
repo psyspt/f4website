@@ -55,6 +55,13 @@
     <Compile Include="CamNangNghe.aspx.designer.cs">
       <DependentUpon>CamNangNghe.aspx</DependentUpon>
     </Compile>
+    <Compile Include="DangKi\DangKiTaiKhoanNhaTuyenDung.aspx.cs">
+      <DependentUpon>DangKiTaiKhoanNhaTuyenDung.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DangKi\DangKiTaiKhoanNhaTuyenDung.aspx.designer.cs">
+      <DependentUpon>DangKiTaiKhoanNhaTuyenDung.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
       <DependentUpon>Default.aspx</DependentUpon>
@@ -105,6 +112,13 @@
     <Compile Include="UserControl\uc_Footer.ascx.designer.cs">
       <DependentUpon>uc_Footer.ascx</DependentUpon>
     </Compile>
+    <Compile Include="UserControl\uc_FormDangKiNhaTuyenDung.ascx.cs">
+      <DependentUpon>uc_FormDangKiNhaTuyenDung.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\uc_FormDangKiNhaTuyenDung.ascx.designer.cs">
+      <DependentUpon>uc_FormDangKiNhaTuyenDung.ascx</DependentUpon>
+    </Compile>
     <Compile Include="UserControl\uc_Header.ascx.cs">
       <DependentUpon>uc_Header.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -115,6 +129,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="CamNangNghe.aspx" />
+    <Content Include="CSS\dangkiStyleSheet.css" />
+    <Content Include="DangKi\DangKiTaiKhoanNhaTuyenDung.aspx" />
+    <Content Include="images\advertisement.jpg" />
+    <Content Include="images\backgoundtitledangki.jpg" />
     <Content Include="images\backgroundMenu.jpg" />
     <Content Include="images\banner.jpg" />
     <Content Include="images\chitietButton.jpg" />
@@ -123,6 +141,8 @@
     <Content Include="images\footer.jpg" />
     <Content Include="images\leftContent.jpg" />
     <Content Include="images\leftHeader.jpg" />
+    <Content Include="images\line.jpg" />
+    <Content Include="images\logoDangki.jpg" />
     <Content Include="images\logoHeader.jpg" />
     <Content Include="images\maincontent.jpg" />
     <Content Include="images\namePage.jpg" />
@@ -140,6 +160,7 @@
     <Content Include="MyTimViec.aspx" />
     <Content Include="TaoHoSo.aspx" />
     <Content Include="TạoThongBaoViec.aspx" />
+    <Content Include="UserControl\uc_FormDangKiNhaTuyenDung.ascx" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
