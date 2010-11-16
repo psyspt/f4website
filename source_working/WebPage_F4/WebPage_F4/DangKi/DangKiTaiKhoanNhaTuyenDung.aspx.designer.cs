@@ -12,5 +12,14 @@ namespace WebPage_F4.DangKi {
     
     
     public partial class DangKiTaiKhoanNhaTuyenDung {
+        
+        /// <summary>
+        /// uc_FormDangKiNhaTuyenDung1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::WebPage_F4.UserControl.uc_FormDangKiNhaTuyenDung uc_FormDangKiNhaTuyenDung1;
     }
 }

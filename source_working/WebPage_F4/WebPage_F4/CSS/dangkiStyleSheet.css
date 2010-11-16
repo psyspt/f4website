@@ -197,6 +197,16 @@ div#menu{
 	background:#FFF url(../images/backgoundtitledangki.jpg) no-repeat;
 }
 
+#title p{
+	position:relative;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:28px;
+	font-style:italic;
+	color:#565756;
+	margin-left: 40px;
+	margin-top: 15px;
+}
+
 #contentinfo #logodangki{
 	float:left;
 	height:1100px;
@@ -215,14 +225,10 @@ div#menu{
 	background:#FFF url(../images/line.jpg) no-repeat;
 }
 
-#title p{
-	position:relative;
-	font-family:Arial, Helvetica, sans-serif;
-	font-size:28px;
-	font-style:italic;
-	color:#565756;
-	margin-left: 40px;
-	margin-top: 15px;
+#contentinfo #thongtindangki{
+	float:left;
+	height:1080px;
+	width: 680px;
 }
 
 #maincontent #rightcontent{

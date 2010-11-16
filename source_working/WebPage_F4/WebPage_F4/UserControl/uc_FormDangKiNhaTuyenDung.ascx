@@ -1,1 +1,146 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="uc_FormDangKiNhaTuyenDung.ascx.cs" Inherits="WebPage_F4.UserControl.uc_FormDangKiNhaTuyenDung" %>
+<style type="text/css">
+#thongTinDangKi 
+{
+	float:left;
+	height:1080px;
+	width: 680px;
+}
+
+#title p{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:24px;
+	color:#639;
+	float:left;
+	bottom: 0px;
+}
+
+    #form7
+    {
+        height: 15px;
+    }
+    .style3
+    {
+        height: 38px;
+    }
+    .style4
+    {
+        height: 176px;
+    }
+    .style5
+    {
+        height: 37px;
+    }
+    .style6
+    {
+        height: 113px;
+    }
+    .style7
+    {
+        height: 259px;
+    }
+    .style8
+    {
+        height: 46px;
+    }
+
+</style>
+<div id="thongTinDangKi">
+<div id="title">
+  	<p>
+    	Thông Tin Đăng Kí
+    </p>
+  </div>
+  <table width="680" height="475" border="0" cellpadding="1" cellspacing="1">
+  <tr>
+    <td width="192" align="right" valign="middle" class="style3"><label>Tên đăng nhập : </label></td>
+    <td width="481" align="center" valign="middle" class="style3">
+        <asp:TextBox ID="username" runat="server" Width="212px"></asp:TextBox>
+                </td>
+  </tr>
+  <tr>
+    <td align="right" valign="middle" class="style3">Mật khẩu : </td>
+    <td align="center" valign="middle" class="style3">
+        <asp:TextBox ID="password" runat="server" TextMode="Password" Width="212px"></asp:TextBox>
+                </td>
+  </tr>
+  <tr>
+    <td align="right" valign="middle" class="style5">Nhập lại mật khẩu :</td>
+    <td align="center" valign="middle" class="style5">
+        <asp:TextBox ID="retypePassword" runat="server" TextMode="Password" 
+            Width="212px"></asp:TextBox>
+                </td>
+  </tr>
+  <tr>
+    <td align="right" valign="middle" class="style3">Email :</td>
+    <td align="center" valign="middle" class="style3">
+        <asp:TextBox ID="email" runat="server" Width="212px"></asp:TextBox>
+                </td>
+  </tr>
+  <tr>
+    <td align="right" valign="middle" class="style5">Tên công ty : </td>
+    <td align="center" valign="middle" class="style5">
+        <asp:TextBox ID="tenCongTy" runat="server" Width="212px"></asp:TextBox>
+                </td>
+  </tr>
+  <tr>
+    <td align="right" valign="middle" class="style5">Địa chỉ : </td>
+    <td align="center" valign="middle" class="style5">
+        <asp:TextBox ID="diaChi" runat="server" Width="212px"></asp:TextBox>
+                </td>
+  </tr>
+  <tr>
+    <td align="right" valign="middle" class="style5">Tỉnh / Thành phố : </td>
+    <td align="center" valign="middle" class="style5">
+        <asp:DropDownList ID="DropDownList1" runat="server" style="margin-left: 0px" 
+            Width="212px">
+        </asp:DropDownList>
+      </td>
+  </tr>
+  <tr>
+    <td align="right" valign="middle" class="style4">Lĩnh vực ngành nghề : </td>
+    <td align="center" valign="middle" class="style4">
+        <asp:ListBox ID="nganhNghe" runat="server" Height="158px" Width="330px">
+        </asp:ListBox>
+      </td>
+  </tr>
+  <tr>
+    <td align="right" valign="middle" class="style6">Mô tả sơ lược về công ty : </td>
+    <td align="center" valign="middle" class="style6">
+        <asp:TextBox ID="TextBox1" runat="server" Height="98px" TextMode="MultiLine" 
+            Width="330px"></asp:TextBox>
+      </td>
+  </tr>
+  <tr>
+    <td align="right" valign="middle" class="style5">Điện thoại : </td>
+    <td align="center" valign="middle" class="style5">
+        <asp:TextBox ID="phone" runat="server" Width="212px"></asp:TextBox>
+      </td>
+  </tr>
+  <tr>
+    <td align="right" valign="middle" class="style5">Website : </td>
+    <td align="center" valign="middle" class="style5">
+        <asp:TextBox ID="website" runat="server" Width="212px"></asp:TextBox>
+      </td>
+  </tr>
+  <tr>
+    <td align="right" valign="middle" class="style5">Email liên hệ : </td>
+    <td align="center" valign="middle" class="style5">
+        <asp:TextBox ID="emailLienHe" runat="server" Width="212px"></asp:TextBox>
+      </td>
+  </tr>
+  <tr>
+    <td align="right" valign="middle" class="style7">Điều khoản sử dụng : </td>
+    <td align="center" valign="middle" class="style7">
+        <asp:TextBox ID="dieuKhoanSuDung" runat="server" Height="230px" 
+            TextMode="MultiLine" Width="450px"></asp:TextBox>
+                </td>
+  </tr>
+  <tr>
+    <td align="center" valign="middle" class="style8" colspan="2">
+        <asp:Button ID="Button1" runat="server" Text="Đăng Kí" Width="114px" />
+      </td>
+  </tr>
+</table>
+
+</div>
