@@ -37,8 +37,9 @@
                 <uc1:uc_FormDangKiNhaTuyenDung ID="uc_FormDangKiNhaTuyenDung1" runat="server" />
             
             </div>
+            
         </div>
-      <div id="rightcontent">
-        </div>
+            <div id="rightcontent">
+            </div>
     </div>
 </asp:Content>

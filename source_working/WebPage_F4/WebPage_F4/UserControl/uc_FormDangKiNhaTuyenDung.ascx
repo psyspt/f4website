@@ -1,11 +1,12 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="uc_FormDangKiNhaTuyenDung.ascx.cs" Inherits="WebPage_F4.UserControl.uc_FormDangKiNhaTuyenDung" %>
 <style type="text/css">
-#thongTinDangKi 
+    #thongTinDangKi 
 {
 	float:left;
 	height:1080px;
 	width: 680px;
-}
+        margin-right: 0px;
+    }
 
 #title p{
 	font-family:Arial, Helvetica, sans-serif;
@@ -14,6 +15,7 @@
 	float:left;
 	bottom: 0px;
         height: 22px;
+        width: 210px;
     }
 
     #form7
@@ -60,40 +62,40 @@
   <table width="680" height="475" border="0" cellpadding="1" cellspacing="1">
   <tr>
     <td width="192" align="right" valign="middle" class="style3"><label>Tên đăng nhập : </label></td>
-    <td width="481" align="left" valign="middle" class="style3">
+    <td width="481" align="left" valign="middle" class="style3" style="color: #FF0000">
         <asp:TextBox ID="username" runat="server" Width="212px"></asp:TextBox>
-                </td>
+                (*)</td>
   </tr>
   <tr>
     <td align="right" valign="middle" class="style3">Mật khẩu : </td>
-    <td align="left" valign="middle" class="style3">
+    <td align="left" valign="middle" class="style3" style="color: #FF0000">
         <asp:TextBox ID="password" runat="server" TextMode="Password" Width="212px"></asp:TextBox>
-                </td>
+                (*)</td>
   </tr>
   <tr>
     <td align="right" valign="middle" class="style5">Nhập lại mật khẩu :</td>
-    <td align="left" valign="middle" class="style5">
+    <td align="left" valign="middle" class="style5" style="color: #FF0000">
         <asp:TextBox ID="retypePassword" runat="server" TextMode="Password" 
             Width="212px"></asp:TextBox>
-                </td>
+                (*)</td>
   </tr>
   <tr>
     <td align="right" valign="middle" class="style3">Email :</td>
-    <td align="left" valign="middle" class="style3">
+    <td align="left" valign="middle" class="style3" style="color: #FF0000">
         <asp:TextBox ID="email" runat="server" Width="212px"></asp:TextBox>
-                </td>
+                (*)</td>
   </tr>
   <tr>
     <td align="right" valign="middle" class="style5">Tên công ty : </td>
-    <td align="left" valign="middle" class="style5">
+    <td align="left" valign="middle" class="style5" style="color: #FF0000">
         <asp:TextBox ID="tenCongTy" runat="server" Width="212px"></asp:TextBox>
-                </td>
+                (*)</td>
   </tr>
   <tr>
     <td align="right" valign="middle" class="style5">Địa chỉ : </td>
-    <td align="left" valign="middle" class="style5">
+    <td align="left" valign="middle" class="style5" style="color: #FF0000">
         <asp:TextBox ID="diaChi" runat="server" Width="212px"></asp:TextBox>
-                </td>
+                (*)</td>
   </tr>
   <tr>
     <td align="right" valign="middle" class="style5">Tỉnh / Thành phố : </td>
@@ -131,9 +133,9 @@
   </tr>
   <tr>
     <td align="right" valign="middle" class="style5">Email liên hệ : </td>
-    <td align="left" valign="middle" class="style5">
+    <td align="left" valign="middle" class="style5" style="color: #FF0000">
         <asp:TextBox ID="emailLienHe" runat="server" Width="212px"></asp:TextBox>
-      </td>
+        (*)</td>
   </tr>
   <tr>
     <td align="right" valign="middle" class="style7">Điều khoản sử dụng : </td>

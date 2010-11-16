@@ -195,6 +195,8 @@ div#menu{
 	height: 64px;
 	width:985px;
 	background:#FFF url(../images/backgoundtitledangki.jpg) no-repeat;
+	top: 0px;
+	left: 0px;
 }
 
 #title p{
@@ -202,6 +204,7 @@ div#menu{
 	font-family:Arial, Helvetica, sans-serif;
 	font-size:28px;
 	font-style:italic;
+	font-weight:bold;
 	color:#565756;
 	margin-left: 40px;
 	margin-top: 15px;
