@@ -13,7 +13,8 @@
 	color:#639;
 	float:left;
 	bottom: 0px;
-}
+        height: 22px;
+    }
 
     #form7
     {
@@ -37,11 +38,16 @@
     }
     .style7
     {
-        height: 259px;
+        height: 232px;
     }
     .style8
     {
         height: 46px;
+    }
+
+    .style9
+    {
+        height: 31px;
     }
 
 </style>
@@ -54,44 +60,44 @@
   <table width="680" height="475" border="0" cellpadding="1" cellspacing="1">
   <tr>
     <td width="192" align="right" valign="middle" class="style3"><label>Tên đăng nhập : </label></td>
-    <td width="481" align="center" valign="middle" class="style3">
+    <td width="481" align="left" valign="middle" class="style3">
         <asp:TextBox ID="username" runat="server" Width="212px"></asp:TextBox>
                 </td>
   </tr>
   <tr>
     <td align="right" valign="middle" class="style3">Mật khẩu : </td>
-    <td align="center" valign="middle" class="style3">
+    <td align="left" valign="middle" class="style3">
         <asp:TextBox ID="password" runat="server" TextMode="Password" Width="212px"></asp:TextBox>
                 </td>
   </tr>
   <tr>
     <td align="right" valign="middle" class="style5">Nhập lại mật khẩu :</td>
-    <td align="center" valign="middle" class="style5">
+    <td align="left" valign="middle" class="style5">
         <asp:TextBox ID="retypePassword" runat="server" TextMode="Password" 
             Width="212px"></asp:TextBox>
                 </td>
   </tr>
   <tr>
     <td align="right" valign="middle" class="style3">Email :</td>
-    <td align="center" valign="middle" class="style3">
+    <td align="left" valign="middle" class="style3">
         <asp:TextBox ID="email" runat="server" Width="212px"></asp:TextBox>
                 </td>
   </tr>
   <tr>
     <td align="right" valign="middle" class="style5">Tên công ty : </td>
-    <td align="center" valign="middle" class="style5">
+    <td align="left" valign="middle" class="style5">
         <asp:TextBox ID="tenCongTy" runat="server" Width="212px"></asp:TextBox>
                 </td>
   </tr>
   <tr>
     <td align="right" valign="middle" class="style5">Địa chỉ : </td>
-    <td align="center" valign="middle" class="style5">
+    <td align="left" valign="middle" class="style5">
         <asp:TextBox ID="diaChi" runat="server" Width="212px"></asp:TextBox>
                 </td>
   </tr>
   <tr>
     <td align="right" valign="middle" class="style5">Tỉnh / Thành phố : </td>
-    <td align="center" valign="middle" class="style5">
+    <td align="left" valign="middle" class="style5">
         <asp:DropDownList ID="DropDownList1" runat="server" style="margin-left: 0px" 
             Width="212px">
         </asp:DropDownList>
@@ -99,41 +105,49 @@
   </tr>
   <tr>
     <td align="right" valign="middle" class="style4">Lĩnh vực ngành nghề : </td>
-    <td align="center" valign="middle" class="style4">
+    <td align="left" valign="middle" class="style4">
         <asp:ListBox ID="nganhNghe" runat="server" Height="158px" Width="330px">
         </asp:ListBox>
       </td>
   </tr>
   <tr>
     <td align="right" valign="middle" class="style6">Mô tả sơ lược về công ty : </td>
-    <td align="center" valign="middle" class="style6">
+    <td align="left" valign="middle" class="style6">
         <asp:TextBox ID="TextBox1" runat="server" Height="98px" TextMode="MultiLine" 
             Width="330px"></asp:TextBox>
       </td>
   </tr>
   <tr>
-    <td align="right" valign="middle" class="style5">Điện thoại : </td>
-    <td align="center" valign="middle" class="style5">
+    <td align="right" valign="middle" class="style3">Điện thoại : </td>
+    <td align="left" valign="middle" class="style3">
         <asp:TextBox ID="phone" runat="server" Width="212px"></asp:TextBox>
       </td>
   </tr>
   <tr>
     <td align="right" valign="middle" class="style5">Website : </td>
-    <td align="center" valign="middle" class="style5">
+    <td align="left" valign="middle" class="style5">
         <asp:TextBox ID="website" runat="server" Width="212px"></asp:TextBox>
       </td>
   </tr>
   <tr>
     <td align="right" valign="middle" class="style5">Email liên hệ : </td>
-    <td align="center" valign="middle" class="style5">
+    <td align="left" valign="middle" class="style5">
         <asp:TextBox ID="emailLienHe" runat="server" Width="212px"></asp:TextBox>
       </td>
   </tr>
   <tr>
     <td align="right" valign="middle" class="style7">Điều khoản sử dụng : </td>
-    <td align="center" valign="middle" class="style7">
-        <asp:TextBox ID="dieuKhoanSuDung" runat="server" Height="230px" 
-            TextMode="MultiLine" Width="450px"></asp:TextBox>
+    <td align="left" valign="middle" class="style7">
+        <asp:TextBox ID="dieuKhoanSuDung" runat="server" Height="212px" 
+            TextMode="MultiLine" Width="450px" ReadOnly="True" 
+            style="margin-bottom: 0px"></asp:TextBox>
+                </td>
+  </tr>
+  <tr>
+    <td align="right" valign="middle" class="style9"> </td>
+    <td align="left" valign="middle" class="style9">
+        <asp:CheckBox ID="CheckBox1" runat="server" 
+            Text="Tôi đồng ý với các điều khoản trên" />
                 </td>
   </tr>
   <tr>

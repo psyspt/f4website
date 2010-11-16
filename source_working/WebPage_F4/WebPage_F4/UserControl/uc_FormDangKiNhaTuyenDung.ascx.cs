@@ -15,7 +15,7 @@ namespace WebPage_F4.UserControl
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            
         }
     }
 }
