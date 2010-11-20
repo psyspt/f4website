@@ -171,6 +171,70 @@ div#menu{
 .inputBoxWith2{
 	width:140px;
 }
+/*Register Nguoi tim viec*/
+
+.Registertieude
+{
+	font-size:16px;
+	font-family:Times New Roman;
+	color:Blue;
+}
+.spacer
+{
+	height: 30px;
+	width: 702px;
+	float:left;
+}
+.Register
+{
+	width: 1000px;
+	border-width: 2px;
+	border-style:solid;
+}
+
+.RegisterHeader
+{
+	font-family:Times New Roman;
+	font-size: 20px;
+	height: 34px;
+	color:Blue;
+	margin-left:150px;
+	width:auto;
+	padding-bottom: 10px;
+}
+.RegisterLabel
+{
+	margin-left: 0px;
+	float: left;
+	width: 200px;
+	height: 40px;
+}
+.RegisterTextbox
+{
+	margin-left:0px;
+	float:left;
+	width:500px;
+	height: 40px;
+}
+.RegisterXacNhan
+{
+	width: 702px;
+	float: left;
+	height: auto;
+}
+.captchar
+{
+	margin-left: 200px;
+}
+.captchaTextbox
+{
+	padding-top: 10px;
+	margin-left: 200px;
+}
+.registerbutton
+{
+	margin-left: 200px;
+}
 
 /*======== this is the conntent =====*/
 #maincontent #backgroundmaincontent{
