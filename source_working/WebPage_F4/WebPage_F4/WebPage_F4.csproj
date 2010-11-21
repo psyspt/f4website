@@ -2,7 +2,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>9.0.30729</ProductVersion>
+    <ProductVersion>9.0.21022</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{88B63DE7-4BBA-4BC9-8E18-8C8C0FC1A5A0}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
@@ -143,6 +143,26 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="CamNangNghe.aspx" />
+    <Content Include="Captcha_images\Captcha1.jpg" />
+    <Content Include="Captcha_images\Captcha10.jpg" />
+    <Content Include="Captcha_images\Captcha11.jpg" />
+    <Content Include="Captcha_images\Captcha12.jpg" />
+    <Content Include="Captcha_images\Captcha13.jpg" />
+    <Content Include="Captcha_images\Captcha14.jpg" />
+    <Content Include="Captcha_images\Captcha15.jpg" />
+    <Content Include="Captcha_images\Captcha16.jpg" />
+    <Content Include="Captcha_images\Captcha17.jpg" />
+    <Content Include="Captcha_images\Captcha18.jpg" />
+    <Content Include="Captcha_images\Captcha19.jpg" />
+    <Content Include="Captcha_images\Captcha2.jpg" />
+    <Content Include="Captcha_images\Captcha20.jpg" />
+    <Content Include="Captcha_images\Captcha3.jpg" />
+    <Content Include="Captcha_images\Captcha4.jpg" />
+    <Content Include="Captcha_images\Captcha5.jpg" />
+    <Content Include="Captcha_images\Captcha6.jpg" />
+    <Content Include="Captcha_images\Captcha7.jpg" />
+    <Content Include="Captcha_images\Captcha8.jpg" />
+    <Content Include="Captcha_images\Captcha9.jpg" />
     <Content Include="CSS\dangkiStyleSheet.css" />
     <Content Include="DangKi\DangKiTaiKhoanNguoiTimViec.aspx" />
     <Content Include="DangKi\DangKiTaiKhoanNhaTuyenDung.aspx" />
@@ -202,9 +222,6 @@
           <IISUrl>
           </IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
-          <UseCustomServer>False</UseCustomServer>
-          <CustomServerUrl>
-          </CustomServerUrl>
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>
