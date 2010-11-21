@@ -182,12 +182,12 @@ div#menu{
 .spacer
 {
 	height: 30px;
-	width: 702px;
+	width: 652px;
 	float:left;
 }
 .Register
 {
-	width: 1000px;
+	width: 652px;
 	border-width: 2px;
 	border-style:solid;
 }
@@ -208,17 +208,18 @@ div#menu{
 	float: left;
 	width: 200px;
 	height: 40px;
+	text-align:left;
 }
 .RegisterTextbox
 {
 	margin-left:0px;
 	float:left;
-	width:500px;
+	width:452px;
 	height: 40px;
 }
 .RegisterXacNhan
 {
-	width: 702px;
+	width: 652px;
 	float: left;
 	height: auto;
 }
