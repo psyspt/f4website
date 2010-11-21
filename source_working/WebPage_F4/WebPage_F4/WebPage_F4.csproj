@@ -55,6 +55,13 @@
     <Compile Include="CamNangNghe.aspx.designer.cs">
       <DependentUpon>CamNangNghe.aspx</DependentUpon>
     </Compile>
+    <Compile Include="DangKi\DangKiTaiKhoanNguoiTimViec.aspx.cs">
+      <DependentUpon>DangKiTaiKhoanNguoiTimViec.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DangKi\DangKiTaiKhoanNguoiTimViec.aspx.designer.cs">
+      <DependentUpon>DangKiTaiKhoanNguoiTimViec.aspx</DependentUpon>
+    </Compile>
     <Compile Include="DangKi\DangKiTaiKhoanNhaTuyenDung.aspx.cs">
       <DependentUpon>DangKiTaiKhoanNhaTuyenDung.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -126,24 +133,18 @@
     <Compile Include="UserControl\uc_Header.ascx.designer.cs">
       <DependentUpon>uc_Header.ascx</DependentUpon>
     </Compile>
-    <Compile Include="UserControl\uc_Register_Nguoi_Tim_Viec.ascx.cs">
-      <DependentUpon>uc_Register_Nguoi_Tim_Viec.ascx</DependentUpon>
+    <Compile Include="UserControl\uc_FormDangKiNguoiTimViec.ascx.cs">
+      <DependentUpon>uc_FormDangKiNguoiTimViec.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="UserControl\uc_Register_Nguoi_Tim_Viec.ascx.designer.cs">
-      <DependentUpon>uc_Register_Nguoi_Tim_Viec.ascx</DependentUpon>
-    </Compile>
-    <Compile Include="WebForm1.aspx.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="WebForm1.aspx.designer.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
+    <Compile Include="UserControl\uc_FormDangKiNguoiTimViec.ascx.designer.cs">
+      <DependentUpon>uc_FormDangKiNguoiTimViec.ascx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="CamNangNghe.aspx" />
     <Content Include="CSS\dangkiStyleSheet.css" />
+    <Content Include="DangKi\DangKiTaiKhoanNguoiTimViec.aspx" />
     <Content Include="DangKi\DangKiTaiKhoanNhaTuyenDung.aspx" />
     <Content Include="images\advertisement.jpg" />
     <Content Include="images\backgoundtitledangki.jpg" />
@@ -175,8 +176,7 @@
     <Content Include="TaoHoSo.aspx" />
     <Content Include="TạoThongBaoViec.aspx" />
     <Content Include="UserControl\uc_FormDangKiNhaTuyenDung.ascx" />
-    <Content Include="UserControl\uc_Register_Nguoi_Tim_Viec.ascx" />
-    <Content Include="WebForm1.aspx" />
+    <Content Include="UserControl\uc_FormDangKiNguoiTimViec.ascx" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
