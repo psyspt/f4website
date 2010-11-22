@@ -20,8 +20,14 @@
         <p> Và Thăng Tiến </p>
     </div>
     <div id="textboxLogin">
-    	<input id="username" class="inputBox inputBoxWith1 inputBoxMarginLeft1" value="user name" name="username" type="text" />
-        <input id="password" class="inputBox inputBoxWith2 inputBoxMarginLeft2" value="password" type="password" />
+    	<!-- <input id="username" class="inputBox inputBoxWith1 inputBoxMarginLeft1" value="user name" name="username" type="text" />
+        <input id="password" class="inputBox inputBoxWith2 inputBoxMarginLeft2" value="password" type="password" /> --->
+        <div id="dangkiButton">
+            <a href="DangKi/DangKiTaiKhoanNguoiTimViec.aspx" title="Đăng Kí"></a>
+        </div>
+        <div id="dangnhapButton">
+            <a href="DangKi/DangKiTaiKhoanNguoiTimViec.aspx" title="Đăng Nhập"></a>
+        </div>
     </div>
 </div><!-- banner -->
         

@@ -138,12 +138,58 @@ div#menu{
 	color:#454142;
 }
 
+#banner #dangnhapButton
+{
+	float :left;
+	top: -4px;
+	left: 16px;
+	width: 104px;
+}
+#dangnhapButton a:link, #dangnhapButton a:visited
+{
+	width:104px;
+	height:31px;
+	display:block;
+	text-indent:-10em;
+	background:#FFF url(../images/buttonDangNhap.jpg);
+	border:none;
+}
+
+
+#dangnhapButton a:hover, #dangnhapButton a:active
+{
+	background:#FFF url(../images/overButtonDangNhap.jpg);
+}
+
+#banner #dangkiButton
+{
+	float:right;
+	top: 0px;
+	left: 297px;
+	width: 104px;
+}
+
+#dangkiButton a:link, #dangkiButton a:visited
+{
+	width:104px;
+	height:31px;
+	display:block;
+	text-indent:-10em;
+	background:#FFF url(../images/buttonDangKi.jpg);
+	border:none;
+}
+
+#dangkiButton a:hover, #dangkiButton a:active
+{
+	background:#FFF url(../images/overButtonDangNhap.jpg);
+}
+
 #banner #textboxLogin{
 	position: absolute;
-	bottom:0;
-	right: 110px;
-	width:521px;
-	height: 50px;
+	bottom:8px;
+	right: 164px;
+	width:308px;
+	height: 33px;
 }
 
 .inputBox{
