@@ -185,6 +185,7 @@
     <Content Include="CaptchaImg\Captcha8.jpg" />
     <Content Include="CaptchaImg\Captcha9.jpg" />
     <Content Include="CSS\dangkiStyleSheet.css" />
+    <Content Include="CSS\dangnhapStyleSheet.css" />
     <Content Include="DangKi\DangKi.aspx" />
     <Content Include="DangKi\DangKiTaiKhoanNguoiTimViec.aspx" />
     <Content Include="DangKi\DangKiTaiKhoanNhaTuyenDung.aspx" />

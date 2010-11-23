@@ -69,14 +69,5 @@
 </div><!-- content's herer -->
 
 </asp:Content>
-<asp:Content ID="Content1" runat="server" contentplaceholderid="head">
 
-    <style type="text/css">
-        #contentDangKi
-        {
-            height: 86px;
-        }
-    </style>
-
-</asp:Content>
 
