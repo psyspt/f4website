@@ -1,6 +1,6 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="uc_FormDangKiNguoiTimViec.ascx.cs" Inherits="WebPage_F4.UserControl.uc_Register_Nguoi_Tim_Viec" %>
 <link href="../CSS/styleSheet.css" rel="Stylesheet" type="text/css" />
- <link rel="stylesheet" type="text/css" href="CSS/jquery-ui-1.8.6.custom.css" />
+ <link rel="stylesheet" type="text/css" href="../CSS/jquery-ui-1.8.6.custom.css" />
  <script type="text/javascript" src="../JavaScript/jquery-1.4.2.min.js"> </script>
  <script type="text/javascript" src="../JavaScript/jquery-ui-1.8.6.custom.min.js"> </script>
 
@@ -55,6 +55,16 @@
         <asp:TextBox ID="DienThoai" runat="server" Height="20px" Width="225px"></asp:TextBox>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" 
             ControlToValidate="DienThoai" ErrorMessage="*Bạn phải nhập điện thoại"></asp:RequiredFieldValidator>
+    </div>
+    
+    <div class="RegisterLabel"> Tỉnh/Thành Phố:</div>
+    <div class="RegisterTextbox"> 
+        
+        <asp:DropDownList ID="ThanhPho" runat="server" Height="21px" Width="154px">
+        </asp:DropDownList>
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" 
+            ControlToValidate="ThanhPho" ErrorMessage="(*)"></asp:RequiredFieldValidator>
+        
     </div>
     
     <div class="RegisterLabel"> Ngày sinh:</div>
@@ -119,5 +129,11 @@
     
     <div class="registerbutton"> 
         <asp:Button ID="DongY" runat="server" Text="Đăng ký" onclick="Button1_Click"/>
+    </div>
+    <div class="RegisterTextbox"> 
+    
+        <asp:Label ID="LbLoi" runat="server" Font-Names="Times New Roman" 
+            ForeColor="Red"></asp:Label>
+    
     </div>
 </div>

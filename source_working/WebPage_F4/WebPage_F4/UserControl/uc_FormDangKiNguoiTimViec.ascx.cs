@@ -14,7 +14,7 @@ using System.Drawing.Imaging;
 using System.Drawing.Text;
 using System.Drawing.Drawing2D;
 using System.Text;
-using System.Web.Mail;
+using System.Net.Mail;
 
 namespace WebPage_F4.UserControl
 {
@@ -162,12 +162,37 @@ namespace WebPage_F4.UserControl
             captchaImage.ImageUrl = captcha.CreateCaptcha();
         }
 
+        public void SendMail(object sender, EventArgs e)
+        {
+            SmtpClient SmtpServer = new SmtpClient();
+            SmtpServer.Credentials = new System.Net.NetworkCredential("ptudwebf4@gmail.com", "th200701"); 
+            SmtpServer.Port = 587; 
+            SmtpServer.Host = "smtp.gmail.com"; 
+            SmtpServer.EnableSsl = true; 
+            MailMessage mail = new MailMessage();
+            string strname = Username.Text;
+            try 
+            {
+                mail.From = new MailAddress("ptudwebf4@gmail.com", "Mail xác nhận đăng ký", System.Text.Encoding.UTF8);  
+                mail.To.Add(Email.Text);
+                mail.Subject = "Xác nhận đăng ký"; 
+                mail.IsBodyHtml = true;
+                mail.Body = "<p>Hello</p>" + strname + "</br> <p>Bạn đã đăng ký vào website Tìm Việc </p>"
+                            + "</br><p>Click vào link liên kết sau để hoàn tất đăng ký</p>";
+                mail.DeliveryNotificationOptions = DeliveryNotificationOptions.OnFailure;  
+                SmtpServer.Send(mail); 
+            } 
+            catch (Exception ex) { } 
+
+        }
         protected void Button1_Click(object sender, EventArgs e)
         {
+            string str = "";
 
             if (CaptchaText.Text.ToString().Equals(Session["captcha"].ToString(), StringComparison.OrdinalIgnoreCase))
             {
-                //code luu du lieu
+                //code Luu du lieu
+                SendMail(sender, e);
             }
             else
             {
