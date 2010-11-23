@@ -167,6 +167,15 @@ div#menu{
 	background:#FFF url(../images/nguoiTimViec.jpg) no-repeat;
 }
 
+#contentDangKi .dangkiparagraph
+{
+	font-family:Arial;
+	font-size:24px;
+	float:left;
+	margin-left :50px;
+	margin-top :28px;
+}
+
 #contentDangKi #dangkiNhaTuyenDung
 {
 	float:left;
@@ -175,6 +184,20 @@ div#menu{
 	margin-left:60px;
 	margin-right:60px;
 	background:#FFF url(../images/nhaTuyenDung.jpg) no-repeat;
+}
+
+#dangkiNguoiTimViec #buttonNguoiTimViec
+{
+	float:left;
+	margin-top:300px;
+	margin-left:-85px;
+}
+
+#dangkiNhaTuyenDung #buttonNhaTuyenDung
+{
+	float:left;
+	margin-top:300px;
+	margin-left:-85px;
 }
 
 #maincontent #contentinfo{

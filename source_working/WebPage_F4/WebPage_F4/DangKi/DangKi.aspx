@@ -44,10 +44,22 @@
             
             <div id="contentDangKi">
                 <div id="dangkiNguoiTimViec">
-                    
+                    <p class="dangkiparagraph">
+                        Người Tìm Việc
+                    </p>
+                    <div id="buttonNguoiTimViec">
+                        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/DangKi/DangKiTaiKhoanNguoiTimViec.aspx"><asp:Button ID="Button1" runat="server" Text="Đăng Kí" Height="28px" 
+                            Width="96px" /></asp:HyperLink>
+                    </div>
                 </div>
                 <div id="dangkiNhaTuyenDung">
-                    
+                    <p class="dangkiparagraph">
+                        Nhà Tuyển Dụng
+                    </p>
+                    <div id="buttonNhaTuyenDung">
+                        <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/DangKi/DangKiTaiKhoanNhaTuyenDung.aspx"><asp:Button ID="Button2" runat="server" Text="Đăng Kí"  Height="28px" 
+                            Width="96px" /></asp:HyperLink>
+                    </div>
                 </div>
             </div>
             
