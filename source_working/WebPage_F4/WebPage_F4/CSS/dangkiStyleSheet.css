@@ -220,7 +220,6 @@ div#menu{
 	font-family:Arial, Helvetica, sans-serif;
 	font-size:28px;
 	font-style:italic;
-	font-weight:bold;
 	color:#565756;
 	margin-left: 40px;
 	margin-top: 15px;
@@ -257,8 +256,6 @@ div#menu{
 	background:#FFF url(../images/rightcontent.jpg) no-repeat;
 }
 
-
-	
 /*=======this is the footer =============================*/
 
 #footer #footercontent{

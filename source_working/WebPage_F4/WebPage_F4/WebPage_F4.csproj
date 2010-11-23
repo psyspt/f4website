@@ -200,6 +200,12 @@
     <Content Include="images\contentInfo.jpg" />
     <Content Include="images\coverMenu.jpg" />
     <Content Include="images\footer.jpg" />
+    <Content Include="images\headerNguoiTimViec.jpg" />
+    <Content Include="images\headerNhaTuyenDung.jpg" />
+    <Content Include="images\imgNguoiTimViec.jpg" />
+    <Content Include="images\imgNhaTuyenDung.jpg" />
+    <Content Include="images\inputNguoiTimViec.jpg" />
+    <Content Include="images\inputNhaTuyenDung.jpg" />
     <Content Include="images\leftContent.jpg" />
     <Content Include="images\leftHeader.jpg" />
     <Content Include="images\line.jpg" />

@@ -133,7 +133,136 @@ div#menu{
 }
 
 /*=======this is the main content =======================*/
+/*=================== body================================*/
+#maincontent{
+	position:relative;
+	width:1200px;
+	height:1164px;
+	padding:0;
+	margin:0;
+}
+/*=================== left ================================*/
+#maincontent #leftcontent {
+	float:left;
+	width:105px;
+	height:1164px;
+	background:#FFF url(../images/leftContent.jpg) no-repeat;
+}
+/*=================== center================================*/
+#maincontent #centercontent{
+	float:left;
+	width:995px;
+	height:1164px;
+}
 
+#centercontent #title
+{
+	position:relative;
+	height: 64px;
+	width:994px;
+	background:#FFF url(../images/backgoundtitledangki.jpg) no-repeat;
+	top: 0px;
+	left: 0px;
+}
+
+#title p
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:24px;
+	color:#74afd5;
+	margin-top:30px;
+	margin-left:50px;
+}
+
+/*=================== nha tuyen dung ============================*/
+
+#centercontent #nhaTuyenDung
+{
+	float:left;
+	width:495px;
+	height:683px;
+}
+
+#nhaTuyenDung #headerNhaTuyenDung
+{
+	float:left;
+	width:495px;
+	height:65px;
+	background:#FFF url(../images/headerNhaTuyenDung.jpg) no-repeat;
+}
+
+#nhaTuyenDung #imgNhaTuyenDung
+{
+	float:left;
+	width:495px;
+	height:192px;
+	background:#FFF url(../images/imgNhaTuyenDung.jpg) no-repeat;
+}
+
+#nhaTuyenDung #inputNhaTuyenDung
+{
+	float:left;
+	width:495px;
+	height:170px;
+	background:#FFF url(../images/inputNhaTuyenDung.jpg) no-repeat;
+}
+
+/*=================== nguoi tim viec ============================*/
+
+#centercontent #nguoiTimViec
+{
+	float:left;
+	width:495px;
+	height:683px;
+}
+
+#nguoiTimViec #headerNguoiTimViec
+{
+	float:left;
+	width:495px;
+	height:65px;
+	background:#FFF url(../images/headerNguoiTimViec.jpg) no-repeat;
+}
+
+#nguoiTimViec #imgNguoiTimViec
+{
+	float:left;
+	width:495px;
+	height:192px;
+	background:#FFF url(../images/imgNguoiTimViec.jpg) no-repeat;
+}
+
+#nguoiTimViec #inputNguoiTimViec
+{
+	float:left;
+	width:495px;
+	height:170px;
+	background:#FFF url(../images/inputNguoiTimViec.jpg) no-repeat;
+}
+
+.paragraph
+{
+	font-size: 24px;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#565756;
+}
+
+.marginNTV
+{
+	margin-left:100px;
+}
+
+.marginNTD
+{
+	margin-left:120px;
+}
+/*=================== right================================*/
+#maincontent #rightcontent{
+	float:left;
+	width:97px;
+	height:1164px;
+	background:#FFF url(../images/rightcontent.jpg) no-repeat;
+}
 
 /*=======this is the footer =============================*/
 

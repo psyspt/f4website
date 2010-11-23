@@ -12,5 +12,59 @@ namespace WebPage_F4.DangNhap {
     
     
     public partial class DangNhap {
+        
+        /// <summary>
+        /// userNguoiTimViec control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox userNguoiTimViec;
+        
+        /// <summary>
+        /// passNguoiTimViec control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox passNguoiTimViec;
+        
+        /// <summary>
+        /// dangNhapNguoiTimViec control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button dangNhapNguoiTimViec;
+        
+        /// <summary>
+        /// userNhaTuyenDung control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox userNhaTuyenDung;
+        
+        /// <summary>
+        /// passNhaTuyenDung control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox passNhaTuyenDung;
+        
+        /// <summary>
+        /// dangNhapNhaTuyenDung control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button dangNhapNhaTuyenDung;
     }
 }
