@@ -76,6 +76,13 @@
     <Compile Include="DangKi\DangKiTaiKhoanNhaTuyenDung.aspx.designer.cs">
       <DependentUpon>DangKiTaiKhoanNhaTuyenDung.aspx</DependentUpon>
     </Compile>
+    <Compile Include="DangNhap\DangNhap.aspx.cs">
+      <DependentUpon>DangNhap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DangNhap\DangNhap.aspx.designer.cs">
+      <DependentUpon>DangNhap.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
       <DependentUpon>Default.aspx</DependentUpon>
@@ -181,6 +188,7 @@
     <Content Include="DangKi\DangKi.aspx" />
     <Content Include="DangKi\DangKiTaiKhoanNguoiTimViec.aspx" />
     <Content Include="DangKi\DangKiTaiKhoanNhaTuyenDung.aspx" />
+    <Content Include="DangNhap\DangNhap.aspx" />
     <Content Include="images\advertisement.jpg" />
     <Content Include="images\backgoundtitledangki.jpg" />
     <Content Include="images\backgroundMenu.jpg" />
@@ -198,6 +206,8 @@
     <Content Include="images\logoHeader.jpg" />
     <Content Include="images\maincontent.jpg" />
     <Content Include="images\namePage.jpg" />
+    <Content Include="images\nguoiTimViec.jpg" />
+    <Content Include="images\nhaTuyenDung.jpg" />
     <Content Include="images\noticedHeader.jpg" />
     <Content Include="images\overButtonDangKi.jpg" />
     <Content Include="images\overButtonDangNhap.jpg" />

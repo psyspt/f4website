@@ -23,10 +23,10 @@
     	<!-- <input id="username" class="inputBox inputBoxWith1 inputBoxMarginLeft1" value="user name" name="username" type="text" />
         <input id="password" class="inputBox inputBoxWith2 inputBoxMarginLeft2" value="password" type="password" /> --->
         <div id="dangkiButton">
-            <a href="DangKi/DangKiTaiKhoanNguoiTimViec.aspx" title="Đăng Kí"></a>
+            <a href="DangKi/DangKi.aspx"title="Đăng Kí"></a>
         </div>
         <div id="dangnhapButton">
-            <a href="DangKi/DangKiTaiKhoanNguoiTimViec.aspx" title="Đăng Nhập"></a>
+            <a href="DangNhap/DangNhap.aspx"title="Đăng Nhập"></a>
         </div>
     </div>
 </div><!-- banner -->
@@ -47,11 +47,11 @@ Theo lời trung tướng Hoàng Kông Tư, (Thủ trưởng Cơ quan An ninh đ
           </p>
         </div> 
         <div id="tieudiembar">
-        	<img src="images/tieudiem.jpg" width="611" height="71"  />
+        	<img src="images/tieudiem.jpg" width="611" height="71"  alt="can't display"/>
     	</div>
         <div id="tieudiem">
         	<div id="tieudiemFirst">
-            	<img class="tieudiemPicture" src="images/tieudiem_picture01.jpg" />
+            	<img class="tieudiemPicture" src="images/tieudiem_picture01.jpg" alt="can't display"/>
             	<h1 class="tieudiemTitle">
                 	Lương cao .
                 </h1>
@@ -63,7 +63,7 @@ Theo lời trung tướng Hoàng Kông Tư, (Thủ trưởng Cơ quan An ninh đ
                 </div>
             </div>
             <div id="tieudiemSecond">
-            	<img class="tieudiemPicture" src="images/tieudiem_picture01.jpg" />
+            	<img class="tieudiemPicture" src="images/tieudiem_picture01.jpg" alt="can't display"/>
             	<h1 class="tieudiemTitle">
                 	Tiền nhiều .
                 </h1>
@@ -75,7 +75,7 @@ Theo lời trung tướng Hoàng Kông Tư, (Thủ trưởng Cơ quan An ninh đ
                 </div>
             </div>
             <div id="tieudiemThird">
-            	<img class="tieudiemPicture" src="images/tieudiem_picture01.jpg" />
+            	<img class="tieudiemPicture" src="images/tieudiem_picture01.jpg" alt="can't display"/>
             	<h1 class="tieudiemTitle">
                 	Chức lơn1 .
                 </h1>
