@@ -48,6 +48,30 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BUS\AdminBUS.cs" />
+    <Compile Include="BUS\ApplicationBUS.cs" />
+    <Compile Include="BUS\BangCapBUS.cs" />
+    <Compile Include="BUS\CapBacBUS.cs" />
+    <Compile Include="BUS\CVBUS.cs" />
+    <Compile Include="BUS\DonViTienTeBUS.cs" />
+    <Compile Include="BUS\GoiDangTuyenBUS.cs" />
+    <Compile Include="BUS\KinhNghiemBUS.cs" />
+    <Compile Include="BUS\KyNangNgonNguBUS.cs" />
+    <Compile Include="BUS\KyNangTinHocBUS.cs" />
+    <Compile Include="BUS\LoaiCongViecBUS.cs" />
+    <Compile Include="BUS\LuongBUS.cs" />
+    <Compile Include="BUS\NganhNgheBUS.cs" />
+    <Compile Include="BUS\NgonNguBUS.cs" />
+    <Compile Include="BUS\NguoiTimViecBUS.cs" />
+    <Compile Include="BUS\NhaTuyenDungBUS.cs" />
+    <Compile Include="BUS\NhaTuyenDungLuuCVBUS.cs" />
+    <Compile Include="BUS\QuangCaoBUS.cs" />
+    <Compile Include="BUS\QuocGiaBUS.cs" />
+    <Compile Include="BUS\TinHocBUS.cs" />
+    <Compile Include="BUS\TinhThanhBUS.cs" />
+    <Compile Include="BUS\TinTuyenDungBUS.cs" />
+    <Compile Include="BUS\TrongSoBUS.cs" />
+    <Compile Include="BUS\ViTriBUS.cs" />
     <Compile Include="CamNangNghe.aspx.cs">
       <DependentUpon>CamNangNghe.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -83,6 +107,31 @@
     <Compile Include="DangNhap\DangNhap.aspx.designer.cs">
       <DependentUpon>DangNhap.aspx</DependentUpon>
     </Compile>
+    <Compile Include="DAO\AdminDAOcs.cs" />
+    <Compile Include="DAO\ApplicationDAO.cs" />
+    <Compile Include="DAO\BangCapDAO.cs" />
+    <Compile Include="DAO\CapBacDAO.cs" />
+    <Compile Include="DAO\CVDAO.cs" />
+    <Compile Include="DAO\DonViTienTeDAO.cs" />
+    <Compile Include="DAO\GoiDangTuyenDAO.cs" />
+    <Compile Include="DAO\KinhNghiemDAO.cs" />
+    <Compile Include="DAO\KyNangNgonNguDAO.cs" />
+    <Compile Include="DAO\KyNangTinHocDAO.cs" />
+    <Compile Include="DAO\LoaiCongViecDAO.cs" />
+    <Compile Include="DAO\LuongDAO.cs" />
+    <Compile Include="DAO\NganhNgheDAO.cs" />
+    <Compile Include="DAO\NgonNguDAO.cs" />
+    <Compile Include="DAO\NguoiTimViecDAO.cs" />
+    <Compile Include="DAO\NhaTuyenDungDAO.cs" />
+    <Compile Include="DAO\NhaTuyenDungLuuCVDAO.cs" />
+    <Compile Include="DAO\QuangCaoDAO.cs" />
+    <Compile Include="DAO\QuocGiaDAO.cs" />
+    <Compile Include="DAO\SQLServerConnecter.cs" />
+    <Compile Include="DAO\TinHocDAO.cs" />
+    <Compile Include="DAO\TinhThanhDAO.cs" />
+    <Compile Include="DAO\TinTuyenDungDAO.cs" />
+    <Compile Include="DAO\TrongSoDAO.cs" />
+    <Compile Include="DAO\ViTriDAO.cs" />
     <Compile Include="Default.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
       <DependentUpon>Default.aspx</DependentUpon>
@@ -90,6 +139,30 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="DTO\AdminDTO.cs" />
+    <Compile Include="DTO\ApplicationDTO.cs" />
+    <Compile Include="DTO\BangCapDTO.cs" />
+    <Compile Include="DTO\CapBacDTO.cs" />
+    <Compile Include="DTO\CVDTO.cs" />
+    <Compile Include="DTO\DonViTienTeDTO.cs" />
+    <Compile Include="DTO\GoiDangTuyenDTO.cs" />
+    <Compile Include="DTO\KinhNghiemDTO.cs" />
+    <Compile Include="DTO\KyNangNgonNguDTOcs.cs" />
+    <Compile Include="DTO\KyNangTinHocDTO.cs" />
+    <Compile Include="DTO\LoaiCongViecDTO.cs" />
+    <Compile Include="DTO\LuongDTO.cs" />
+    <Compile Include="DTO\NganhNgheDTO.cs" />
+    <Compile Include="DTO\NgonNguDTO.cs" />
+    <Compile Include="DTO\NguoiTimViecDTO.cs" />
+    <Compile Include="DTO\NhaTuyenDungDTO.cs" />
+    <Compile Include="DTO\NhaTuyenDungLuuCVDTO.cs" />
+    <Compile Include="DTO\QuangCaoDTO.cs" />
+    <Compile Include="DTO\QuocGiaDTO.cs" />
+    <Compile Include="DTO\TinHocDTO.cs" />
+    <Compile Include="DTO\TinhThanhDTO.cs" />
+    <Compile Include="DTO\TinTuyenDungDTO.cs" />
+    <Compile Include="DTO\TrongSoDTO.cs" />
+    <Compile Include="DTO\ViTriDTO.cs" />
     <Compile Include="KiemViec.aspx.cs">
       <DependentUpon>KiemViec.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

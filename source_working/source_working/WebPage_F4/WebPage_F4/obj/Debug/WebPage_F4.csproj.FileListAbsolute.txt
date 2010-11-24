@@ -18,3 +18,8 @@ C:\Users\Ninh\Desktop\f4_website\f4website\source_working\WebPage_F4\WebPage_F4\
 C:\Users\Ninh\Desktop\f4_website\f4website\source_working\WebPage_F4\WebPage_F4\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Ninh\Desktop\f4_website\f4website\source_working\WebPage_F4\WebPage_F4\obj\Debug\WebPage_F4.dll
 C:\Users\Ninh\Desktop\f4_website\f4website\source_working\WebPage_F4\WebPage_F4\obj\Debug\WebPage_F4.pdb
+E:\1 KHTN\1 Web\Google Group\source_working\source_working\WebPage_F4\WebPage_F4\bin\WebPage_F4.dll
+E:\1 KHTN\1 Web\Google Group\source_working\source_working\WebPage_F4\WebPage_F4\bin\WebPage_F4.pdb
+E:\1 KHTN\1 Web\Google Group\source_working\source_working\WebPage_F4\WebPage_F4\obj\Debug\ResolveAssemblyReference.cache
+E:\1 KHTN\1 Web\Google Group\source_working\source_working\WebPage_F4\WebPage_F4\obj\Debug\WebPage_F4.dll
+E:\1 KHTN\1 Web\Google Group\source_working\source_working\WebPage_F4\WebPage_F4\obj\Debug\WebPage_F4.pdb
