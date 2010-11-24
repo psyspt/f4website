@@ -151,7 +151,8 @@
   </tr>
   <tr>
     <td align="center" valign="middle" class="style8" colspan="2">
-        <asp:Button ID="Button1" runat="server" Text="Đăng Kí" Width="114px" />
+        <asp:Button ID="Button1" runat="server" Text="Đăng Kí" Width="114px" 
+            onclick="Button1_Click1" />
       </td>
   </tr>
 </table>

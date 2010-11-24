@@ -15,7 +15,8 @@ using System.Drawing.Text;
 using System.Drawing.Drawing2D;
 using System.Text;
 using System.Net.Mail;
-
+using DTO;
+using BUS;
 namespace WebPage_F4.UserControl
 {
     public class CaptchaProvider : Page
@@ -198,6 +199,26 @@ namespace WebPage_F4.UserControl
                 //Lưu dữ liệu
                 //send mail
                 SendMail(sender, e);
+                NguoiTimViecDTO newrecord = new NguoiTimViecDTO();
+                newrecord.TrangThai = 1;
+                newrecord.HoTen = Ho.Text + " " + Ten.Text;
+                if (gioitinh.SelectedIndex == 0)
+                {
+                    newrecord.GioiTinh = 1;
+                }
+                else if (gioitinh.SelectedIndex == 1)
+                {
+                    newrecord.GioiTinh = 0;
+                }
+                newrecord.NgaySinh = DateTime.Parse(datepicker.Value);
+                newrecord.DiaChi = DiaChi.Text;
+                newrecord.DienThoai = DienThoai.Text;
+                newrecord.UserName = Username.Text;
+                newrecord.PassWord = Password.Text;
+                newrecord.EMail = Email.Text;
+                NguoiTimViecBUS bus = new NguoiTimViecBUS();
+                bool kq = bus.Insert(newrecord);
+                
             }
             else
             {

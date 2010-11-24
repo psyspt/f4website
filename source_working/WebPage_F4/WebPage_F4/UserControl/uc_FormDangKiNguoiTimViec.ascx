@@ -36,7 +36,7 @@
     
     <div class="RegisterLabel"> Giới tính:</div>
     <div class="RegisterTextbox"> 
-        <select id="gioitinh">
+        <select id="gioitinh" runat ="server" >
             <option value="Nam">Nam</option>
             <option value="Nu">Nu</option>
             <option value="Khac">Khac</option>
@@ -67,7 +67,7 @@
     
     <div class="RegisterLabel"> Ngày sinh:</div>
     <div class="RegisterTextbox"> 
-        <input type="text" id="datepicker" style="width: 225px; height: 25px"></div>
+        <input type="text" id="datepicker" style="width: 225px; height: 25px" runat="server"></div>
     
     <div class="spacer"> <span class="Registertieude">Nhập thông tin tài khoản</span></div>
     

@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{64740181-E53B-44AF-84E0-75A3D21D5CC0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DTO</RootNamespace>
+    <AssemblyName>DTO</AssemblyName>
+    <TargetFrameworkVersion>v3.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminDTO.cs" />
+    <Compile Include="ApplicationDTO.cs" />
+    <Compile Include="BangCapDTO.cs" />
+    <Compile Include="CapBacDTO.cs" />
+    <Compile Include="CVDTO.cs" />
+    <Compile Include="DonViTienTeDTO.cs" />
+    <Compile Include="GoiDangTuyenDTO.cs" />
+    <Compile Include="KinhNghiemDTO.cs" />
+    <Compile Include="KyNangNgonNguDTOcs.cs" />
+    <Compile Include="KyNangTinHocDTO.cs" />
+    <Compile Include="LoaiCongViecDTO.cs" />
+    <Compile Include="LuongDTO.cs" />
+    <Compile Include="NganhNgheDTO.cs" />
+    <Compile Include="NgonNguDTO.cs" />
+    <Compile Include="NguoiTimViecDTO.cs" />
+    <Compile Include="NhaTuyenDungDTO.cs" />
+    <Compile Include="NhaTuyenDungLuuCVDTO.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuangCaoDTO.cs" />
+    <Compile Include="QuocGiaDTO.cs" />
+    <Compile Include="TinHocDTO.cs" />
+    <Compile Include="TinhThanhDTO.cs" />
+    <Compile Include="TinTuyenDungDTO.cs" />
+    <Compile Include="TrongSoDTO.cs" />
+    <Compile Include="ViTriDTO.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
