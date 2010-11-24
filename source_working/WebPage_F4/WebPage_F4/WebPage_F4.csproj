@@ -236,6 +236,18 @@
     <Content Include="UserControl\uc_FormDangKiNguoiTimViec.ascx" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BUS\BUS.csproj">
+      <Project>{B761C956-9471-4321-A2DA-341953ECE7EF}</Project>
+      <Name>BUS</Name>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\DTO\DTO.csproj">
+      <Project>{64740181-E53B-44AF-84E0-75A3D21D5CC0}</Project>
+      <Name>DTO</Name>
+      <Private>True</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="JavaScript\" />
   </ItemGroup>

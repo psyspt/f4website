@@ -36,7 +36,7 @@
     
     <div class="RegisterLabel"> Giới tính:</div>
     <div class="RegisterTextbox"> 
-        <select id="gioitinh" runat ="server" >
+        <select id="gioitinh" runat="server" >
             <option value="Nam">Nam</option>
             <option value="Nu">Nu</option>
             <option value="Khac">Khac</option>

@@ -73,6 +73,7 @@
     <ProjectReference Include="..\DTO\DTO.csproj">
       <Project>{64740181-E53B-44AF-84E0-75A3D21D5CC0}</Project>
       <Name>DTO</Name>
+      <Private>True</Private>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
