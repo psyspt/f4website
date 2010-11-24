@@ -18,3 +18,14 @@ C:\Users\Ninh\Desktop\f4_website\f4website\source_working\WebPage_F4\WebPage_F4\
 C:\Users\Ninh\Desktop\f4_website\f4website\source_working\WebPage_F4\WebPage_F4\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Ninh\Desktop\f4_website\f4website\source_working\WebPage_F4\WebPage_F4\obj\Debug\WebPage_F4.dll
 C:\Users\Ninh\Desktop\f4_website\f4website\source_working\WebPage_F4\WebPage_F4\obj\Debug\WebPage_F4.pdb
+E:\1 KHTN\1 Web\Google Group\source_working\WebPage_F4\WebPage_F4\bin\WebPage_F4.dll
+E:\1 KHTN\1 Web\Google Group\source_working\WebPage_F4\WebPage_F4\bin\WebPage_F4.pdb
+E:\1 KHTN\1 Web\Google Group\source_working\WebPage_F4\WebPage_F4\obj\Debug\ResolveAssemblyReference.cache
+E:\1 KHTN\1 Web\Google Group\source_working\WebPage_F4\WebPage_F4\obj\Debug\WebPage_F4.dll
+E:\1 KHTN\1 Web\Google Group\source_working\WebPage_F4\WebPage_F4\obj\Debug\WebPage_F4.pdb
+E:\1 KHTN\1 Web\Google Group\source_working\WebPage_F4\WebPage_F4\bin\BUS.dll
+E:\1 KHTN\1 Web\Google Group\source_working\WebPage_F4\WebPage_F4\bin\DTO.dll
+E:\1 KHTN\1 Web\Google Group\source_working\WebPage_F4\WebPage_F4\bin\BUS.pdb
+E:\1 KHTN\1 Web\Google Group\source_working\WebPage_F4\WebPage_F4\bin\DTO.pdb
+E:\1 KHTN\1 Web\Google Group\source_working\WebPage_F4\WebPage_F4\bin\DAO.dll
+E:\1 KHTN\1 Web\Google Group\source_working\WebPage_F4\WebPage_F4\bin\DAO.pdb

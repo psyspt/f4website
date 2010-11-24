@@ -197,8 +197,6 @@ namespace WebPage_F4.UserControl
             if (CaptchaText.Text.ToString().Equals(Session["captcha"].ToString(), StringComparison.OrdinalIgnoreCase))
             {
                 //Lưu dữ liệu
-                //send mail
-                SendMail(sender, e);
                 NguoiTimViecDTO newrecord = new NguoiTimViecDTO();
                 newrecord.TrangThai = 1;
                 newrecord.HoTen = Ho.Text + " " + Ten.Text;
@@ -218,7 +216,9 @@ namespace WebPage_F4.UserControl
                 newrecord.EMail = Email.Text;
                 NguoiTimViecBUS bus = new NguoiTimViecBUS();
                 bool kq = bus.Insert(newrecord);
-                
+                //send mail
+                SendMail(sender, e);
+      
             }
             else
             {
