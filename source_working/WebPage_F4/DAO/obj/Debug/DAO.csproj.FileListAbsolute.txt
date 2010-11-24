@@ -1,7 +1,0 @@
-E:\1 KHTN\1 Web\Google Group\source_working\WebPage_F4\DAO\bin\Debug\DAO.dll
-E:\1 KHTN\1 Web\Google Group\source_working\WebPage_F4\DAO\bin\Debug\DAO.pdb
-E:\1 KHTN\1 Web\Google Group\source_working\WebPage_F4\DAO\bin\Debug\DTO.dll
-E:\1 KHTN\1 Web\Google Group\source_working\WebPage_F4\DAO\bin\Debug\DTO.pdb
-E:\1 KHTN\1 Web\Google Group\source_working\WebPage_F4\DAO\obj\Debug\ResolveAssemblyReference.cache
-E:\1 KHTN\1 Web\Google Group\source_working\WebPage_F4\DAO\obj\Debug\DAO.dll
-E:\1 KHTN\1 Web\Google Group\source_working\WebPage_F4\DAO\obj\Debug\DAO.pdb
