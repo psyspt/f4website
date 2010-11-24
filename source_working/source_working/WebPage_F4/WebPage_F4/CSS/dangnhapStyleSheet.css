@@ -1,0 +1,274 @@
+﻿/*===========outer div ======================*/
+div#outerdiv{
+	width:1200px;
+	margin:0 auto;
+}
+/*===============header=====================*/
+div#header{
+	position:relative;
+	width: 1200px;
+	height:200px;
+	/*border:#006 solid 1px;*/
+}
+
+#header #leftHeader{
+	float:left;
+	width:102px;
+	height:200px;
+	padding:0;
+	margin:0;
+	background:#FFF url(../images/leftHeader.jpg) no-repeat;
+}
+
+#header #logoHeader{
+	float:left;
+	width: 126px;
+	height:200px;
+	padding:0;
+	margin:0;
+	background:#FFF url(../images/logoHeader.jpg) no-repeat;
+}
+
+#header #namePage{
+	float:left;
+	width:271px;
+	height:200px;
+	padding:0;
+	margin:0;
+	background:#FFF url(../images/namePage.jpg) no-repeat;
+}
+
+#header #spaceHeader{
+	float:left;
+	width:184px;
+	height:200px;
+	background:#FFF url(../images/spaceHeader.jpg) no-repeat;
+}
+
+#header #noticedHeader{
+	float:left;
+	width:417px;
+	height:200px;
+	background:#FFF url(../images/noticedHeader.jpg) no-repeat;
+
+}
+
+#noticedHeader p{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	font-weight:bold;
+	margin-top: 30px;
+}
+
+#header #rightHeader{
+	float:left;
+	width:100px;
+	height:200px;
+	background:#FFF url(../images/rightHeader.jpg) no-repeat;
+}
+/*================Menu===========================*/
+div#menu{
+	position:relative;
+	width: 1200px;
+	height:44px;
+	background:#FFF url(../images/backgroundMenu.jpg) no-repeat;
+}
+
+#menu ul{
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+
+#menu li{
+	float:left;
+	margin:0;
+	padding:0;
+}
+
+#menu #mainmenu{
+	position:absolute;
+	width:898px;
+	height:44px;
+	margin-left:150px;
+}
+
+#mainmenu li a:link , #menu li a:visited{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:19px;
+	display:block;
+	color:#FFF;
+	text-decoration:none;
+	padding:0 15px 0px 15px;
+	line-height:45px;
+	border:none;
+	margin-left:0;
+}
+
+#mainmenu li a:hover, #mainmenu li a:active{
+	background:#FFF url(../images/coverMenu.jpg) no-repeat;
+}
+
+#mainmenu a.current{
+	background:#FFF url(../images/coverMenu.jpg) no-repeat;
+}
+/*======== this is the banner ========*/
+#banner {
+	position:relative;
+	width:1200px;
+	height:386px;
+	background:#FFF url(../images/banner.jpg);
+}
+#banner #bannercontent{
+	position:absolute;
+	left: 130px;
+	top: 20px;
+}
+
+#bannercontent p{
+	font-size: 24px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:lighter;
+	color:#454142;
+}
+
+/*=======this is the main content =======================*/
+/*=================== body================================*/
+#maincontent{
+	position:relative;
+	width:1200px;
+	height:1164px;
+	padding:0;
+	margin:0;
+}
+/*=================== left ================================*/
+#maincontent #leftcontent {
+	float:left;
+	width:105px;
+	height:1164px;
+	background:#FFF url(../images/leftContent.jpg) no-repeat;
+}
+/*=================== center================================*/
+#maincontent #centercontent{
+	float:left;
+	width:995px;
+	height:1164px;
+}
+
+#centercontent #title
+{
+	position:relative;
+	height: 64px;
+	width:994px;
+	background:#FFF url(../images/backgoundtitledangki.jpg) no-repeat;
+	top: 0px;
+	left: 0px;
+}
+
+#title p
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:24px;
+	color:#74afd5;
+	margin-top:30px;
+	margin-left:50px;
+}
+
+/*=================== nha tuyen dung ============================*/
+
+#centercontent #nhaTuyenDung
+{
+	float:left;
+	width:495px;
+	height:683px;
+}
+
+#nhaTuyenDung #headerNhaTuyenDung
+{
+	float:left;
+	width:495px;
+	height:65px;
+	background:#FFF url(../images/headerNhaTuyenDung.jpg) no-repeat;
+}
+
+#nhaTuyenDung #imgNhaTuyenDung
+{
+	float:left;
+	width:495px;
+	height:192px;
+	background:#FFF url(../images/imgNhaTuyenDung.jpg) no-repeat;
+}
+
+#nhaTuyenDung #inputNhaTuyenDung
+{
+	float:left;
+	width:495px;
+	height:170px;
+	background:#FFF url(../images/inputNhaTuyenDung.jpg) no-repeat;
+}
+
+/*=================== nguoi tim viec ============================*/
+
+#centercontent #nguoiTimViec
+{
+	float:left;
+	width:495px;
+	height:683px;
+}
+
+#nguoiTimViec #headerNguoiTimViec
+{
+	float:left;
+	width:495px;
+	height:65px;
+	background:#FFF url(../images/headerNguoiTimViec.jpg) no-repeat;
+}
+
+#nguoiTimViec #imgNguoiTimViec
+{
+	float:left;
+	width:495px;
+	height:192px;
+	background:#FFF url(../images/imgNguoiTimViec.jpg) no-repeat;
+}
+
+#nguoiTimViec #inputNguoiTimViec
+{
+	float:left;
+	width:495px;
+	height:170px;
+	background:#FFF url(../images/inputNguoiTimViec.jpg) no-repeat;
+}
+
+.paragraph
+{
+	font-size: 24px;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#565756;
+}
+
+.marginNTV
+{
+	margin-left:100px;
+}
+
+.marginNTD
+{
+	margin-left:120px;
+}
+/*=================== right================================*/
+#maincontent #rightcontent{
+	float:left;
+	width:97px;
+	height:1164px;
+	background:#FFF url(../images/rightcontent.jpg) no-repeat;
+}
+
+/*=======this is the footer =============================*/
+
+#footer #footercontent{
+	
+	width: 1200px;
+	height: 137px;
+	background:#FFF url(../images/footer.jpg);
+}
