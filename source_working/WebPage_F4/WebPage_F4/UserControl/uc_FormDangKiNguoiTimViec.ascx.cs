@@ -171,14 +171,18 @@ namespace WebPage_F4.UserControl
             SmtpServer.EnableSsl = true; 
             MailMessage mail = new MailMessage();
             string strname = Username.Text;
+            
             try 
             {
                 mail.From = new MailAddress("ptudwebf4@gmail.com", "Mail xác nhận đăng ký", System.Text.Encoding.UTF8);  
                 mail.To.Add(Email.Text);
                 mail.Subject = "Xác nhận đăng ký"; 
                 mail.IsBodyHtml = true;
-                mail.Body = "<p>Hello</p>" + strname + "</br> <p>Bạn đã đăng ký vào website Tìm Việc </p>"
-                            + "</br><p>Click vào link liên kết sau để hoàn tất đăng ký</p>";
+
+                string strlink = "<a href = " + "http://localhost:49865/XacNhanDangKy.aspx?username=" +strname+" > http://localhost:49865/XacNhanDangKy.aspx?username=" + strname + "</a>";
+                mail.Body = "Hello! " + strname + "</br> <p>Bạn đã đăng ký vào website Tìm Việc </p>"
+                            + "</br><p>Click vào link liên kết sau để hoàn tất đăng ký:</p>"
+                            + strlink;
                 mail.DeliveryNotificationOptions = DeliveryNotificationOptions.OnFailure;  
                 SmtpServer.Send(mail); 
             } 
@@ -188,10 +192,11 @@ namespace WebPage_F4.UserControl
         protected void Button1_Click(object sender, EventArgs e)
         {
             string str = "";
-
+            string username = Username.Text;
             if (CaptchaText.Text.ToString().Equals(Session["captcha"].ToString(), StringComparison.OrdinalIgnoreCase))
             {
-                //code Luu du lieu
+                //Lưu dữ liệu
+                //send mail
                 SendMail(sender, e);
             }
             else

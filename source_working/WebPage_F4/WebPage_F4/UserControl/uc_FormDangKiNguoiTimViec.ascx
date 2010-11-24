@@ -62,8 +62,6 @@
         
         <asp:DropDownList ID="ThanhPho" runat="server" Height="21px" Width="154px">
         </asp:DropDownList>
-        <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" 
-            ControlToValidate="ThanhPho" ErrorMessage="(*)"></asp:RequiredFieldValidator>
         
     </div>
     
