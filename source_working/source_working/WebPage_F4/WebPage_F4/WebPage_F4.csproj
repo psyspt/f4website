@@ -30,6 +30,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="HtmlAgilityPack, Version=1.4.0.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -163,6 +164,8 @@
     <Compile Include="DTO\TinTuyenDungDTO.cs" />
     <Compile Include="DTO\TrongSoDTO.cs" />
     <Compile Include="DTO\ViTriDTO.cs" />
+    <Compile Include="Feed\Article.cs" />
+    <Compile Include="Feed\GetFeed.cs" />
     <Compile Include="KiemViec.aspx.cs">
       <DependentUpon>KiemViec.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -198,6 +201,13 @@
     </Compile>
     <Compile Include="TạoThongBaoViec.aspx.designer.cs">
       <DependentUpon>TạoThongBaoViec.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\uc_Feed.ascx.cs">
+      <DependentUpon>uc_Feed.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\uc_Feed.ascx.designer.cs">
+      <DependentUpon>uc_Feed.ascx</DependentUpon>
     </Compile>
     <Compile Include="UserControl\uc_Footer.ascx.cs">
       <DependentUpon>uc_Footer.ascx</DependentUpon>
@@ -263,6 +273,7 @@
     <Content Include="DangKi\DangKiTaiKhoanNguoiTimViec.aspx" />
     <Content Include="DangKi\DangKiTaiKhoanNhaTuyenDung.aspx" />
     <Content Include="DangNhap\DangNhap.aspx" />
+    <Content Include="Feed\HtmlAgilityPack.dll" />
     <Content Include="images\advertisement.jpg" />
     <Content Include="images\backgoundtitledangki.jpg" />
     <Content Include="images\backgroundMenu.jpg" />
@@ -270,6 +281,7 @@
     <Content Include="images\buttonDangKi.jpg" />
     <Content Include="images\buttonDangNhap.jpg" />
     <Content Include="images\chitietButton.jpg" />
+    <Content Include="images\chonvieclogo.jpg" />
     <Content Include="images\contentInfo.jpg" />
     <Content Include="images\coverMenu.jpg" />
     <Content Include="images\footer.jpg" />
@@ -279,6 +291,7 @@
     <Content Include="images\imgNhaTuyenDung.jpg" />
     <Content Include="images\inputNguoiTimViec.jpg" />
     <Content Include="images\inputNhaTuyenDung.jpg" />
+    <Content Include="images\kiemvieclogo.jpg" />
     <Content Include="images\leftContent.jpg" />
     <Content Include="images\leftHeader.jpg" />
     <Content Include="images\line.jpg" />
@@ -299,11 +312,13 @@
     <Content Include="images\tieudiem.jpg" />
     <Content Include="images\tieudiem_picture01.jpg" />
     <Content Include="images\timKiem.jpg" />
+    <Content Include="images\timviecnhanhlogo.jpg" />
     <Content Include="KiemViec.aspx" />
     <Content Include="MasterPage\MasterPage.Master" />
     <Content Include="MyTimViec.aspx" />
     <Content Include="TaoHoSo.aspx" />
     <Content Include="TạoThongBaoViec.aspx" />
+    <Content Include="UserControl\uc_Feed.ascx" />
     <Content Include="UserControl\uc_FormDangKi.ascx" />
     <Content Include="UserControl\uc_FormDangKiNhaTuyenDung.ascx" />
     <Content Include="UserControl\uc_FormDangKiNguoiTimViec.ascx" />
@@ -337,7 +352,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>49865</DevelopmentServerPort>
+          <DevelopmentServerPort>49866</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>

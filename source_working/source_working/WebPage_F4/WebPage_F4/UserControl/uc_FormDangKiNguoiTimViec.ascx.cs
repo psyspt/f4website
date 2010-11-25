@@ -188,12 +188,14 @@ namespace WebPage_F4.UserControl
                 mail.DeliveryNotificationOptions = DeliveryNotificationOptions.OnFailure;  
                 SmtpServer.Send(mail); 
             } 
-            catch (Exception ex) { } 
+            catch (Exception ex){
+                ex.ToString();
+            } 
 
         }
         protected void Button1_Click(object sender, EventArgs e)
         {
-            string str = "";
+            //string str = "";
             string username = Username.Text;
             if (CaptchaText.Text.ToString().Equals(Session["captcha"].ToString(), StringComparison.OrdinalIgnoreCase))
             {

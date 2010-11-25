@@ -23,3 +23,9 @@ E:\1 KHTN\1 Web\Google Group\source_working\source_working\WebPage_F4\WebPage_F4
 E:\1 KHTN\1 Web\Google Group\source_working\source_working\WebPage_F4\WebPage_F4\obj\Debug\ResolveAssemblyReference.cache
 E:\1 KHTN\1 Web\Google Group\source_working\source_working\WebPage_F4\WebPage_F4\obj\Debug\WebPage_F4.dll
 E:\1 KHTN\1 Web\Google Group\source_working\source_working\WebPage_F4\WebPage_F4\obj\Debug\WebPage_F4.pdb
+C:\Users\X-Freshy\Desktop\f4website\source_working\source_working\WebPage_F4\WebPage_F4\bin\WebPage_F4.dll
+C:\Users\X-Freshy\Desktop\f4website\source_working\source_working\WebPage_F4\WebPage_F4\bin\WebPage_F4.pdb
+C:\Users\X-Freshy\Desktop\f4website\source_working\source_working\WebPage_F4\WebPage_F4\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\X-Freshy\Desktop\f4website\source_working\source_working\WebPage_F4\WebPage_F4\obj\Debug\WebPage_F4.dll
+C:\Users\X-Freshy\Desktop\f4website\source_working\source_working\WebPage_F4\WebPage_F4\obj\Debug\WebPage_F4.pdb
+C:\Users\X-Freshy\Desktop\f4website\source_working\source_working\WebPage_F4\WebPage_F4\bin\HtmlAgilityPack.dll

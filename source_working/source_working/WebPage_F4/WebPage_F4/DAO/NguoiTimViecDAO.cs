@@ -72,6 +72,7 @@ namespace DAO
             }
             catch (Exception e)
             {
+                e.ToString();
                 return false;
             }
             //return true;

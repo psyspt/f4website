@@ -1,5 +1,7 @@
 ﻿<%@ Page Language="C#" MasterPageFile="~/MasterPage/MasterPage.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="WebPage_F4._Default" %>
 
+<%@ Register src="UserControl/uc_Feed.ascx" tagname="uc_Feed" tagprefix="uc1" %>
+
 <asp:Content ID="MyContent" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
 <link href="CSS/styleSheet.css" rel="Stylesheet" type="text/css" />
 <div id="menu">
@@ -51,40 +53,28 @@ Theo lời trung tướng Hoàng Kông Tư, (Thủ trưởng Cơ quan An ninh đ
     	</div>
         <div id="tieudiem">
         	<div id="tieudiemFirst">
-            	<img class="tieudiemPicture" src="images/tieudiem_picture01.jpg" alt="can't display"/>
+            	<img class="tieudiemPicture" src="images/timviecnhanhlogo.jpg" width="289" height="85" alt="can't display"/>
             	<h1 class="tieudiemTitle">
-                	Lương cao .
-                </h1>
+                	TimViecNhanh.com</h1>
             	<p class="tieudiemParagraph">
-                	M.U đã xác định rõ ràng mục tiêu chiến thắng trong trận đấu với W 25 năm nắm quyền ở Old Trafford. Tỏ ra rất khó khăn khi họ cũng không có được trong tay những gương mặt <a href="#">đủ sức tạo ra </a> nhiều đột biến trong lối chơi tấn công.
+            	    <uc1:uc_Feed ID="uc_Feed1" runat="server" />
                 </p>
-                <div class="chitietButton">
-					<a href="#">Chi Tiết</a>
-                </div>
             </div>
             <div id="tieudiemSecond">
-            	<img class="tieudiemPicture" src="images/tieudiem_picture01.jpg" alt="can't display"/>
-            	<h1 class="tieudiemTitle">
-                	Tiền nhiều .
-                </h1>
-            	<p class="tieudiemParagraph">
-                	Nắm quyền kiểm soát thế trận nhưng những cơ hội mà M.U tạo ra chưa đhi cú sút của tiền vệ người Hàn Quốc - Park Ji Sung tung cú svào lưới. Tỷ số được mở cho M.U ngay trước khi hiệp một khép lại.
+            	<img class="tieudiemPicture" src="images/chonvieclogo.jpg" width="289" height="85" alt="can't display"/>
+                <h1 class="tieudiemTitle">
+                	ChonViec.com</h1>
+                <p class="tieudiemParagraph">
+                    <uc1:uc_Feed ID="uc_Feed2" runat="server" />
                 </p>
-                <div class="chitietButton">
-					<a href="#">Chi Tiết</a>
-                </div>
             </div>
             <div id="tieudiemThird">
-            	<img class="tieudiemPicture" src="images/tieudiem_picture01.jpg" alt="can't display"/>
+            	<img class="tieudiemPicture" src="images/kiemvieclogo.jpg" width="289" height="85" alt="can't display"/>
             	<h1 class="tieudiemTitle">
-                	Chức lơn1 .
-                </h1>
+                	KiemViec.com</h1>
             	<p class="tieudiemParagraph">
-                	Những tưởng lợi thế dẫn bàn sẽ giúp M.U chơi thăng hoa hơn trongi đbanks-Blake nhận bóng khá thoải mái trong vòng cấm địa rồi dễ dàng đánh bại Van der Sar để san bằng tỷ số ở phút thứ 66.
+                	<uc1:uc_Feed ID="uc_Feed3" runat="server" />
                 </p>
-                <div class="chitietButton">
-					<a href="#">Chi Tiết</a>
-                </div>
             </div>
         </div><!--- news , tin tuc -->
         
