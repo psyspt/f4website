@@ -10,6 +10,7 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using BUS;
 using DTO;
+using System.Collections.Generic;
 
 namespace WebPage_F4.UserControl
 {
@@ -17,7 +18,14 @@ namespace WebPage_F4.UserControl
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+            NganhNgheBUS bus = new NganhNgheBUS();
+            List<NganhNgheDTO> allrecord = new List<NganhNgheDTO>();
+            allrecord = bus.GetAllRecord();
+            for (int i = 0; i < allrecord.Count; i++)
+            {
+                ListItem li = new ListItem(allrecord[i].TenNganhNghe, allrecord[i].ID.ToString());
+                nganhNghe.Items.Add(li);
+            }
         }
 
         protected void Button1_Click(object sender, EventArgs e)

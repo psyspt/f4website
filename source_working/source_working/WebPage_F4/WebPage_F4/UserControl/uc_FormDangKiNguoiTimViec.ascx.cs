@@ -17,6 +17,7 @@ using System.Text;
 using System.Net.Mail;
 using DTO;
 using BUS;
+using System.Collections.Generic;
 
 namespace WebPage_F4.UserControl
 {
@@ -157,6 +158,14 @@ namespace WebPage_F4.UserControl
             {
                 captchaImage.ImageUrl = captcha.CreateCaptcha();
             }
+            List<TinhThanhDTO> allrecord = new List<TinhThanhDTO>();
+            TinhThanhBUS bus = new TinhThanhBUS();
+            allrecord = bus.GetAllRecord();
+            for (int i = 0; i < allrecord.Count; i++)
+            {
+                ListItem li = new ListItem(allrecord[i].TenTinhThanh, allrecord[i].ID.ToString());
+                ThanhPho.Items.Add(li);
+            }
         }
 
         protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
@@ -218,6 +227,7 @@ namespace WebPage_F4.UserControl
                 newrecord.UserName = Username.Text;
                 newrecord.PassWord = Password.Text;
                 newrecord.EMail = Email.Text;
+                newrecord.TinhThanh = int.Parse(ThanhPho.SelectedValue);
                 NguoiTimViecBUS bus = new NguoiTimViecBUS();
                 bool kq = bus.Insert(newrecord);
                 //send mail
