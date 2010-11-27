@@ -211,8 +211,8 @@ div#menu{
 	height: 64px;
 	width:985px;
 	background:#FFF url(../images/backgoundtitledangki.jpg) no-repeat;
-	top: 0px;
-	left: 0px;
+	top: -262px;
+	left: -116px;
 }
 
 #title p{
@@ -249,6 +249,12 @@ div#menu{
 	width: 680px;
 }
 
+#contentinfo #thongtinthongbao{
+	float:left;
+	height:auto;
+	width: 680px;
+}
+
 #contentinfo #xacnhandangky{
 	float:left;
 	height:200px;
@@ -262,6 +268,15 @@ div#menu{
 	background:#FFF url(../images/rightcontent.jpg) no-repeat;
 }
 
+/*thong bao*/
+#thongbao{
+	border-color: inherit;
+	border-width: 1px;
+	float:left;
+	height:auto;
+	border-style:solid;
+	width: 680px;
+}
 /*=======this is the footer =============================*/
 
 #footer #footercontent{
