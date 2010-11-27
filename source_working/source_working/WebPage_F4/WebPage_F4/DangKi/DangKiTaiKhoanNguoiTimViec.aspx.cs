@@ -10,7 +10,12 @@ namespace WebPage_F4.DangKi
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            uc_ThongBao1.Visible = false;
+            if (Request.QueryString["AddUser"] != null)
+            {
+                uc_FormDangKiNguoiTimViec1.Visible = false;
+                uc_ThongBao1.Visible = true;
+            }
         }
     }
 }

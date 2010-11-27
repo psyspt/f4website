@@ -14,6 +14,15 @@ namespace WebPage_F4.DangKi {
     public partial class DangKiTaiKhoanNguoiTimViec {
         
         /// <summary>
+        /// uc_ThongBao1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::WebPage_F4.UserControl.uc_ThongBao uc_ThongBao1;
+        
+        /// <summary>
         /// uc_FormDangKiNguoiTimViec1 control.
         /// </summary>
         /// <remarks>

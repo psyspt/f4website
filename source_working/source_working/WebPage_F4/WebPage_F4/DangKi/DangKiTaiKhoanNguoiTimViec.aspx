@@ -4,6 +4,8 @@
 
 <%@ Register src="../UserControl/uc_FormDangKiNguoiTimViec.ascx" tagname="uc_FormDangKiNguoiTimViec" tagprefix="uc2" %>
 
+<%@ Register src="../UserControl/uc_ThongBao.ascx" tagname="uc_ThongBao" tagprefix="uc3" %>
+
 <asp:Content ID="MyContent" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
 <link href="../CSS/dangkiStyleSheet.css" rel="Stylesheet" type="text/css" />
 
@@ -34,13 +36,15 @@
             </div>
             <div id="line">            
             </div>
+            
+            <div id="thongtinthongbao">
+            
+                <uc3:uc_ThongBao ID="uc_ThongBao1" runat="server" />
+            
+            </div>
             <div id="thongtindangki">
             
-                
-            
                 <uc2:uc_FormDangKiNguoiTimViec ID="uc_FormDangKiNguoiTimViec1" runat="server" />
-            
-                
             
             </div>
             
