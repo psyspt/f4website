@@ -27,6 +27,8 @@ namespace WebPage_F4.Feed
             HtmlNodeCollection anode = parentNode.SelectNodes(".//td");
             StringBuilder sb = new StringBuilder();
 
+            int count = 0;
+
             foreach (HtmlNode hnode in anode)
             {
                 HtmlNode artnode = hnode.SelectSingleNode(".//div[@class='itemjob']");
@@ -40,16 +42,11 @@ namespace WebPage_F4.Feed
                 arttemp.desc = desc;
                 list.Add(arttemp);
 
-                /*sb.Append("<font face='arial'><p><b><a href='");
-                sb.Append(link);
-                sb.Append("'>");
-                sb.Append(title);
-                sb.Append("</a></b><br/>");
-                sb.Append(desc);
-                sb.Append("</p></font>");*/
+                count++;
+                if (count == 3)
+                    break;
             }
 
-            //return sb.ToString();
             return list;
         }
 
@@ -93,6 +90,8 @@ namespace WebPage_F4.Feed
             HtmlNodeCollection anode = parentNode.SelectNodes(".//ul//li");
             StringBuilder sb = new StringBuilder();
 
+            int count = 0;
+
             foreach (HtmlNode hnode in anode)
             {
                 string temp = hnode.SelectSingleNode(".//a[@class='linkblack2']").Attributes[2].Value.Trim();
@@ -107,13 +106,9 @@ namespace WebPage_F4.Feed
                 arttemp.desc = desc;
                 list.Add(arttemp);
 
-                /*sb.Append("<font face='arial'><p><b><a href='");
-                sb.Append(link);
-                sb.Append("'>");
-                sb.Append(title);
-                sb.Append("</a></b><br/>");
-                sb.Append(desc);
-                sb.Append("</p></font>");*/
+                count++;
+                if (count == 3)
+                    break;
             }
 
             return list;
@@ -130,6 +125,8 @@ namespace WebPage_F4.Feed
             HtmlNodeCollection anode = parentNode.SelectNodes(".//ul//li");
             StringBuilder sb = new StringBuilder();
 
+            int count = 0;
+
             foreach (HtmlNode hnode in anode)
             {
                 string title = hnode.SelectSingleNode(".//a").Attributes[1].Value.Trim();
@@ -142,13 +139,9 @@ namespace WebPage_F4.Feed
                 arttemp.desc = desc;
                 list.Add(arttemp);
 
-                /*sb.Append("<font face='arial'><p><b><a href='");
-                sb.Append(link);
-                sb.Append("'>");
-                sb.Append(title);
-                sb.Append("</a></b><br/>");
-                sb.Append(desc);
-                sb.Append("</p></font>");*/
+                count++;
+                if (count == 3)
+                    break;
             }
 
             return list;
