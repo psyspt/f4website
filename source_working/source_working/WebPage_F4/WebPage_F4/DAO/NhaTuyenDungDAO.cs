@@ -24,19 +24,7 @@ namespace DAO
         {
             try
             {
-                /*
-                @TenCongTy nvarchar(100),
-	            @Email varchar(50),
-	            @Password varchar(50),
-	            @DiaChi nvarchar(100),
-	            @DienThoai nchar(20),
-	            @LinhVuc int,
-	            @TenNguoiDaiDien nvarchar(50),
-	            @MoTa text,
-	            @MaTKNganHang nchar(10),
-	            @TrangThai int,
-	            @ID int OUTPUT
-                */
+                
                 SqlCommand cmd = new SqlCommand("sp_InsertNHATUYENDUNG", conn);
                 cmd.CommandType = System.Data.CommandType.StoredProcedure;
                 SqlParameter tencongty_param = cmd.Parameters.Add("@TenCongTy", System.Data.SqlDbType.NVarChar);
@@ -80,6 +68,34 @@ namespace DAO
                 e.ToString();
                 return false;
             }
+        }
+
+        public NhaTuyenDungDTO SelectByEmail(string email)
+        {
+            StringBuilder command = new StringBuilder();
+            command.Append("select * from NHATUYENDUNG where Email='");
+            command.Append(email);
+            command.Append("'");
+            SqlCommand cmd = new SqlCommand(command.ToString(), conn);
+            SqlDataReader r = cmd.ExecuteReader();
+            NhaTuyenDungDTO returnrecord = new NhaTuyenDungDTO();
+            r.Read();
+            object[] obj = new object[11];
+            r.GetValues(obj);
+
+            returnrecord.TenCongTy = obj[1].ToString();
+            returnrecord.Email = obj[2].ToString().TrimEnd(' ');
+            returnrecord.Password = obj[3].ToString().TrimEnd(' ');
+            returnrecord.DiaChi = obj[4].ToString();
+            returnrecord.DienThoai = obj[5].ToString();
+            returnrecord.LinhVuc = int.Parse(obj[6].ToString());
+            returnrecord.TenNguoiDaiDien = obj[7].ToString();
+            returnrecord.MoTa = obj[8].ToString();
+            returnrecord.MaTKNganHang = obj[9].ToString();
+            returnrecord.TrangThai = int.Parse(obj[10].ToString());
+            
+            conn.Close();
+            return returnrecord;
         }
     }
 }

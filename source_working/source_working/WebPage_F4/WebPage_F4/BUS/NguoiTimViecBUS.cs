@@ -16,5 +16,15 @@ namespace BUS
             }
             return false;
         }
+
+        public NguoiTimViecDTO SelectByusername(string username)
+        {
+            NguoiTimViecDAO dao = new NguoiTimViecDAO();
+            if (dao.ConnectToSQLServer())
+            {
+                return dao.SelectByUsername(username);
+            }
+            return null;
+        }
     }
 }

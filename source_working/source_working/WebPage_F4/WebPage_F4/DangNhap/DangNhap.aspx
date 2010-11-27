@@ -70,7 +70,8 @@
                     </tr>
                     <tr>
                         <td align="center" class="style7" colspan="2">
-                            <asp:Button ID="dangNhapNguoiTimViec" runat="server" Text="Đăng Nhập" Width="90px" />
+                            <asp:Button ID="dangNhapNguoiTimViec" runat="server" Text="Đăng Nhập" 
+                                Width="90px" onclick="dangNhapNguoiTimViec_Click" />
                         </td>
                     </tr>
                 </table>
@@ -104,7 +105,7 @@
                     <tr>
                         <td align="center" class="style7" colspan="2">
                             <asp:Button ID="dangNhapNhaTuyenDung" runat="server" Text="Đăng Nhập" 
-                                Width="90px" />
+                                Width="90px" onclick="dangNhapNhaTuyenDung_Click" />
                         </td>
                     </tr>
                 </table>

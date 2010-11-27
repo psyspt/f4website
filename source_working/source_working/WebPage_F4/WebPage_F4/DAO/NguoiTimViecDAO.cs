@@ -77,5 +77,36 @@ namespace DAO
             }
             //return true;
         }
+
+        public NguoiTimViecDTO SelectByUsername(string username)
+        {
+            StringBuilder command = new StringBuilder();
+            command.Append("select * from NGUOITIMVIEC where Username='");
+            command.Append(username);
+            command.Append("'");
+            SqlCommand cmd = new SqlCommand(command.ToString(), conn);
+            SqlDataReader r = cmd.ExecuteReader();
+            NguoiTimViecDTO returnrecord = new NguoiTimViecDTO();
+            r.Read();
+            object[] obj = new object[13];
+            r.GetValues(obj);
+           
+            returnrecord.HoTen = obj[1].ToString();
+            returnrecord.UserName = obj[2].ToString().TrimEnd(' ');
+            returnrecord.PassWord = obj[3].ToString().TrimEnd(' ');
+            returnrecord.EMail = obj[4].ToString();
+            returnrecord.DiaChi = obj[5].ToString();
+            returnrecord.NgaySinh = DateTime.Parse(obj[6].ToString());
+            returnrecord.GioiTinh = int.Parse(obj[7].ToString());
+            returnrecord.DienThoai = obj[8].ToString();
+            returnrecord.TinhThanh = int.Parse(obj[9].ToString());
+            returnrecord.NgonNgu = int.Parse(obj[10].ToString());
+            returnrecord.URLHinhAnh = obj[11].ToString();
+            returnrecord.TrangThai = int.Parse(obj[12].ToString());
+            conn.Close();
+            return returnrecord;
+        }
     }
+
+   
 }

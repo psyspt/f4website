@@ -244,6 +244,13 @@
     <Compile Include="UserControl\uc_FormDangKiNguoiTimViec.ascx.designer.cs">
       <DependentUpon>uc_FormDangKiNguoiTimViec.ascx</DependentUpon>
     </Compile>
+    <Compile Include="UserControl\uc_ThongBao.ascx.cs">
+      <DependentUpon>uc_ThongBao.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\uc_ThongBao.ascx.designer.cs">
+      <DependentUpon>uc_ThongBao.ascx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="CamNangNghe.aspx" />
@@ -322,6 +329,7 @@
     <Content Include="UserControl\uc_FormDangKi.ascx" />
     <Content Include="UserControl\uc_FormDangKiNhaTuyenDung.ascx" />
     <Content Include="UserControl\uc_FormDangKiNguoiTimViec.ascx" />
+    <Content Include="UserControl\uc_ThongBao.ascx" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="C:\Users\LTB\Desktop\WebPage_F4\BUS\BUS.csproj">

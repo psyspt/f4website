@@ -16,5 +16,15 @@ namespace BUS
             }
             return false;
         }
+
+        public NhaTuyenDungDTO SelectByEmail(string email)
+        {
+            NhaTuyenDungDAO dao = new NhaTuyenDungDAO();
+            if (dao.ConnectToSQLServer())
+            {
+                return dao.SelectByEmail(email);
+            }
+            return null;
+        }
     }
 }
