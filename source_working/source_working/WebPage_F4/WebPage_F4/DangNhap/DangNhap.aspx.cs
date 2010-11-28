@@ -30,7 +30,7 @@ namespace WebPage_F4.DangNhap
             {
                 if (user.PassWord == password)
                 {
-                    //dang nhap thanh cong
+                    Response.Redirect("../DangKi/DangKiTaiKhoanNguoiTimViec.aspx?AddUser=" + username);
                 }
             }
         }
