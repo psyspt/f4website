@@ -47,6 +47,7 @@ namespace DAO
                     hinhanh_param.Direction = System.Data.ParameterDirection.Input;
                     trangthai_param.Direction = System.Data.ParameterDirection.Input;
                     id_param.Direction = System.Data.ParameterDirection.Output;
+
                     user_param.Value = newrecord.UserName;
                     hoten_param.Value = newrecord.HoTen;
                     password_parm.Value = newrecord.PassWord;
