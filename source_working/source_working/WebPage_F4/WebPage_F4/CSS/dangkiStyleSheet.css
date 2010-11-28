@@ -207,12 +207,10 @@ div#menu{
 }
 
 #contentinfo #title{
-	position:relative;
+	float:left;
 	height: 64px;
-	width:985px;
+	width:992px;
 	background:#FFF url(../images/backgoundtitledangki.jpg) no-repeat;
-	top: -262px;
-	left: -116px;
 }
 
 #title p{
@@ -239,7 +237,7 @@ div#menu{
 #contentinfo #line{
 	float:left;
 	width:3px;
-	height:1080px;
+	height:1094px;
 	background:#FFF url(../images/line.jpg) no-repeat;
 }
 
