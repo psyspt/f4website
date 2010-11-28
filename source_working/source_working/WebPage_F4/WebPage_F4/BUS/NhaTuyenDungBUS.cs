@@ -7,24 +7,16 @@ namespace BUS
 {
     public class NhaTuyenDungBUS
     {
-        public bool Insert(NhaTuyenDungDTO newrecord)
+        public int Insert(NhaTuyenDungDTO newrecord)
         {
-            NhaTuyenDungDAO dao = new NhaTuyenDungDAO();
-            if (dao.ConnectToSQLServer())
-            {
-                return dao.Insert(newrecord);
-            }
-            return false;
+            NhaTuyenDungDAO dao = new NhaTuyenDungDAO();            
+            return dao.Insert(newrecord);
         }
 
         public NhaTuyenDungDTO SelectByEmail(string email)
         {
             NhaTuyenDungDAO dao = new NhaTuyenDungDAO();
-            if (dao.ConnectToSQLServer())
-            {
-                return dao.SelectByEmail(email);
-            }
-            return null;
+            return dao.SelectByEmail(email);
         }
     }
 }

@@ -10,11 +10,7 @@ namespace BUS
         public List<TinhThanhDTO> GetAllRecord()
         {
             TinhThanhDAO dao = new TinhThanhDAO();
-            if (dao.ConnectToSQLServer())
-            {
-                return dao.GetAllRecord();
-            }
-            return null;
+            return dao.GetAllRecord();
         }
     }
 }

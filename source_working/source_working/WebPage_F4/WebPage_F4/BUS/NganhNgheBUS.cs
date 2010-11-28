@@ -10,11 +10,7 @@ namespace BUS
         public List<NganhNgheDTO> GetAllRecord()
         {
             NganhNgheDAO dao = new NganhNgheDAO();
-            if (dao.ConnectToSQLServer())
-            {
-                return dao.GetAllRecord();
-            }
-            return null;
+            return dao.GetAllRecord();
         }
     }
 }

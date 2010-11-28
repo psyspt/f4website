@@ -7,24 +7,16 @@ namespace BUS
 {
     public class NguoiTimViecBUS
     {
-        public bool Insert(NguoiTimViecDTO newrecord)
+        public int Insert(NguoiTimViecDTO newrecord)
         {
             NguoiTimViecDAO dao = new NguoiTimViecDAO();
-            if (dao.ConnectToSQLServer())
-            {
-                return dao.Insert(newrecord);
-            }
-            return false;
+            return dao.Insert(newrecord);
         }
 
         public NguoiTimViecDTO SelectByusername(string username)
         {
             NguoiTimViecDAO dao = new NguoiTimViecDAO();
-            if (dao.ConnectToSQLServer())
-            {
-                return dao.SelectByUsername(username);
-            }
-            return null;
+            return dao.SelectByUsername(username);
         }
     }
 }
