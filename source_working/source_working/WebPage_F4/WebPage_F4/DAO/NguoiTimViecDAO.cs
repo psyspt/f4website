@@ -8,7 +8,6 @@ namespace DAO
 {
     public class NguoiTimViecDAO
     {
-        
 #region Inserting
         public int Insert(NguoiTimViecDTO newrecord)
         {

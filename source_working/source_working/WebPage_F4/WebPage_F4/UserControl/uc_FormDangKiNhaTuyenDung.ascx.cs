@@ -41,7 +41,16 @@ namespace WebPage_F4.UserControl
             dto.Password = password.Text;
 
             //End 'Luu vai database'
-            bus.Insert(dto);
+            int result = bus.Insert(dto);
+            if (result == 1)//success
+            {
+                //gui mail xac nhan
+                //redirect den trang bao thanh cong
+            }
+            else
+            {
+                //redirect den trang bao loi
+            }
         }
     }
 }

@@ -229,15 +229,22 @@ namespace WebPage_F4.UserControl
                 newrecord.EMail = Email.Text;
                 newrecord.TinhThanh = int.Parse(ThanhPho.SelectedValue);
                 NguoiTimViecBUS bus = new NguoiTimViecBUS();
-                int kq = bus.Insert(newrecord); 
-                //send mail
-                SendMail(sender, e);
-                //Thông báo thành công
-                Response.Redirect("../DangKi/DangKiTaiKhoanNguoiTimViec.aspx?AddUser="+username);
+                int result = bus.Insert(newrecord); 
+                if (result == 1)
+                {
+                    SendMail(sender, e);
+                    //Thông báo thành công
+                    Response.Redirect("../DangKi/DangKiTaiKhoanNguoiTimViec.aspx?AddUser=" + username);
+                }
+                else
+                {
+                    //redirect den trang bao loi
+                }
+                
             }
             else
             {
-                //bao loi
+                //redirect den trang bao loi
             }
 
         }
