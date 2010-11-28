@@ -7,44 +7,45 @@ namespace DAO
 {
     public class TinhThanhDAO
     {
-        private string connectionString = "Data Source=LTBCOMPUTER;Initial Catalog=CSDLWeb;Integrated Security=True";
-        public static SqlConnection conn;
-        public bool ConnectToSQLServer()
-        {
-            conn = new SqlConnection(connectionString);
-            if (conn != null)
-            {
-                conn.Open();
-                return true;
-            }
-            return false;
-        }
-
+#region Receiving
         public List<TinhThanhDTO> GetAllRecord()
         {
+            List<TinhThanhDTO> listrecord = new List<TinhThanhDTO>();
             try
             {
-                object[] allrecord = new object[3];
-                List<TinhThanhDTO> listrecord = new List<TinhThanhDTO>();
-                SqlCommand cmd = new SqlCommand("sp_SelectTINHTHANHsAll", conn);
-                cmd.CommandType = System.Data.CommandType.StoredProcedure;
-                SqlDataReader reader = cmd.ExecuteReader();
-                while (reader.Read())
+                SqlConnection connect = new SqlConnection(SqlDataAccess.ConnectionString);
+                connect.Open();
+                try
                 {
-                    reader.GetValues(allrecord);
-                    TinhThanhDTO tt = new TinhThanhDTO();
-                    tt.ID = (int)allrecord.GetValue(0);
-                    tt.MaQuocGia = (int)allrecord.GetValue(2);
-                    tt.TenTinhThanh = (string)allrecord.GetValue(1);
-                    listrecord.Add(tt);
+                    object[] allrecord = new object[3];
+                    SqlCommand cmd = new SqlCommand("sp_SelectTINHTHANHsAll", connect);
+                    cmd.CommandType = System.Data.CommandType.StoredProcedure;
+                    SqlDataReader reader = cmd.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        reader.GetValues(allrecord);
+                        TinhThanhDTO tt = new TinhThanhDTO();
+                        tt.ID = (int)allrecord.GetValue(0);
+                        tt.MaQuocGia = (int)allrecord.GetValue(2);
+                        tt.TenTinhThanh = (string)allrecord.GetValue(1);
+                        listrecord.Add(tt);
+                    }
                 }
-                return listrecord;
+                catch (System.Exception ex)
+                {
+                    throw ex;
+                }
+                finally
+                {
+                    connect.Close();
+                }
             }
             catch (Exception e)
             {
-                e.ToString();
-                return null;
+                throw e;
             }
+            return listrecord;
         }
+#endregion
     }
 }
