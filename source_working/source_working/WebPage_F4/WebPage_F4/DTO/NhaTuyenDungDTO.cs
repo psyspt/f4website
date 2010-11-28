@@ -6,7 +6,6 @@ namespace DTO
 {
     public class NhaTuyenDungDTO
     {
-
         private string _tenCongTy;
 
         public string TenCongTy
