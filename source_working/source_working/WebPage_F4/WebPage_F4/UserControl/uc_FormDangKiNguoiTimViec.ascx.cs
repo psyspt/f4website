@@ -240,13 +240,11 @@ namespace WebPage_F4.UserControl
                 {
                     //redirect den trang bao loi
                 }
-                
             }
             else
             {
                 //redirect den trang bao loi
             }
-
         }
     }
 }
