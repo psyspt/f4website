@@ -2,7 +2,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>9.0.21022</ProductVersion>
+    <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{88B63DE7-4BBA-4BC9-8E18-8C8C0FC1A5A0}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
@@ -276,6 +276,7 @@
     <Content Include="CaptchaImg\Captcha9.jpg" />
     <Content Include="CSS\dangkiStyleSheet.css" />
     <Content Include="CSS\dangnhapStyleSheet.css" />
+    <Content Include="CSS\jquery-ui-1.8.6.custom.css" />
     <Content Include="DangKi\DangKi.aspx" />
     <Content Include="DangKi\DangKiTaiKhoanNguoiTimViec.aspx" />
     <Content Include="DangKi\DangKiTaiKhoanNhaTuyenDung.aspx" />
@@ -320,6 +321,8 @@
     <Content Include="images\tieudiem_picture01.jpg" />
     <Content Include="images\timKiem.jpg" />
     <Content Include="images\timviecnhanhlogo.jpg" />
+    <Content Include="JavaScript\jquery-1.4.2.min.js" />
+    <Content Include="JavaScript\jquery-ui-1.8.6.custom.min.js" />
     <Content Include="KiemViec.aspx" />
     <Content Include="MasterPage\MasterPage.Master" />
     <Content Include="MyTimViec.aspx" />
@@ -343,7 +346,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="JavaScript\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
@@ -365,6 +367,9 @@
           <IISUrl>
           </IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>

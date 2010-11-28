@@ -221,7 +221,8 @@ namespace WebPage_F4.UserControl
                 {
                     newrecord.GioiTinh = 0;
                 }
-                newrecord.NgaySinh = DateTime.Parse(datepicker.Value);
+                
+                newrecord.NgaySinh = DateTime.Parse(NgaySinh.Text);
                 newrecord.DiaChi = DiaChi.Text;
                 newrecord.DienThoai = DienThoai.Text;
                 newrecord.UserName = Username.Text;
@@ -229,9 +230,11 @@ namespace WebPage_F4.UserControl
                 newrecord.EMail = Email.Text;
                 newrecord.TinhThanh = int.Parse(ThanhPho.SelectedValue);
                 NguoiTimViecBUS bus = new NguoiTimViecBUS();
-                bool kq = bus.Insert(newrecord);
+                bool kq = bus.Insert(newrecord); 
                 //send mail
                 SendMail(sender, e);
+                //Thông báo thành công
+                Response.Redirect("../DangKi/DangKiTaiKhoanNguoiTimViec.aspx?AddUser="+username);
             }
             else
             {

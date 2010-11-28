@@ -3,15 +3,12 @@
  <link rel="stylesheet" type="text/css" href="../CSS/jquery-ui-1.8.6.custom.css" />
  <script type="text/javascript" src="../JavaScript/jquery-1.4.2.min.js"> </script>
  <script type="text/javascript" src="../JavaScript/jquery-ui-1.8.6.custom.min.js"> </script>
+ 
+    <script type="text/javascript">
+        $(function() {
+            $('#<%=NgaySinh.ClientID %>').datepicker();
+        });
 
-	<script>
-	    $(function() {
-	        $("#datepicker").datepicker({
-	            showOn: "button",
-	            buttonImage: "../Images/calendar.gif",
-	            buttonImageOnly: true
-	        });
-	    });
 	</script>
 	
 <div id= "Register" 
@@ -67,7 +64,8 @@
     
     <div class="RegisterLabel"> Ngày sinh:</div>
     <div class="RegisterTextbox"> 
-        <input type="text" id="datepicker" runat = "server" Width="225px" Height= "25px"></div>
+       <asp:TextBox ID="NgaySinh" runat="server" Height="20px" Width="225px"></asp:TextBox>
+    </div>
     
     <div class="spacer"> <span class="Registertieude">Nhập thông tin tài khoản</span></div>
     
