@@ -214,7 +214,6 @@ namespace WebPage_F4.UserControl
                 newrecord.HoTen = Ho.Text + " " + Ten.Text;
                 if (gioitinh.SelectedIndex == 0)
                 {
-                    
                     newrecord.GioiTinh = 1;
                 }
                 else if (gioitinh.SelectedIndex == 1)
@@ -230,7 +229,7 @@ namespace WebPage_F4.UserControl
                 newrecord.EMail = Email.Text;
                 newrecord.TinhThanh = int.Parse(ThanhPho.SelectedValue);
                 NguoiTimViecBUS bus = new NguoiTimViecBUS();
-                bool kq = bus.Insert(newrecord); 
+                int kq = bus.Insert(newrecord); 
                 //send mail
                 SendMail(sender, e);
                 //Thông báo thành công

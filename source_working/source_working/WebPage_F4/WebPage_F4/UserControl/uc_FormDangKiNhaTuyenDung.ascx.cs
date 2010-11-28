@@ -40,8 +40,8 @@ namespace WebPage_F4.UserControl
             dto.MoTa = TextBox1.Text;
             dto.Password = password.Text;
 
-            bus.Insert(dto);
             //End 'Luu vai database'
+            bus.Insert(dto);
         }
     }
 }
