@@ -12,7 +12,7 @@
 			<li><a href="../KiemViec.aspx">Kiếm Việc</a></li>
 	        <li><a href="../MyTimViec.aspx">My Tìm Việc</a></li>
 	        <li><a href="../TaoHoSo.aspx">Tạo Hồ Sơ</a></li>
-	        <li><a href="../TạoThongBaoViec.aspx">Tạo Thông Báo Việc</a></li>
+	        <li><a href="../TaoThongBaoViec.aspx">Tạo Thông Báo Việc</a></li>
     		<li><a href="../CamNangNghe.aspx">Cẩm Nang Nghề</a></li>
         </ul>
     </div>
