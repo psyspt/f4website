@@ -35,8 +35,8 @@
     <div class="RegisterTextbox"> 
         <select id="gioitinh" runat="server">
             <option value="Nam">Nam</option>
-            <option value="Nu">Nu</option>
-            <option value="Khac">Khac</option>
+            <option value="Nu">Nữ</option>
+            <option value="Khac">Khác</option>
         </select>
     </div>
     

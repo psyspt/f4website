@@ -251,6 +251,13 @@
     <Compile Include="UserControl\uc_ThongBao.ascx.designer.cs">
       <DependentUpon>uc_ThongBao.ascx</DependentUpon>
     </Compile>
+    <Compile Include="UserControl\uc_TimKiem.ascx.cs">
+      <DependentUpon>uc_TimKiem.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\uc_TimKiem.ascx.designer.cs">
+      <DependentUpon>uc_TimKiem.ascx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="CamNangNghe.aspx" />
@@ -277,6 +284,7 @@
     <Content Include="CSS\dangkiStyleSheet.css" />
     <Content Include="CSS\dangnhapStyleSheet.css" />
     <Content Include="CSS\jquery-ui-1.8.6.custom.css" />
+    <Content Include="CSS\timKiem.css" />
     <Content Include="DangKi\DangKi.aspx" />
     <Content Include="DangKi\DangKiTaiKhoanNguoiTimViec.aspx" />
     <Content Include="DangKi\DangKiTaiKhoanNhaTuyenDung.aspx" />
@@ -286,6 +294,7 @@
     <Content Include="images\backgoundtitledangki.jpg" />
     <Content Include="images\backgroundMenu.jpg" />
     <Content Include="images\banner.jpg" />
+    <Content Include="images\bgTimKiem.jpg" />
     <Content Include="images\buttonDangKi.jpg" />
     <Content Include="images\buttonDangNhap.jpg" />
     <Content Include="images\chitietButton.jpg" />
@@ -333,6 +342,7 @@
     <Content Include="UserControl\uc_FormDangKiNhaTuyenDung.ascx" />
     <Content Include="UserControl\uc_FormDangKiNguoiTimViec.ascx" />
     <Content Include="UserControl\uc_ThongBao.ascx" />
+    <Content Include="UserControl\uc_TimKiem.ascx" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="C:\Users\LTB\Desktop\WebPage_F4\BUS\BUS.csproj">

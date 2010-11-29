@@ -1,0 +1,12 @@
+﻿#mainframe{
+	width:327px;
+	height:690px;
+	background:#FFF url(../images/bgTimKiem.jpg) no-repeat;
+}
+
+#mainframe #table{
+	float:right;
+	width:280px;
+	height:566px;
+	margin-top:57px;
+}
