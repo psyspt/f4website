@@ -1,4 +1,4 @@
-﻿  <%@ Page Language="C#" MasterPageFile="~/MasterPage/MasterPage.Master" AutoEventWireup="true" CodeBehind="TạoThongBaoViec.aspx.cs" Inherits="WebPage_F4.TạoThongBaoViec" %>
+﻿   <%@ Page Language="C#" MasterPageFile="~/MasterPage/MasterPage.Master" AutoEventWireup="true" CodeBehind="TaoThongBaoViec.aspx.cs" Inherits="WebPage_F4.TạoThongBaoViec" %>
 
 <asp:Content ID="MyContent" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
 <link href="CSS/styleSheet.css" rel="Stylesheet" type="text/css" />

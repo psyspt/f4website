@@ -195,12 +195,12 @@
     <Compile Include="TaoHoSo.aspx.designer.cs">
       <DependentUpon>TaoHoSo.aspx</DependentUpon>
     </Compile>
-    <Compile Include="TạoThongBaoViec.aspx.cs">
-      <DependentUpon>TạoThongBaoViec.aspx</DependentUpon>
+    <Compile Include="TaoThongBaoViec.aspx.cs">
+      <DependentUpon>TaoThongBaoViec.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="TạoThongBaoViec.aspx.designer.cs">
-      <DependentUpon>TạoThongBaoViec.aspx</DependentUpon>
+    <Compile Include="TaoThongBaoViec.aspx.designer.cs">
+      <DependentUpon>TaoThongBaoViec.aspx</DependentUpon>
     </Compile>
     <Compile Include="UserControl\uc_Feed.ascx.cs">
       <DependentUpon>uc_Feed.ascx</DependentUpon>
@@ -327,7 +327,7 @@
     <Content Include="MasterPage\MasterPage.Master" />
     <Content Include="MyTimViec.aspx" />
     <Content Include="TaoHoSo.aspx" />
-    <Content Include="TạoThongBaoViec.aspx" />
+    <Content Include="TaoThongBaoViec.aspx" />
     <Content Include="UserControl\uc_Feed.ascx" />
     <Content Include="UserControl\uc_FormDangKi.ascx" />
     <Content Include="UserControl\uc_FormDangKiNhaTuyenDung.ascx" />
