@@ -19,6 +19,8 @@ namespace WebPage_F4
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            Session["IsLogin"] = 0;
+
             //TimViecNhanh.com
             List<Article> list = GetFeed.getTimViecNhanh();
 

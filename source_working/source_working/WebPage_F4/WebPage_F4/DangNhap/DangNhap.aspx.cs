@@ -30,7 +30,12 @@ namespace WebPage_F4.DangNhap
             {
                 if (user.PassWord == password)
                 {
-                    Response.Redirect("../DangKi/DangKiTaiKhoanNguoiTimViec.aspx?AddUser=" + username);
+                    Session["IsLogin"] = 1;
+                    Response.Redirect("../Default.aspx");
+                }
+                else
+                {
+                    Response.Write("<script>alert('Vui Lòng Đăng Nhập Lại !')</script>");
                 }
             }
         }
@@ -46,7 +51,12 @@ namespace WebPage_F4.DangNhap
             {
                 if (user.Password == password)
                 {
-                    //dang nhap thanh cong
+                    Session["IsLogin"] = 1;
+                    Response.Redirect("../Default.aspx");
+                }
+                else
+                {
+                    Response.Write("<script>alert('Vui Lòng Đăng Nhập Lại !')</script>");
                 }
             }
         }
