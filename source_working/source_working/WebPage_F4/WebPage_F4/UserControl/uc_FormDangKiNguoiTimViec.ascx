@@ -119,7 +119,7 @@
                 ImageUrl="~/images/Refresh-icon.png" Width="16px" 
                 onclick="ImageButton1_Click" />
         </div>
-        <div class = "captchaTextbox"><asp:TextBox ID="CaptchaText" runat="server" Height="20px" Width="100px"/> 
+        <div class = "captchaTextbox"><asp:TextBox ID="CaptchaText" runat="server" Height="20px" Width="200px"/> 
         </div>
     </div>
     

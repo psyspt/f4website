@@ -280,7 +280,7 @@ div#menu{
 }
 .registerbutton
 {
-	margin-left: 200px;
+	margin-left: 272px;
 }
 
 /*======== this is the conntent =====*/
@@ -289,6 +289,18 @@ div#menu{
 	width: 1200px;
 	height: 1083px;
 	background:#FFF url(../images/maincontent.jpg);
+}
+#KhoangTrang
+{
+	height: 20px;
+}
+#XacNhanDangKy
+{
+	width: 500px;
+	border: 1px;
+	
+	height: 600px;
+	margin-left: 400px;
 }
 /*====== this is the left bar =====================*/
 #maincontent #leftSideBar{
@@ -308,6 +320,7 @@ div#menu{
 	margin: 30px 0 0;
 /*	border:#0F6 solid 1px;*/
 }
+
 
 /*====== this is the right side bar ================*/
 #backgroundmaincontent #rightSideBar{

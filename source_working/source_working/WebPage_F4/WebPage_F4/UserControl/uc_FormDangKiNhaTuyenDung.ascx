@@ -140,7 +140,10 @@
   <tr>
     <td align="right" valign="middle" class="style10"> Captchar :</td>
     <td align="left" valign="middle" class="style10">
-        <asp:Image ID="Image1" runat="server" Width="60px" />
+        <asp:Image ID="CaptchaImg" runat="server" />
+                <asp:ImageButton ID="ImageButton1" runat="server" Height="20px" 
+            ImageUrl="~/images/refresh-icon.jpg" onclick="ImageButton1_Click" 
+            Width="29px" />
                 </td>
   </tr>
   <tr>
@@ -156,5 +159,4 @@
       </td>
   </tr>
 </table>
-
 </div>

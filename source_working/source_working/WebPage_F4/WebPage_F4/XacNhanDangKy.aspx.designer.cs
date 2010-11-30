@@ -8,10 +8,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WebPage_F4.DangKi {
+namespace WebPage_F4 {
     
     
-    public partial class DangKiTaiKhoanNguoiTimViec {
+    public partial class XacNhanDangKy {
         
         /// <summary>
         /// Label1 control.
@@ -23,6 +23,15 @@ namespace WebPage_F4.DangKi {
         protected global::System.Web.UI.WebControls.Label Label1;
         
         /// <summary>
+        /// Label2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label2;
+        
+        /// <summary>
         /// HyperLink1 control.
         /// </summary>
         /// <remarks>
@@ -32,12 +41,12 @@ namespace WebPage_F4.DangKi {
         protected global::System.Web.UI.WebControls.HyperLink HyperLink1;
         
         /// <summary>
-        /// Label2 control.
+        /// Label3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label2;
+        protected global::System.Web.UI.WebControls.Label Label3;
     }
 }

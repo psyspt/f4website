@@ -2,7 +2,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>9.0.21022</ProductVersion>
+    <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{88B63DE7-4BBA-4BC9-8E18-8C8C0FC1A5A0}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
@@ -53,6 +53,7 @@
     <Compile Include="BUS\ApplicationBUS.cs" />
     <Compile Include="BUS\BangCapBUS.cs" />
     <Compile Include="BUS\CapBacBUS.cs" />
+    <Compile Include="BUS\CaptchaBUS.cs" />
     <Compile Include="BUS\CVBUS.cs" />
     <Compile Include="BUS\DonViTienTeBUS.cs" />
     <Compile Include="BUS\GoiDangTuyenBUS.cs" />
@@ -112,6 +113,7 @@
     <Compile Include="DAO\ApplicationDAO.cs" />
     <Compile Include="DAO\BangCapDAO.cs" />
     <Compile Include="DAO\CapBacDAO.cs" />
+    <Compile Include="DAO\CaptchaDAO.cs" />
     <Compile Include="DAO\CVDAO.cs" />
     <Compile Include="DAO\DonViTienTeDAO.cs" />
     <Compile Include="DAO\GoiDangTuyenDAO.cs" />
@@ -144,6 +146,7 @@
     <Compile Include="DTO\ApplicationDTO.cs" />
     <Compile Include="DTO\BangCapDTO.cs" />
     <Compile Include="DTO\CapBacDTO.cs" />
+    <Compile Include="DTO\CaptchaDTO.cs" />
     <Compile Include="DTO\CVDTO.cs" />
     <Compile Include="DTO\DonViTienTeDTO.cs" />
     <Compile Include="DTO\GoiDangTuyenDTO.cs" />
@@ -258,6 +261,13 @@
     <Compile Include="UserControl\uc_TimKiem.ascx.designer.cs">
       <DependentUpon>uc_TimKiem.ascx</DependentUpon>
     </Compile>
+    <Compile Include="XacNhanDangKy.aspx.cs">
+      <DependentUpon>XacNhanDangKy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="XacNhanDangKy.aspx.designer.cs">
+      <DependentUpon>XacNhanDangKy.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="CamNangNghe.aspx" />
@@ -322,6 +332,7 @@
     <Content Include="images\overButtonDangKi.jpg" />
     <Content Include="images\overButtonDangNhap.jpg" />
     <Content Include="images\overChitietButton.jpg" />
+    <Content Include="images\refresh-icon.jpg" />
     <Content Include="images\rightcontent.jpg" />
     <Content Include="images\rightHeader.jpg" />
     <Content Include="images\sidebarcontent.jpg" />
@@ -343,6 +354,7 @@
     <Content Include="UserControl\uc_FormDangKiNguoiTimViec.ascx" />
     <Content Include="UserControl\uc_ThongBao.ascx" />
     <Content Include="UserControl\uc_TimKiem.ascx" />
+    <Content Include="XacNhanDangKy.aspx" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="C:\Users\LTB\Desktop\WebPage_F4\BUS\BUS.csproj">
@@ -372,11 +384,14 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>49866</DevelopmentServerPort>
+          <DevelopmentServerPort>49305</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>
