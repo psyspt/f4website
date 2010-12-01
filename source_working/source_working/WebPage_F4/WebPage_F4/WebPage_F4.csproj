@@ -240,6 +240,13 @@
     <Compile Include="UserControl\uc_FormDangKiNhaTuyenDung.ascx.designer.cs">
       <DependentUpon>uc_FormDangKiNhaTuyenDung.ascx</DependentUpon>
     </Compile>
+    <Compile Include="UserControl\uc_FormDangTinTuyenDung.ascx.cs">
+      <DependentUpon>uc_FormDangTinTuyenDung.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\uc_FormDangTinTuyenDung.ascx.designer.cs">
+      <DependentUpon>uc_FormDangTinTuyenDung.ascx</DependentUpon>
+    </Compile>
     <Compile Include="UserControl\uc_Header.ascx.cs">
       <DependentUpon>uc_Header.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -253,6 +260,13 @@
     </Compile>
     <Compile Include="UserControl\uc_FormDangKiNguoiTimViec.ascx.designer.cs">
       <DependentUpon>uc_FormDangKiNguoiTimViec.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\uc_TaoCV.ascx.cs">
+      <DependentUpon>uc_TaoCV.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\uc_TaoCV.ascx.designer.cs">
+      <DependentUpon>uc_TaoCV.ascx</DependentUpon>
     </Compile>
     <Compile Include="UserControl\uc_ThongBao.ascx.cs">
       <DependentUpon>uc_ThongBao.ascx</DependentUpon>
@@ -362,6 +376,8 @@
     <Content Include="UserControl\uc_FormDangKi.ascx" />
     <Content Include="UserControl\uc_FormDangKiNhaTuyenDung.ascx" />
     <Content Include="UserControl\uc_FormDangKiNguoiTimViec.ascx" />
+    <Content Include="UserControl\uc_FormDangTinTuyenDung.ascx" />
+    <Content Include="UserControl\uc_TaoCV.ascx" />
     <Content Include="UserControl\uc_ThongBao.ascx" />
     <Content Include="UserControl\uc_TimKiem.ascx" />
     <Content Include="XacNhanDangKy.aspx" />
