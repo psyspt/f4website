@@ -2,7 +2,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>9.0.30729</ProductVersion>
+    <ProductVersion>9.0.21022</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{88B63DE7-4BBA-4BC9-8E18-8C8C0FC1A5A0}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
@@ -80,6 +80,13 @@
     </Compile>
     <Compile Include="CamNangNghe.aspx.designer.cs">
       <DependentUpon>CamNangNghe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HuongDan.aspx.cs">
+      <DependentUpon>HuongDan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HuongDan.aspx.designer.cs">
+      <DependentUpon>HuongDan.aspx</DependentUpon>
     </Compile>
     <Compile Include="DangKi\DangKi.aspx.cs">
       <DependentUpon>DangKi.aspx</DependentUpon>
@@ -291,6 +298,7 @@
     <Content Include="CaptchaImg\Captcha7.jpg" />
     <Content Include="CaptchaImg\Captcha8.jpg" />
     <Content Include="CaptchaImg\Captcha9.jpg" />
+    <Content Include="HuongDan.aspx" />
     <Content Include="CSS\dangkiStyleSheet.css" />
     <Content Include="CSS\dangnhapStyleSheet.css" />
     <Content Include="CSS\jquery-ui-1.8.6.custom.css" />
@@ -312,6 +320,8 @@
     <Content Include="images\contentInfo.jpg" />
     <Content Include="images\coverMenu.jpg" />
     <Content Include="images\footer.jpg" />
+    <Content Include="images\hdTaoHoSo.jpg" />
+    <Content Include="images\hdTaoTaiKhoan.jpg" />
     <Content Include="images\headerNguoiTimViec.jpg" />
     <Content Include="images\headerNhaTuyenDung.jpg" />
     <Content Include="images\imgNguoiTimViec.jpg" />
@@ -389,9 +399,6 @@
           <IISUrl>
           </IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
-          <UseCustomServer>False</UseCustomServer>
-          <CustomServerUrl>
-          </CustomServerUrl>
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>
