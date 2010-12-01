@@ -123,8 +123,14 @@
     {
         height: 31px;
     }
+    #main
+    {
+    	width:612px;
+    	height:680px;
+    }
+    
 </style>
-<asp:Panel ID="Panel1" runat="server" Height="680px" Width="612px">
+<div id="main">
     <span class="style2">Tạo Tuyển Dụng</span><br />
     <br />
     <b>:: MÔ TẢ CÔNG VIỆC</b><br />
@@ -320,4 +326,4 @@
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <input ID="Button1" type="button" value="Đồng ý" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <input ID="Button2" type="button" value="Thoát" />
-</asp:Panel>
+</div>
