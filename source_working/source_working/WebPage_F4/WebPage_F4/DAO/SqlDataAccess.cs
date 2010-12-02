@@ -16,7 +16,7 @@ namespace DAO
         {
             get
             {
-                return ReadConnectionString("ConnectionString.xml");
+                return ReadConnectionString("E:\\WebSource\\source_working\\source_working\\WebPage_F4\\ConnectionString.xml");
             }
         }
         public static String ReadConnectionString(String file)

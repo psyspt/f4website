@@ -212,6 +212,13 @@
     <Compile Include="TaoThongBaoViec.aspx.designer.cs">
       <DependentUpon>TaoThongBaoViec.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Test_UploadFile.aspx.cs">
+      <DependentUpon>Test_UploadFile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Test_UploadFile.aspx.designer.cs">
+      <DependentUpon>Test_UploadFile.aspx</DependentUpon>
+    </Compile>
     <Compile Include="UserControl\uc_Feed.ascx.cs">
       <DependentUpon>uc_Feed.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -281,6 +288,13 @@
     </Compile>
     <Compile Include="UserControl\uc_TimKiem.ascx.designer.cs">
       <DependentUpon>uc_TimKiem.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\uc_UploadCV.ascx.cs">
+      <DependentUpon>uc_UploadCV.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\uc_UploadCV.ascx.designer.cs">
+      <DependentUpon>uc_UploadCV.ascx</DependentUpon>
     </Compile>
     <Compile Include="XacNhanDangKy.aspx.cs">
       <DependentUpon>XacNhanDangKy.aspx</DependentUpon>
@@ -372,6 +386,7 @@
     <Content Include="MyTimViec.aspx" />
     <Content Include="TaoHoSo.aspx" />
     <Content Include="TaoThongBaoViec.aspx" />
+    <Content Include="Test_UploadFile.aspx" />
     <Content Include="UserControl\uc_Feed.ascx" />
     <Content Include="UserControl\uc_FormDangKi.ascx" />
     <Content Include="UserControl\uc_FormDangKiNhaTuyenDung.ascx" />
@@ -380,6 +395,7 @@
     <Content Include="UserControl\uc_TaoCV.ascx" />
     <Content Include="UserControl\uc_ThongBao.ascx" />
     <Content Include="UserControl\uc_TimKiem.ascx" />
+    <Content Include="UserControl\uc_UploadCV.ascx" />
     <Content Include="XacNhanDangKy.aspx" />
   </ItemGroup>
   <ItemGroup>

@@ -29,3 +29,9 @@ C:\Users\X-Freshy\Desktop\f4website\source_working\source_working\WebPage_F4\Web
 C:\Users\X-Freshy\Desktop\f4website\source_working\source_working\WebPage_F4\WebPage_F4\obj\Debug\WebPage_F4.dll
 C:\Users\X-Freshy\Desktop\f4website\source_working\source_working\WebPage_F4\WebPage_F4\obj\Debug\WebPage_F4.pdb
 C:\Users\X-Freshy\Desktop\f4website\source_working\source_working\WebPage_F4\WebPage_F4\bin\HtmlAgilityPack.dll
+E:\WebSource\source_working\source_working\WebPage_F4\WebPage_F4\bin\WebPage_F4.dll
+E:\WebSource\source_working\source_working\WebPage_F4\WebPage_F4\bin\WebPage_F4.pdb
+E:\WebSource\source_working\source_working\WebPage_F4\WebPage_F4\bin\HtmlAgilityPack.dll
+E:\WebSource\source_working\source_working\WebPage_F4\WebPage_F4\obj\Debug\ResolveAssemblyReference.cache
+E:\WebSource\source_working\source_working\WebPage_F4\WebPage_F4\obj\Debug\WebPage_F4.dll
+E:\WebSource\source_working\source_working\WebPage_F4\WebPage_F4\obj\Debug\WebPage_F4.pdb
