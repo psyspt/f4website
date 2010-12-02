@@ -1,2 +1,2 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<connectionString>Data Source=NINH-PC\SQLEXPRESS;Initial Catalog=CSDLWeb;Integrated Security=True</connectionString>
+<connectionString>Data Source=LTBCOMPUTER;Initial Catalog=CSDLWeb;Integrated Security=True</connectionString>
