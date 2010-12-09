@@ -8,27 +8,18 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WebPage_F4 {
+namespace WebPage_F4.UserControl {
     
     
-    public partial class MyTimViec {
+    public partial class uc_ThongTinNTV {
         
         /// <summary>
-        /// uc_MyTimViec_NTV1 control.
+        /// DetailsNTV control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::WebPage_F4.UserControl.uc_MyTimViec_NTV uc_MyTimViec_NTV1;
-        
-        /// <summary>
-        /// uc_TimKiem1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::WebPage_F4.UserControl.uc_TimKiem uc_TimKiem1;
+        protected global::System.Web.UI.WebControls.DetailsView DetailsNTV;
     }
 }

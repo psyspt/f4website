@@ -2,6 +2,8 @@
 
 <%@ Register src="UserControl/uc_TimKiem.ascx" tagname="uc_TimKiem" tagprefix="uc1" %>
 
+<%@ Register src="UserControl/uc_MyTimViec_NTV.ascx" tagname="uc_MyTimViec_NTV" tagprefix="uc2" %>
+
 <asp:Content ID="MyContent" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
 <link href="CSS/styleSheet.css" rel="Stylesheet" type="text/css" />
 <div id="menu">
@@ -20,9 +22,8 @@
     	<div id="leftcontent">
         </div>
         <div id="contentinfo">
-        	<p>
-            Danh sách nghề nghiệp.
-            </p>
+        	
+            <uc2:uc_MyTimViec_NTV ID="uc_MyTimViec_NTV1" runat="server" />
         </div>
         <div id="sidebarcontent">
         	

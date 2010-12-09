@@ -2,7 +2,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>9.0.21022</ProductVersion>
+    <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{88B63DE7-4BBA-4BC9-8E18-8C8C0FC1A5A0}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
@@ -55,6 +55,7 @@
     <Compile Include="BUS\CapBacBUS.cs" />
     <Compile Include="BUS\CaptchaBUS.cs" />
     <Compile Include="BUS\CVBUS.cs" />
+    <Compile Include="BUS\DanhSachCongViecBUS.cs" />
     <Compile Include="BUS\DonViTienTeBUS.cs" />
     <Compile Include="BUS\GoiDangTuyenBUS.cs" />
     <Compile Include="BUS\KinhNghiemBUS.cs" />
@@ -81,6 +82,8 @@
     <Compile Include="CamNangNghe.aspx.designer.cs">
       <DependentUpon>CamNangNghe.aspx</DependentUpon>
     </Compile>
+    <Compile Include="DAO\DanhSachCongViecDAO.cs" />
+    <Compile Include="DTO\DanhSachCongViecDTO.cs" />
     <Compile Include="HuongDan.aspx.cs">
       <DependentUpon>HuongDan.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -219,6 +222,13 @@
     <Compile Include="Test_UploadFile.aspx.designer.cs">
       <DependentUpon>Test_UploadFile.aspx</DependentUpon>
     </Compile>
+    <Compile Include="UserControl\uc_DanhSachCongViec.ascx.cs">
+      <DependentUpon>uc_DanhSachCongViec.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\uc_DanhSachCongViec.ascx.designer.cs">
+      <DependentUpon>uc_DanhSachCongViec.ascx</DependentUpon>
+    </Compile>
     <Compile Include="UserControl\uc_Feed.ascx.cs">
       <DependentUpon>uc_Feed.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -268,6 +278,13 @@
     <Compile Include="UserControl\uc_FormDangKiNguoiTimViec.ascx.designer.cs">
       <DependentUpon>uc_FormDangKiNguoiTimViec.ascx</DependentUpon>
     </Compile>
+    <Compile Include="UserControl\uc_MyTimViec_NTV.ascx.cs">
+      <DependentUpon>uc_MyTimViec_NTV.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\uc_MyTimViec_NTV.ascx.designer.cs">
+      <DependentUpon>uc_MyTimViec_NTV.ascx</DependentUpon>
+    </Compile>
     <Compile Include="UserControl\uc_TaoCV.ascx.cs">
       <DependentUpon>uc_TaoCV.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -281,6 +298,13 @@
     </Compile>
     <Compile Include="UserControl\uc_ThongBao.ascx.designer.cs">
       <DependentUpon>uc_ThongBao.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\uc_ThongTinNTV.ascx.cs">
+      <DependentUpon>uc_ThongTinNTV.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\uc_ThongTinNTV.ascx.designer.cs">
+      <DependentUpon>uc_ThongTinNTV.ascx</DependentUpon>
     </Compile>
     <Compile Include="UserControl\uc_TimKiem.ascx.cs">
       <DependentUpon>uc_TimKiem.ascx</DependentUpon>
@@ -326,6 +350,7 @@
     <Content Include="CaptchaImg\Captcha7.jpg" />
     <Content Include="CaptchaImg\Captcha8.jpg" />
     <Content Include="CaptchaImg\Captcha9.jpg" />
+    <Content Include="CSS\MyTimViec.css" />
     <Content Include="HuongDan.aspx" />
     <Content Include="CSS\dangkiStyleSheet.css" />
     <Content Include="CSS\dangnhapStyleSheet.css" />
@@ -366,6 +391,7 @@
     <Content Include="images\namePage.jpg" />
     <Content Include="images\nguoiTimViec.jpg" />
     <Content Include="images\nhaTuyenDung.jpg" />
+    <Content Include="images\no_avatar.gif" />
     <Content Include="images\noticedHeader.jpg" />
     <Content Include="images\overButtonDangKi.jpg" />
     <Content Include="images\overButtonDangNhap.jpg" />
@@ -381,19 +407,23 @@
     <Content Include="images\timviecnhanhlogo.jpg" />
     <Content Include="JavaScript\jquery-1.4.2.min.js" />
     <Content Include="JavaScript\jquery-ui-1.8.6.custom.min.js" />
+    <Content Include="JavaScript\tabs.js" />
     <Content Include="KiemViec.aspx" />
     <Content Include="MasterPage\MasterPage.Master" />
     <Content Include="MyTimViec.aspx" />
     <Content Include="TaoHoSo.aspx" />
     <Content Include="TaoThongBaoViec.aspx" />
     <Content Include="Test_UploadFile.aspx" />
+    <Content Include="UserControl\uc_DanhSachCongViec.ascx" />
     <Content Include="UserControl\uc_Feed.ascx" />
     <Content Include="UserControl\uc_FormDangKi.ascx" />
     <Content Include="UserControl\uc_FormDangKiNhaTuyenDung.ascx" />
     <Content Include="UserControl\uc_FormDangKiNguoiTimViec.ascx" />
     <Content Include="UserControl\uc_FormDangTinTuyenDung.ascx" />
+    <Content Include="UserControl\uc_MyTimViec_NTV.ascx" />
     <Content Include="UserControl\uc_TaoCV.ascx" />
     <Content Include="UserControl\uc_ThongBao.ascx" />
+    <Content Include="UserControl\uc_ThongTinNTV.ascx" />
     <Content Include="UserControl\uc_TimKiem.ascx" />
     <Content Include="UserControl\uc_UploadCV.ascx" />
     <Content Include="XacNhanDangKy.aspx" />
@@ -431,6 +461,9 @@
           <IISUrl>
           </IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>

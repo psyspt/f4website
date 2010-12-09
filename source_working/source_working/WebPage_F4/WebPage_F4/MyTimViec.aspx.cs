@@ -15,12 +15,12 @@ namespace WebPage_F4
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            int nDangNhap = (int)(Session["IsLogin"]);
+            //int nDangNhap = (int)(Session["IsLogin"]);
 
-            if (nDangNhap == 0)
-            {
-                Response.Redirect("DangNhap/DangNhap.aspx");
-            }
+            //if (nDangNhap == 0)
+            //{
+            //    Response.Redirect("DangNhap/DangNhap.aspx");
+            //}
         }
     }
 }
