@@ -5,11 +5,11 @@ using DTO;
 using DAO;
 namespace BUS
 {
-    public class TinTuyenDungBUS
+    public class ThongTinViecLamBUS
     {
-        public int Insert(TinTuyenDungDTO newrecord)
+        public int Insert(ThongTinViecLamDTO newrecord)
         {
-            TinTuyenDungDAO dao = new TinTuyenDungDAO();
+            ThongTinViecLamDAO dao = new ThongTinViecLamDAO();
             return dao.Insert(newrecord);
         }
     }

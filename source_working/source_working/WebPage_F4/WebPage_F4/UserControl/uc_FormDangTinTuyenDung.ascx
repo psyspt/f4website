@@ -1,4 +1,13 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="uc_FormDangTinTuyenDung.ascx.cs" Inherits="WebPage_F4.UserControl.uc_FormDangTinTuyenDung" %>
+<script language="javascript" type="text/javascript">
+// <!CDATA[
+
+
+
+
+// ]]>
+</script>
+
 <style type="text/css">
     .style2
     {
@@ -129,6 +138,82 @@
     	height:680px;
     }
     
+    #TenCongTy
+    {
+        width: 242px;
+    }
+    #TenLienLac
+    {
+        width: 242px;
+    }
+    
+    #Email
+    {
+        width: 242px;
+    }
+    #DiaChi
+    {
+        width: 242px;
+    }
+    #QuocGia
+    {
+        width: 242px;
+    }
+    #TinhThanh
+    {
+        width: 242px;
+    }
+    #DienThoai
+    {
+        width: 242px;
+    }
+    #Fax
+    {
+        width: 242px;
+    }
+    
+    .style7
+    {
+        width: 162px;
+        text-align: right;
+        height: 30px;
+    }
+    .style8
+    {
+        height: 30px;
+    }
+    
+    #NganhNghe
+    {
+        width: 218px;
+    }
+    
+    #CapBac
+    {
+        width: 218px;
+    }
+    #BangCap
+    {
+        width: 218px;
+    }
+    
+    #GioiTinh
+    {
+        width: 72px;
+    }
+    #KinhNghiem
+    {
+        width: 124px;
+    }
+    #QuocGiaList
+    {
+        width: 124px;
+    }
+    #TinhThanhList
+    {
+        width: 124px;
+    }
+    
 </style>
 <div id="main">
     <span class="style2">Tạo Tuyển Dụng</span><br />
@@ -139,19 +224,19 @@
             <td class="style3">
                 Vị trí tuyển dụng:</td>
             <td>
-                <input ID="Text1" type="text" /> <span class="style4">(*)</span></td>
+                <input id="ViTriTuyenDung" type="text" runat="server"/> <span class="style4">(*)</span></td>
         </tr>
         <tr>
             <td class="style3">
                 Mô tả công việc:</td>
             <td>
-                <textarea ID="TextArea1" name="S1"></textarea> <span class="style4">(*)</span></td>
+                <textarea id="MoTaCongViec" name="S1" runat="server"></textarea> <span class="style4">(*)</span></td>
         </tr>
         <tr>
             <td class="style3">
                 Kỹ năng công việc:</td>
             <td>
-                <textarea ID="TextArea2" cols="20" name="S2" rows="1"></textarea><span 
+                <textarea id="KyNangCongViec" cols="20" name="S2" rows="1" runat="server"></textarea><span 
                     class="style4">(*)</span></td>
         </tr>
     </table>
@@ -161,19 +246,19 @@
             <td class="style3">
                 Mã số công việc:</td>
             <td>
-                <input ID="Text2" type="text" /></td>
+                <input id="MaSoCongViec" type="text" runat = "server" /></td>
         </tr>
         <tr>
             <td class="style3">
                 Số lượng:</td>
             <td>
-                <input ID="Text3" type="text" /></td>
+                <input id="SoLuong" type="text" runat = "server"/></td>
         </tr>
         <tr>
             <td class="style3">
                 Giới tính:</td>
             <td>
-                <select ID="Select1" name="D1">
+                <select id="GioiTinh" name="D1" runat = "server">
                     <option></option>
                 </select></td>
         </tr>
@@ -181,14 +266,14 @@
             <td class="style3">
                 Tuổi:</td>
             <td>
-                <input ID="Text4" type="text" /> đến:
-                <input ID="Text5" type="text" /></td>
+                <input id="TuoiMin" type="text" runat = "server"/> đến:
+                <input id="TuoiMax" type="text" runat = "server"/></td>
         </tr>
         <tr>
             <td class="style3">
                 Số năm kinh nghiệm:</td>
             <td>
-                <select ID="Select2" name="D2">
+                <select id="KinhNghiem" name="D2" runat="server">
                     <option></option>
                 </select></td>
         </tr>
@@ -196,7 +281,7 @@
             <td class="style3">
                 Quốc gia:</td>
             <td>
-                <select ID="Select3" name="D3">
+                <select id="QuocGiaList" name="D3" runat = "server">
                     <option></option>
                 </select><span class="style4"> (*)</span></td>
         </tr>
@@ -204,7 +289,7 @@
             <td class="style3">
                 Tỉnh/Thành phố:</td>
             <td>
-                <select ID="Select4" name="D4">
+                <select id="TinhThanhList" name="D4" runat = "server">
                     <option></option>
                 </select> <span class="style4">(*)</span></td>
         </tr>
@@ -212,34 +297,34 @@
             <td class="style3">
                 Loại hình:</td>
             <td>
-                <input ID="Checkbox1" type="checkbox" />Toàn thời gian&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <input ID="Checkbox2" type="checkbox" />Bán thời gian <span class="style4">(*)</span></td>
+                <input id="Checkbox1" type="checkbox" runat = "server"/>Toàn thời gian&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input id="Checkbox2" type="checkbox" runat = "server"/>Bán thời gian <span class="style4">(*)</span></td>
         </tr>
         <tr>
             <td class="style3">
                 Hình thức:</td>
             <td>
-                <input ID="Checkbox3" type="checkbox" />Nhân viên chính thức&nbsp;&nbsp;&nbsp;&nbsp;
-                <input ID="Checkbox4" type="checkbox" />Thời vụ/Dự án&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <input ID="Checkbox5" type="checkbox" />Nghề tự do <span class="style4">(*)</span></td>
+                <input id="Checkbox3" type="checkbox" runat = "server"/>Nhân viên chính thức&nbsp;&nbsp;&nbsp;&nbsp;
+                <input id="Checkbox4" type="checkbox" runat = "server"/>Thời vụ/Dự án&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input id="Checkbox5" type="checkbox" runat = "server"/>Nghề tự do <span class="style4">(*)</span></td>
         </tr>
         <tr>
             <td class="style3">
                 Mức lương:</td>
             <td>
-                <input ID="Text6" type="text" /></td>
+                <input id="MucLuong" type="text" runat = "server"/></td>
         </tr>
         <tr>
             <td class="style3">
                 Phụ cấp khác:</td>
             <td>
-                <textarea ID="TextArea3" cols="20" name="S3" rows="1"></textarea></td>
+                <textarea id="PhuCap" cols="20" name="S3" rows="1" runat ="server" ></textarea></td>
         </tr>
         <tr>
             <td class="style3">
                 Hạn nộp hồ sơ:</td>
             <td>
-                <input ID="Text7" type="text" /> (dd/mm/yyyy)</td>
+                <input id="HanNopHoSo" type="text"  runat = "server"/> (dd/mm/yyyy)</td>
         </tr>
     </table>
     <b>
@@ -249,7 +334,7 @@
             <td class="style3">
                 Ngành nghề:</td>
             <td>
-                <select ID="Select5" name="D5">
+                <select id="NganhNghe" name="D5" runat = "server">
                     <option></option>
                 </select> <span class="style4">(*)</span></td>
         </tr>
@@ -257,7 +342,7 @@
             <td class="style5">
                 Cấp bậc:</td>
             <td class="style6">
-                <select ID="Select6" name="D6">
+                <select id="CapBac" name="D6" runat = "server">
                     <option></option>
                 </select> <span class="style4">(*)</span></td>
         </tr>
@@ -265,7 +350,7 @@
             <td class="style3">
                 Bằng cấp:</td>
             <td>
-                <select ID="Select7" name="D7">
+                <select id="BangCap" name="D7" runat = "server">
                     <option></option>
                 </select> <span class="style4">(*)</span></td>
         </tr>
@@ -277,53 +362,54 @@
             <td class="style3">
                 Tên công ty:</td>
             <td>
-                <input ID="Text8" type="text" />&nbsp;<span class="style4">(*)</span></td>
+                <input id="TenCongTy" type="text" runat ="server" />&nbsp;<span class="style4">(*)</span></td>
         </tr>
         <tr>
             <td class="style3">
                 Tên liên lạc:</td>
             <td>
-                <input ID="Text9" type="text" />&nbsp;<span class="style4">(*)</span></td>
+                <input id="TenLienLac" type="text" runat ="server"/>&nbsp;<span class="style4">(*)</span></td>
         </tr>
         <tr>
             <td class="style3">
                 Email:</td>
             <td>
-                <input ID="Text10" type="text" />&nbsp;<span class="style4">(*)</span></td>
+                <input id="Email" type="text" runat ="server" />&nbsp;<span class="style4">(*)</span></td>
         </tr>
         <tr>
-            <td class="style3">
+            <td class="style7">
                 Địa chỉ:</td>
-            <td>
-                <input ID="Text11" type="text" />&nbsp;<span class="style4">(*)</span></td>
+            <td class="style8">
+                <input id="DiaChi" type="text" runat ="server"/>&nbsp;<span class="style4">(*)</span></td>
         </tr>
         <tr>
             <td class="style3">
                 Quốc gia:</td>
             <td>
-                <input ID="Text12" type="text" />&nbsp;<span class="style4">(*)</span></td>
+                <input id="QuocGia" type="text" runat ="server"/>&nbsp;<span class="style4">(*)</span></td>
         </tr>
         <tr>
             <td class="style3">
                 Tỉnh/Thành phố:</td>
             <td>
-                <input ID="Text13" type="text" />&nbsp;<span class="style4">(*)</span></td>
+                <input id="TinhThanh" type="text" runat ="server"/>&nbsp;<span class="style4">(*)</span></td>
         </tr>
         <tr>
             <td class="style3">
                 Điện thoại:</td>
             <td>
-                <input ID="Text14" type="text" /></td>
+                <input id="DienThoai" type="text" runat ="server"/></td>
         </tr>
         <tr>
             <td class="style3">
                 Fax:</td>
             <td>
-                <input ID="Text15" type="text" /></td>
+                <input id="Fax" type="text" runat ="server"/></td>
         </tr>
     </table>
     <br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <input ID="Button1" type="button" value="Đồng ý" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <input ID="Button2" type="button" value="Thoát" />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Button 
+        ID="DongY" runat="server" onclick="DongY_Click" Text="Đồng Ý" />
+    &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <asp:Button ID="Thoat" runat="server" Text="Thoát" />
 </div>

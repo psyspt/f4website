@@ -18,5 +18,11 @@ namespace BUS
             NhaTuyenDungDAO dao = new NhaTuyenDungDAO();
             return dao.SelectByEmail(email);
         }
+        public int GetIDNhaTuyenDung(string email)
+        {
+            NhaTuyenDungDAO dao = new NhaTuyenDungDAO();
+            int ID = dao.GetIDNhaTuyenDung(email);
+            return ID;
+        }
     }
 }

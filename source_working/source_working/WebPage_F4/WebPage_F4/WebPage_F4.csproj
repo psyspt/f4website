@@ -2,7 +2,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>9.0.30729</ProductVersion>
+    <ProductVersion>9.0.21022</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{88B63DE7-4BBA-4BC9-8E18-8C8C0FC1A5A0}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
@@ -62,7 +62,9 @@
     <Compile Include="BUS\KyNangNgonNguBUS.cs" />
     <Compile Include="BUS\KyNangTinHocBUS.cs" />
     <Compile Include="BUS\LoaiCongViecBUS.cs" />
+    <Compile Include="BUS\LoaiUngVienBUS.cs" />
     <Compile Include="BUS\LuongBUS.cs" />
+    <Compile Include="BUS\MoTaCongViecBUS.cs" />
     <Compile Include="BUS\NganhNgheBUS.cs" />
     <Compile Include="BUS\NgonNguBUS.cs" />
     <Compile Include="BUS\NguoiTimViecBUS.cs" />
@@ -70,6 +72,7 @@
     <Compile Include="BUS\NhaTuyenDungLuuCVBUS.cs" />
     <Compile Include="BUS\QuangCaoBUS.cs" />
     <Compile Include="BUS\QuocGiaBUS.cs" />
+    <Compile Include="BUS\ThongTinViecLamBUS.cs" />
     <Compile Include="BUS\TinHocBUS.cs" />
     <Compile Include="BUS\TinhThanhBUS.cs" />
     <Compile Include="BUS\TinTuyenDungBUS.cs" />
@@ -83,7 +86,13 @@
       <DependentUpon>CamNangNghe.aspx</DependentUpon>
     </Compile>
     <Compile Include="DAO\DanhSachCongViecDAO.cs" />
+    <Compile Include="DAO\LoaiUngVienDAO.cs" />
+    <Compile Include="DAO\MoTaCongViecDAO.cs" />
+    <Compile Include="DAO\ThongTinViecLamDAO.cs" />
     <Compile Include="DTO\DanhSachCongViecDTO.cs" />
+    <Compile Include="DTO\LoaiUngVienDTO.cs" />
+    <Compile Include="DTO\MoTaCongViecDTO.cs" />
+    <Compile Include="DTO\ThongTinViecLamDTO.cs" />
     <Compile Include="HuongDan.aspx.cs">
       <DependentUpon>HuongDan.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -214,6 +223,13 @@
     </Compile>
     <Compile Include="TaoThongBaoViec.aspx.designer.cs">
       <DependentUpon>TaoThongBaoViec.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Test_DangTin.aspx.cs">
+      <DependentUpon>Test_DangTin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Test_DangTin.aspx.designer.cs">
+      <DependentUpon>Test_DangTin.aspx</DependentUpon>
     </Compile>
     <Compile Include="Test_UploadFile.aspx.cs">
       <DependentUpon>Test_UploadFile.aspx</DependentUpon>
@@ -413,6 +429,7 @@
     <Content Include="MyTimViec.aspx" />
     <Content Include="TaoHoSo.aspx" />
     <Content Include="TaoThongBaoViec.aspx" />
+    <Content Include="Test_DangTin.aspx" />
     <Content Include="Test_UploadFile.aspx" />
     <Content Include="UserControl\uc_DanhSachCongViec.ascx" />
     <Content Include="UserControl\uc_Feed.ascx" />
@@ -461,9 +478,6 @@
           <IISUrl>
           </IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
-          <UseCustomServer>False</UseCustomServer>
-          <CustomServerUrl>
-          </CustomServerUrl>
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>
