@@ -223,19 +223,19 @@
             <td class="style1">
                 Họ và tên:</td>
             <td>
-                <input id="Text1" type="text" /></td>
+                <input id="tbxThongTin_HoTen" type="text"  runat = "server"/></td>
         </tr>
         <tr>
             <td class="style1">
                 Ngày sinh:</td>
             <td>
-                &nbsp;<select id="Select1" name="D1">
+                &nbsp;<select id="cbxThongTin_NgaySinh" name="D1" runat = "server">
                     <option></option>
                 </select>&nbsp;&nbsp;
-                <select id="Select2" name="D2">
+                <select id="cbxThongTin_Thang" name="D2" runat = "server">
                     <option></option>
                 </select>&nbsp;&nbsp;
-                <select id="Select3" name="D3">
+                <select id="cbxThongTin_Nam" name="D3" runat = "server">
                     <option></option>
                 </select></td>
         </tr>
@@ -243,7 +243,7 @@
             <td class="style1">
                 Giới tính:</td>
             <td>
-                <select id="Select4" name="D4">
+                <select id="cbxThongTin_GioiTinh" name="D4" runat = "server">
                     <option></option>
                 </select></td>
         </tr>
@@ -251,7 +251,7 @@
             <td class="style1">
                 Tình trạng hôn nhân:</td>
             <td>
-                <select id="Select5" name="D5">
+                <select id="cbxThongTin_TinhTrangHonNhan"  runat = "server" name="D5">
                     <option></option>
                 </select></td>
         </tr>
@@ -259,19 +259,19 @@
             <td class="style1">
                 Địa chỉ:</td>
             <td>
-                <input id="Text2" type="text" /></td>
+                <input id="tbxThongTin_DiaChi" type="text"  runat = "server"/></td>
         </tr>
         <tr>
             <td class="style1">
                 Điện thoại:</td>
             <td>
-                <input id="Text3" type="text" /></td>
+                <input id="tbxThongTin_DienThoai" type="text"  runat = "server"/></td>
         </tr>
         <tr>
             <td class="style1">
                 Email:</td>
             <td>
-                <input id="Text4" type="text" /></td>
+                <input id="tbxThongTin_Email" type="text"  runat = "server"/></td>
         </tr>
     </table>
 
@@ -281,7 +281,7 @@
             <td class="style2">
                 Kinh nghiệm làm việc:</td>
             <td>
-                <select id="Select6" name="D6">
+                <select id="cbxTTUngDung_KinhNghiem" name="D6" runat = "server">
                     <option></option>
                 </select></td>
         </tr>
@@ -289,7 +289,7 @@
             <td class="style2">
                 Cấp bậc:</td>
             <td>
-                <select id="Select7" name="D7">
+                <select id="cbxTTUngDung_CapBac" name="D7" runat = "server">
                     <option></option>
                 </select></td>
         </tr>
@@ -297,7 +297,7 @@
             <td class="style2">
                 Bằng cấp:</td>
             <td>
-                <select id="Select8" name="D8">
+                <select id="cbxTTUngDung_BangCap" name="D8" runat = "server">
                     <option></option>
                 </select></td>
         </tr>
@@ -305,10 +305,10 @@
             <td class="style2">
                 Ngoại ngữ:</td>
             <td>
-                <select id="Select9" name="D9">
+                <select id="cbxTTUngDung_LoaiNgoaiNgu" name="D9" runat = "server">
                     <option></option>
                 </select>&nbsp;&nbsp;
-                <select id="Select10" name="D10">
+                <select id="cbxTTUngDung_TrinhDoNgoaiNgu" name="D10" runat = "server">
                     <option></option>
                 </select></td>
         </tr>
@@ -316,28 +316,28 @@
             <td class="style2">
                 Có thể đi công tác:</td>
             <td>
-                <input id="Radio1" name="R1" type="radio" value="V1" />Có&nbsp;&nbsp;
-                <input id="Radio2" name="R2" type="radio" value="V1" />Tùy trường 
+                <input id="rdTTUngDung_CongTac_Yes" name="R1" type="radio" value="V1"  runat = "server"/>Có&nbsp;&nbsp;
+                <input id="rdTTUngDung_CongTac_Option" name="R2" type="radio" value="V1"  runat = "server"/>Tùy trường 
                 hợp&nbsp;&nbsp;
-                <input id="Radio3" name="R3" type="radio" value="V1" />Không</td>
+                <input id="rdTTUngDung_CongTac_No" name="R3" type="radio" value="V1"  runat = "server"/>Không</td>
         </tr>
         <tr>
             <td class="style2">
                 Có thể chuyển chổ ở:</td>
             <td>
-                <input id="Radio4" name="R4" type="radio" value="V1" />Có&nbsp;&nbsp;
-                <input id="Radio5" name="R5" type="radio" value="V1" />Tùy trường 
+                <input id="rbTTUngDung_ChuyenCho_Yes" name="R4" type="radio" value="V1"  runat = "server"/>Có&nbsp;&nbsp;
+                <input id="rbTTUngDung_ChuyenCho_Option" name="R5" type="radio" value="V1"  runat = "server"/>Tùy trường 
                 hợp&nbsp;&nbsp;
-                <input id="Radio6" name="R6" type="radio" value="V1" />Không</td>
+                <input id="rdTTUngDung_ChuyenCho_No" name="R6" type="radio" value="V1"  runat = "server"/>Không</td>
         </tr>
         <tr>
             <td class="style2">
                 Có thể làm thêm ngoài giờ:</td>
             <td>
-                <input id="Radio7" name="R7" type="radio" value="V1" />Có&nbsp;&nbsp;
-                <input id="Radio8" name="R8" type="radio" value="V1" />Tùy trường 
+                <input id="rdTTUngDung_LamNgoaigio_Yes" name="R7" type="radio" value="V1"  runat = "server"/>Có&nbsp;&nbsp;
+                <input id="rdTTUngDung_LamNgoaiGio_Option" name="R8" type="radio" value="V1" runat = "server" />Tùy trường 
                 hợp&nbsp;&nbsp;
-                <input id="Radio9" name="R9" type="radio" value="V1" />Không</td>
+                <input id="rdTTUngDung_LamNgoaiGio_No" name="R9" type="radio" value="V1" runat = "server" />Không</td>
         </tr>
     </table>
     <br />
@@ -346,7 +346,7 @@
             <td class="style3" style="text-align: right">
                 Ngành nghề:</td>
             <td>
-                <select id="Select11" name="D11">
+                <select id="cbxVLMongMuon_NganhNghe" name="D11" runat = "server">
                     <option></option>
                 </select></td>
         </tr>
@@ -354,13 +354,13 @@
             <td class="style3">
                 Vị trí mong muốn:</td>
             <td>
-                <input id="Text5" type="text" /></td>
+                <input id="tbxVLMongMuon_ViTri" type="text"  runat = "server"/></td>
         </tr>
         <tr>
             <td class="style3">
                 Mức lương đề nghị:</td>
             <td>
-                <select id="Select12" name="D12">
+                <select id="cbxVLMongMuon_MucLuongDeNghi" name="D12" runat = "server">
                     <option></option>
                 </select></td>
         </tr>
@@ -368,22 +368,22 @@
             <td class="style3">
                 Hình thức làm việc:</td>
             <td>
-                <input id="Checkbox1" type="checkbox" />Nhân viên chính thức&nbsp;
-                <input id="Checkbox2" type="checkbox" />Thời vụ/Dự án&nbsp;
-                <input id="Checkbox3" type="checkbox" />Tự do</td>
+                <input id="cbVLMongMuon_HinhThucCongViec_ChinhThuc" type="checkbox"  runat = "server"/>Nhân viên chính thức&nbsp;
+                <input id="cbVLMongMuon_HinhThucCongViec_ThoiVu" type="checkbox"  runat = "server"/>Thời vụ/Dự án&nbsp;
+                <input id="cbVLMongMuon_HinhThucCongViec_TuDo" type="checkbox"  runat = "server"/>Tự do</td>
         </tr>
         <tr>
             <td class="style3">
                 Loại hình:</td>
             <td>
-                <input id="Checkbox4" type="checkbox" />Toàn thời gian&nbsp;&nbsp;
-                <input id="Checkbox5" type="checkbox" />Bán thời gian</td>
+                <input id="cbVLMongMuon_LoaiCongViec_Fulltime" type="checkbox"  runat = "server"/>Toàn thời gian&nbsp;&nbsp;
+                <input id="cbVLMongMuon_LaiCongViec_Parttime" type="checkbox"  runat = "server"/>Bán thời gian</td>
         </tr>
         <tr>
             <td class="style3">
                 Nơi làm việc:
             <td>
-&nbsp;<select id="Select13" name="D13">
+&nbsp;<select id="cbxVLMongMuon_NoiLamViec" name="D13" runat = "server">
                     <option></option>
                 </select></td>
         </tr>
@@ -394,19 +394,19 @@
             <td class="style1">
                 Tên trường:</td>
             <td>
-                <input id="Text6" type="text" /></td>
+                <input id="tbxQuaTrinhHocTap_TenTruong" type="text"  runat = "server"/></td>
         </tr>
         <tr>
             <td class="style5" style="text-align: right">
                 Chuyên ngành/Khóa học:</td>
             <td>
-                <input id="Text7" type="text" /></td>
+                <input id="tbxQuaTrinhHocTap_ChuyenNganh" type="text"  runat = "server"/></td>
         </tr>
         <tr>
             <td class="style5" style="text-align: right">
                 Bằng cấp/Chứng chỉ:</td>
             <td>
-                <select id="Select14" name="D14">
+                <select id="cbxQuaTrinhHocTap_BangCap" name="D14" runat = "server">
                     <option></option>
                 </select></td>
         </tr>
@@ -414,7 +414,7 @@
             <td class="style5" style="text-align: right">
                 Tỉnh/Thành phố:</td>
             <td>
-                <select id="Select15" name="D15">
+                <select id="cbxQuaTrinhHocTap_TinhThanh" name="D15" runat = "server">
                     <option></option>
                 </select></td>
         </tr>
@@ -422,18 +422,16 @@
             <td class="style5" style="text-align: right">
                 Ngày tốt nghiệp:</td>
             <td>
-                <select id="Select16" name="D16">
+                <select id="cbxQuaTrinhHocTap_NamTotNghiep" name="D16" runat = "server">
                     <option></option>
                 </select>&nbsp;&nbsp;
-                <select id="Select17" name="D17">
-                    <option></option>
-                </select></td>
+                </td>
         </tr>
         <tr>
             <td class="style5" style="text-align: right">
                 Mô tả thêm:</td>
             <td>
-                <textarea id="TextArea1" name="S1"></textarea></td>
+                <textarea id="QuaTrinhHocTap_Mota" name="S1" runat = "server"></textarea></td>
         </tr>
     </table>
     <br />
@@ -442,20 +440,20 @@
             <td class="style5" style="text-align: right">
                 &nbsp;</td>
             <td>
-                <input id="Radio10" name="R10" type="radio" value="V1" />Có&nbsp;&nbsp;
-                <input id="Radio11" name="R11" type="radio" value="V1" />Không</td>
+                <input id="Radio10" name="R10" type="radio" value="V1" runat = "server" />Có&nbsp;&nbsp;
+                <input id="Radio11" name="R11" type="radio" value="V1" runat = "server"/>Không</td>
         </tr>
         <tr>
-            <td class="style5" style="text-align: right">
+            <td class="style5" style="text-align: right" runat = "server">
                 Tên công ty:</td>
             <td>
-                <input id="Text8" type="text" /></td>
+                <input id="Text8" type="text" runat = "server"/></td>
         </tr>
         <tr>
             <td class="style5" style="text-align: right">
                 Vị trí công việc:</td>
             <td>
-                <input id="Text9" type="text" /></td>
+                <input id="Text9" type="text" runat = "server"/></td>
         </tr>
         <tr>
             <td class="style5" style="text-align: right">
@@ -472,10 +470,10 @@
             <td class="style5" style="text-align: right">
                 Đến thời gian:</td>
             <td>
-                <select id="Select20" name="D20">
+                <select id="Select20" name="D20" runat = "server">
                     <option></option>
                 </select>&nbsp;&nbsp;
-                <select id="Select21" name="D21">
+                <select id="Select21" name="D21" runat = "server">
                     <option></option>
                 </select></td>
         </tr>
@@ -483,15 +481,15 @@
             <td class="style5" style="text-align: right">
                 Tình/Thành phố:</td>
             <td>
-                <select id="Select22" name="D22">
+                <select id="Select22" name="D22" runat = "server">
                     <option></option>
                 </select></td>
         </tr>
         <tr>
-            <td class="style5" style="text-align: right">
+            <td class="style5" style="text-align: right" runat = "server">
                 Mô tả công việc:</td>
             <td>
-                <textarea id="TextArea2" name="S2" cols="20" rows="1"></textarea></td>
+                <textarea id="TextArea2" name="S2" cols="20" rows="1" runat = "server"></textarea></td>
         </tr>
     </table>
     <br />
@@ -501,27 +499,29 @@
             <td class="style5" style="text-align: right">
                 Mục tiêu nghề nghiệp:</td>
             <td>
-                <textarea id="TextArea3" name="S3" cols="20" rows="1"></textarea></td>
+                <textarea id="TextArea3" name="S3" cols="20" rows="1"  runat = "server"></textarea></td>
         </tr>
         <tr>
             <td class="style5" style="text-align: right">
                 Kỹ năng:</td>
             <td>
-                <textarea id="TextArea4" name="S4" cols="20" rows="1"></textarea></td>
+                <textarea id="TextArea4" name="S4" cols="20" rows="1" runat = "server"></textarea></td>
         </tr>
         <tr>
             <td class="style5" style="text-align: right">
                 Ưu điểm - nhược điểm:</td>
             <td>
-                <textarea id="TextArea5" name="S5" cols="20" rows="1"></textarea></td>
+                <textarea id="TextArea5" name="S5" cols="20" rows="1" runat = "server"></textarea></td>
         </tr>
         <tr>
             <td class="style5" style="text-align: right">
                 Năng khiếu - sở thích:</td>
             <td>
-                <textarea id="TextArea6" name="S6" cols="20" rows="1"></textarea></td>
+                <textarea id="TextArea6" name="S6" cols="20" rows="1" runat = "server"></textarea></td>
         </tr>
     </table>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <asp:Button ID="butCV" runat="server" onclick="butCV_Click" Text="Tạo CV" />
     <br />
 
 </div>

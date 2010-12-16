@@ -55,6 +55,12 @@
     <Compile Include="BUS\CapBacBUS.cs" />
     <Compile Include="BUS\CaptchaBUS.cs" />
     <Compile Include="BUS\CVBUS.cs" />
+    <Compile Include="BUS\CV_KinhNghiemLamViecBUS.cs" />
+    <Compile Include="BUS\CV_NewBUS.cs" />
+    <Compile Include="BUS\CV_QuaTrinhHocVanBUS.cs" />
+    <Compile Include="BUS\CV_ThongTinBoSungBUS.cs" />
+    <Compile Include="BUS\CV_ThongTinUngDungBUS.cs" />
+    <Compile Include="BUS\CV_ViecLamMongMuonBUS.cs" />
     <Compile Include="BUS\DanhSachCongViecBUS.cs" />
     <Compile Include="BUS\DonViTienTeBUS.cs" />
     <Compile Include="BUS\GoiDangTuyenBUS.cs" />
@@ -85,10 +91,22 @@
     <Compile Include="CamNangNghe.aspx.designer.cs">
       <DependentUpon>CamNangNghe.aspx</DependentUpon>
     </Compile>
+    <Compile Include="DAO\CV_KinhNghiemLamViecDAO.cs" />
+    <Compile Include="DAO\CV_NewDAO.cs" />
+    <Compile Include="DAO\CV_QuaTrinhHocVanDAO.cs" />
+    <Compile Include="DAO\CV_ThongTinBoSungDAO.cs" />
+    <Compile Include="DAO\CV_ThongTinUngDungDAO.cs" />
+    <Compile Include="DAO\CV_ViecLamMongMuonDAO.cs" />
     <Compile Include="DAO\DanhSachCongViecDAO.cs" />
     <Compile Include="DAO\LoaiUngVienDAO.cs" />
     <Compile Include="DAO\MoTaCongViecDAO.cs" />
     <Compile Include="DAO\ThongTinViecLamDAO.cs" />
+    <Compile Include="DTO\CV_KinhNghiemLamViecDTO.cs" />
+    <Compile Include="DTO\CV_NewDTO.cs" />
+    <Compile Include="DTO\CV_QuaTrinhHocVanDTO.cs" />
+    <Compile Include="DTO\CV_ThongTinBoSungDTO.cs" />
+    <Compile Include="DTO\CV_ThongTinUngDungDTO.cs" />
+    <Compile Include="DTO\CV_ViecLamMongMuonDTO.cs" />
     <Compile Include="DTO\DanhSachCongViecDTO.cs" />
     <Compile Include="DTO\LoaiUngVienDTO.cs" />
     <Compile Include="DTO\MoTaCongViecDTO.cs" />

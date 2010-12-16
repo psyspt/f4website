@@ -20,7 +20,7 @@ namespace WebPage_F4
         protected void Page_Load(object sender, EventArgs e)
         {
             Session["IsLogin"] = 0;
-
+            
             //TimViecNhanh.com
             List<Article> list = GetFeed.getTimViecNhanh();
 
@@ -88,6 +88,7 @@ namespace WebPage_F4
             htemp = (HyperLink)uc_Feed3.FindControl("HyperLink3");
             htemp.Text = list[2].title;
             htemp.NavigateUrl = list[2].link;
+            
         }
     }
 }

@@ -18,6 +18,7 @@ namespace WebPage_F4.Feed
     {
         public static List<Article> getTimViecNhanh()
         {
+
             List<Article> list = new List<Article>();
 
             HtmlWeb hw = new HtmlWeb();
