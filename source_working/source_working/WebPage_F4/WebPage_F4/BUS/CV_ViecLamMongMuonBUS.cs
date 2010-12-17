@@ -7,10 +7,16 @@ using System.Web.UI;
 using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
-
+using WebPage_F4.DTO;
+using WebPage_F4.DAO;
 namespace WebPage_F4.BUS
 {
     public class CV_ViecLamMongMuonBUS
     {
+        public int Insert(CV_ViecLamMongMuonDTO record)
+        {
+            CV_ViecLamMongMuonDAO dao = new CV_ViecLamMongMuonDAO();
+            return dao.Insert(record);
+        }
     }
 }
