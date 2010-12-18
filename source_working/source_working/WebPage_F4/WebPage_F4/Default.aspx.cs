@@ -12,7 +12,8 @@ using WebPage_F4.Feed;
 using WebPage_F4.UserControl;
 using System.Text;
 using System.Collections.Generic;
-
+using WebPage_F4.DTO;
+using WebPage_F4.BUS;
 namespace WebPage_F4
 {
     public partial class _Default : System.Web.UI.Page
@@ -88,7 +89,6 @@ namespace WebPage_F4
             htemp = (HyperLink)uc_Feed3.FindControl("HyperLink3");
             htemp.Text = list[2].title;
             htemp.NavigateUrl = list[2].link;
-            
         }
     }
 }
