@@ -212,6 +212,10 @@
         width: 270px;
         height: 100px;
     }
+    #cbxTTUngDung_LoaiNgoaiNgu
+    {
+        width: 24px;
+    }
 </style>
 
 <div runat="server" style="width: 500px">
@@ -283,7 +287,7 @@
             <td>
                 <select id="cbxTTUngDung_KinhNghiem" name="D6" runat = "server">
                     <option></option>
-                </select></td>
+                </select> </td>
         </tr>
         <tr>
             <td class="style2">
@@ -397,13 +401,13 @@
                 <input id="tbxQuaTrinhHocTap_TenTruong" type="text"  runat = "server"/></td>
         </tr>
         <tr>
-            <td class="style5" style="text-align: right">
+            <td class="style3" style="text-align: right">
                 Chuyên ngành/Khóa học:</td>
             <td>
                 <input id="tbxQuaTrinhHocTap_ChuyenNganh" type="text"  runat = "server"/></td>
         </tr>
         <tr>
-            <td class="style5" style="text-align: right">
+            <td class="style3" style="text-align: right">
                 Bằng cấp/Chứng chỉ:</td>
             <td>
                 <select id="cbxQuaTrinhHocTap_BangCap" name="D14" runat = "server">
@@ -411,7 +415,7 @@
                 </select></td>
         </tr>
         <tr>
-            <td class="style5" style="text-align: right">
+            <td class="style3" style="text-align: right">
                 Tỉnh/Thành phố:</td>
             <td>
                 <select id="cbxQuaTrinhHocTap_TinhThanh" name="D15" runat = "server">
@@ -419,16 +423,14 @@
                 </select></td>
         </tr>
         <tr>
-            <td class="style5" style="text-align: right">
+            <td class="style3" style="text-align: right">
                 Ngày tốt nghiệp:</td>
             <td>
-                <select id="cbxQuaTrinhHocTap_NamTotNghiep" name="D16" runat = "server">
-                    <option></option>
-                </select>&nbsp;&nbsp;
+                <asp:TextBox ID="tbxNgayTotNghiep" runat="server"></asp:TextBox>
                 </td>
         </tr>
         <tr>
-            <td class="style5" style="text-align: right">
+            <td class="style3" style="text-align: right">
                 Mô tả thêm:</td>
             <td>
                 <textarea id="QuaTrinhHocTap_Mota" name="S1" runat = "server"></textarea></td>
@@ -447,22 +449,22 @@
             <td class="style5" style="text-align: right" runat = "server">
                 Tên công ty:</td>
             <td>
-                <input id="Text8" type="text" runat = "server"/></td>
+                <input id="tbxKNLV_TenCongTy" type="text" runat = "server"/></td>
         </tr>
         <tr>
             <td class="style5" style="text-align: right">
                 Vị trí công việc:</td>
             <td>
-                <input id="Text9" type="text" runat = "server"/></td>
+                <input id="tbxKNLV_ViTriCongViec" type="text" runat = "server"/></td>
         </tr>
         <tr>
             <td class="style5" style="text-align: right">
                 Từ thời gian:</td>
             <td>
-                <select id="Select18" name="D18">
+                <select id="cbxKNLV_Begin_Month" name="D18" runat = "server">
                     <option></option>
                 </select>&nbsp;&nbsp;
-                <select id="Select19" name="D19">
+                <select id="cbxKNLV_Begin_Year" name="D19" runat = "server">
                     <option></option>
                 </select></td>
         </tr>
@@ -470,10 +472,10 @@
             <td class="style5" style="text-align: right">
                 Đến thời gian:</td>
             <td>
-                <select id="Select20" name="D20" runat = "server">
+                <select id="cbxKNLV_End_Month" name="D20" runat = "server">
                     <option></option>
                 </select>&nbsp;&nbsp;
-                <select id="Select21" name="D21" runat = "server">
+                <select id="cbxKNLV_End_Year" name="D21" runat = "server">
                     <option></option>
                 </select></td>
         </tr>
@@ -481,7 +483,7 @@
             <td class="style5" style="text-align: right">
                 Tình/Thành phố:</td>
             <td>
-                <select id="Select22" name="D22" runat = "server">
+                <select id="cbxKNLV_TinhTP" name="D22" runat = "server">
                     <option></option>
                 </select></td>
         </tr>
@@ -489,7 +491,7 @@
             <td class="style5" style="text-align: right" runat = "server">
                 Mô tả công việc:</td>
             <td>
-                <textarea id="TextArea2" name="S2" cols="20" rows="1" runat = "server"></textarea></td>
+                <textarea id="tbxKNLV_MoTa" name="S2" cols="20" rows="1" runat = "server"></textarea></td>
         </tr>
     </table>
     <br />

@@ -249,6 +249,13 @@
     <Compile Include="Test_DangTin.aspx.designer.cs">
       <DependentUpon>Test_DangTin.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Test_TaoHoSo.aspx.cs">
+      <DependentUpon>Test_TaoHoSo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Test_TaoHoSo.aspx.designer.cs">
+      <DependentUpon>Test_TaoHoSo.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Test_UploadFile.aspx.cs">
       <DependentUpon>Test_UploadFile.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -448,6 +455,7 @@
     <Content Include="TaoHoSo.aspx" />
     <Content Include="TaoThongBaoViec.aspx" />
     <Content Include="Test_DangTin.aspx" />
+    <Content Include="Test_TaoHoSo.aspx" />
     <Content Include="Test_UploadFile.aspx" />
     <Content Include="UserControl\uc_DanhSachCongViec.ascx" />
     <Content Include="UserControl\uc_Feed.ascx" />

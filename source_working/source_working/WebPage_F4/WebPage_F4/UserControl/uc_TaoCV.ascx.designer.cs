@@ -338,13 +338,13 @@ namespace WebPage_F4.UserControl {
         protected global::System.Web.UI.HtmlControls.HtmlSelect cbxQuaTrinhHocTap_TinhThanh;
         
         /// <summary>
-        /// cbxQuaTrinhHocTap_NamTotNghiep control.
+        /// tbxNgayTotNghiep control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlSelect cbxQuaTrinhHocTap_NamTotNghiep;
+        protected global::System.Web.UI.WebControls.TextBox tbxNgayTotNghiep;
         
         /// <summary>
         /// QuaTrinhHocTap_Mota control.
@@ -374,58 +374,76 @@ namespace WebPage_F4.UserControl {
         protected global::System.Web.UI.HtmlControls.HtmlInputRadioButton Radio11;
         
         /// <summary>
-        /// Text8 control.
+        /// tbxKNLV_TenCongTy control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText Text8;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText tbxKNLV_TenCongTy;
         
         /// <summary>
-        /// Text9 control.
+        /// tbxKNLV_ViTriCongViec control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText Text9;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText tbxKNLV_ViTriCongViec;
         
         /// <summary>
-        /// Select20 control.
+        /// cbxKNLV_Begin_Month control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlSelect Select20;
+        protected global::System.Web.UI.HtmlControls.HtmlSelect cbxKNLV_Begin_Month;
         
         /// <summary>
-        /// Select21 control.
+        /// cbxKNLV_Begin_Year control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlSelect Select21;
+        protected global::System.Web.UI.HtmlControls.HtmlSelect cbxKNLV_Begin_Year;
         
         /// <summary>
-        /// Select22 control.
+        /// cbxKNLV_End_Month control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlSelect Select22;
+        protected global::System.Web.UI.HtmlControls.HtmlSelect cbxKNLV_End_Month;
         
         /// <summary>
-        /// TextArea2 control.
+        /// cbxKNLV_End_Year control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlTextArea TextArea2;
+        protected global::System.Web.UI.HtmlControls.HtmlSelect cbxKNLV_End_Year;
+        
+        /// <summary>
+        /// cbxKNLV_TinhTP control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlSelect cbxKNLV_TinhTP;
+        
+        /// <summary>
+        /// tbxKNLV_MoTa control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlTextArea tbxKNLV_MoTa;
         
         /// <summary>
         /// TextArea3 control.
