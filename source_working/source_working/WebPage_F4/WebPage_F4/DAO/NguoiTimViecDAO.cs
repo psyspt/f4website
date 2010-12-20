@@ -96,7 +96,7 @@ namespace DAO
             r.Read();
             object[] obj = new object[13];
             r.GetValues(obj);
-
+            returnrecord.ID = (int)obj[0];
             returnrecord.HoTen = obj[1].ToString();
             returnrecord.UserName = obj[2].ToString().TrimEnd(' ');
             returnrecord.PassWord = obj[3].ToString().TrimEnd(' ');

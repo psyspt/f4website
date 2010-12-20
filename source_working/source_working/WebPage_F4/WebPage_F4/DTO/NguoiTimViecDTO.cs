@@ -98,6 +98,13 @@ namespace DTO
             set { _trangThai = value; }
         }
 
+        private int _iD;
+
+        public int ID
+        {
+            get { return _iD; }
+            set { _iD = value; }
+        }
         public NguoiTimViecDTO()
         {
             TrangThai = 1;

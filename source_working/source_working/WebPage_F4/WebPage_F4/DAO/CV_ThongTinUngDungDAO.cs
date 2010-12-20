@@ -22,13 +22,13 @@ namespace WebPage_F4.DAO
             {
                 string strcmd = "insert into CV_THONG_TIN_UNG_DUNG(KinhNghiem,BangCap,CapBac,NgoaiNgu,DiCongTac,ChuyenChoO,LamNgoaiGio) values(@KinhNghiem,@BangCap,@CapBac,@NgoaiNgu,@DiCongTac,@ChuyenChoO,@LamNgoaiGio) SET @ID = SCOPE_IDENTITY()";
                 SqlCommand cmd = new SqlCommand(strcmd, connect);
-                SqlParameter kinhnghiem = new SqlParameter("@KinhNghiem", SqlDbType.Int);
+                SqlParameter kinhnghiem = new SqlParameter("@KinhNghiem", SqlDbType.NVarChar, 50);
                 kinhnghiem.Value = record.KinhNghiem;
-                SqlParameter bangcapParam = new SqlParameter("@BangCap", SqlDbType.Int);
+                SqlParameter bangcapParam = new SqlParameter("@BangCap", SqlDbType.NVarChar, 50);
                 bangcapParam.Value = record.BangCap;
-                SqlParameter capbacParam = new SqlParameter("@CapBac", SqlDbType.Int);
+                SqlParameter capbacParam = new SqlParameter("@CapBac", SqlDbType.NVarChar, 50);
                 capbacParam.Value = record.CapBac;
-                SqlParameter ngoainguParam = new SqlParameter("@NgoaiNgu", SqlDbType.Int);
+                SqlParameter ngoainguParam = new SqlParameter("@NgoaiNgu", SqlDbType.NVarChar, 50);
                 ngoainguParam.Value = record.NgoaiNgu;
                 SqlParameter congtacgParam = new SqlParameter("@DiCongTac", SqlDbType.NVarChar, 50);
                 congtacgParam.Value = record.DiCongtac;

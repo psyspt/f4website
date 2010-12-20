@@ -20,7 +20,7 @@ namespace WebPage_F4.DAO
             connect.Open();
             try
             {
-                string strcmd = "insert into CV_QUA_TRINH_HOC_VAN(TenTruong,ChuyenNganh,BangCap,NamTotNghiep) values(@TenTruong,@ChuyenNganh,@BangCap,@NamTotNghiep) SET @ID = SCOPE_IDENTITY()";
+                string strcmd = "insert into CV_QUA_TRINH_HOC_VAN(TenTruong,ChuyenNganh,BangCap,NamTotNghiep) values(@TenTruong,@ChuyenNganh,@BangCap,@NamTotNghiep) SET @IDR = SCOPE_IDENTITY()";
                 SqlCommand cmd = new SqlCommand(strcmd, connect);
                 SqlParameter truongParam = new SqlParameter("@TenTruong", SqlDbType.NVarChar, 50);
                 truongParam.Value = record.TenTruong;
@@ -30,7 +30,7 @@ namespace WebPage_F4.DAO
                 bangcapParam.Value = record.BangCap;
                 SqlParameter namtotnghiepParam = new SqlParameter("@NamTotNghiep", SqlDbType.Int);
                 namtotnghiepParam.Value = record.NamTotNghiep;
-                SqlParameter IDParam = new SqlParameter("@ID", SqlDbType.Int);
+                SqlParameter IDParam = new SqlParameter("@IDR", SqlDbType.Int);
                 IDParam.Direction = ParameterDirection.Output;
                 //MoTaParam.Value = record.MoTa;
                 cmd.Parameters.Add(truongParam);

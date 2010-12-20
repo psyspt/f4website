@@ -11,10 +11,13 @@ using System.Web.UI.WebControls.WebParts;
 using DTO;
 using BUS;
 using System.Collections.Generic;
+using WebPage_F4.BUS;
+using WebPage_F4.DTO;
 namespace WebPage_F4.UserControl
 {
     public partial class uc_TaoCV : System.Web.UI.UserControl
     {
+        NguoiTimViecDTO CurrentUser = new NguoiTimViecDTO();
         protected void Page_Load(object sender, EventArgs e)
         {
             //Init form
@@ -122,8 +125,8 @@ namespace WebPage_F4.UserControl
             }
             for (int i = 1; i <= 12; i++)
             {
-                cbxKNLV_Begin_Month.Items.Add("Tháng "+ i.ToString());
-                cbxKNLV_End_Month.Items.Add("Tháng " + i.ToString());
+                cbxKNLV_Begin_Month.Items.Add(i.ToString());
+                cbxKNLV_End_Month.Items.Add(i.ToString());
             }
             for (int i = 1990; i <= DateTime.Now.Year; i++)
             {
@@ -134,11 +137,11 @@ namespace WebPage_F4.UserControl
 
             string username = "thic";//thay bang session["ID"]
             NguoiTimViecBUS busNTV = new NguoiTimViecBUS();
-            NguoiTimViecDTO user = busNTV.SelectByusername(username);
-            tbxThongTin_Email.Value = user.EMail;
-            tbxThongTin_DiaChi.Value = user.DiaChi;
-            tbxThongTin_DienThoai.Value = user.DienThoai;
-            if (user.GioiTinh==1)
+            CurrentUser = busNTV.SelectByusername(username);
+            tbxThongTin_Email.Value = CurrentUser.EMail;
+            tbxThongTin_DiaChi.Value = CurrentUser.DiaChi;
+            tbxThongTin_DienThoai.Value = CurrentUser.DienThoai;
+            if (CurrentUser.GioiTinh == 1)
             {
                 cbxThongTin_GioiTinh.Value = "Nam";
             }
@@ -146,16 +149,129 @@ namespace WebPage_F4.UserControl
             {
                 cbxThongTin_GioiTinh.Value = "Nữ";
             }
-            cbxThongTin_NgaySinh.Value = user.NgaySinh.Day.ToString();
-            cbxThongTin_Thang.Value = user.NgaySinh.Month.ToString();
-            cbxThongTin_Nam.Value = user.NgaySinh.Year.ToString();
+            cbxThongTin_NgaySinh.Value = CurrentUser.NgaySinh.Day.ToString();
+            cbxThongTin_Thang.Value = CurrentUser.NgaySinh.Month.ToString();
+            cbxThongTin_Nam.Value = CurrentUser.NgaySinh.Year.ToString();
             cbxThongTin_TinhTrangHonNhan.Value = "Đã kết hôn";
-            tbxThongTin_HoTen.Value = user.HoTen;
+            tbxThongTin_HoTen.Value = CurrentUser.HoTen;
         }
 
         protected void butCV_Click(object sender, EventArgs e)
         {
-            //
+            CV_KinhNghiemLamViecBUS busKNLV = new CV_KinhNghiemLamViecBUS();
+            CV_NewBUS busCV = new CV_NewBUS();
+            CV_QuaTrinhHocVanBUS busQTHV = new CV_QuaTrinhHocVanBUS();
+            CV_ThongTinBoSungBUS busTTBS = new CV_ThongTinBoSungBUS();
+            CV_ThongTinUngDungBUS busTTUD = new CV_ThongTinUngDungBUS();
+            CV_ViecLamMongMuonBUS busVLMM = new CV_ViecLamMongMuonBUS();
+
+            int idNTV = CurrentUser.ID;
+
+            CV_ThongTinUngDungDTO dtoTTUD = new CV_ThongTinUngDungDTO();
+            dtoTTUD.KinhNghiem = cbxTTUngDung_KinhNghiem.Value;
+            dtoTTUD.BangCap = cbxTTUngDung_BangCap.Value;
+            dtoTTUD.CapBac = cbxTTUngDung_CapBac.Value;
+            dtoTTUD.NgoaiNgu = cbxTTUngDung_LoaiNgoaiNgu.Value;
+            if (rbTTUngDung_ChuyenCho_Option.Checked)
+            {
+                dtoTTUD.ChuyenChoO = "Tùy trường hợp";
+            }
+            else if (rbTTUngDung_ChuyenCho_Yes.Checked)
+            {
+                dtoTTUD.ChuyenChoO = "Có";
+            }
+            else if (rdTTUngDung_ChuyenCho_No.Checked)
+            {
+                dtoTTUD.ChuyenChoO = "Không";
+            }
+
+            if (rdTTUngDung_CongTac_No.Checked)
+            {
+                dtoTTUD.DiCongtac = "Không";
+            }
+            else if (rdTTUngDung_CongTac_Yes.Checked)
+            {
+                dtoTTUD.DiCongtac = "Có";
+            }
+            else if (rdTTUngDung_CongTac_Option.Checked)
+            {
+                dtoTTUD.DiCongtac = "Tùy trường hợp";
+            }
+
+            if (rdTTUngDung_LamNgoaiGio_No.Checked)
+            {
+                dtoTTUD.LamNgoaiGio = "Không";
+            }
+            else if (rdTTUngDung_LamNgoaigio_Yes.Checked)
+            {
+                dtoTTUD.LamNgoaiGio = "Có";
+            }
+            else if (rdTTUngDung_LamNgoaiGio_Option.Checked)
+            {
+                dtoTTUD.LamNgoaiGio = "Tùy trường hợp";
+            }
+            int idTTUD = busTTUD.Insert(dtoTTUD);
+
+            CV_ViecLamMongMuonDTO dtoVLMM = new CV_ViecLamMongMuonDTO();
+            dtoVLMM.MucLuong = cbxVLMongMuon_MucLuongDeNghi.Value;
+            dtoVLMM.NoiLamViec = cbxVLMongMuon_NoiLamViec.Value;
+            dtoVLMM.NganhNgheMongMuon = cbxVLMongMuon_NganhNghe.Value;
+            dtoVLMM.ViTriMongMuon = tbxVLMongMuon_ViTri.Value;
+            if (cbVLMongMuon_HinhThucCongViec_ChinhThuc.Checked)
+            {
+                dtoVLMM.HinhThucLamViec = "Nhân viên chính thức";
+            }
+            else if (cbVLMongMuon_HinhThucCongViec_TuDo.Checked)
+            {
+                dtoVLMM.HinhThucLamViec = "Tự do";
+            }
+            else if (cbVLMongMuon_HinhThucCongViec_ThoiVu.Checked)
+            {
+                dtoVLMM.HinhThucLamViec = "Nhân viên thời vụ";
+            }
+
+            if (cbVLMongMuon_LaiCongViec_Parttime.Checked)
+            {
+                dtoVLMM.LoaiHinhCongViec = "Part-time";
+            }
+            else if (cbVLMongMuon_LoaiCongViec_Fulltime.Checked)
+            {
+                dtoVLMM.LoaiHinhCongViec = "Full-time";
+            }
+            int idVLMM = busVLMM.Insert(dtoVLMM);
+
+            CV_QuaTrinhHocVanDTO dtoQTHV = new CV_QuaTrinhHocVanDTO();
+            dtoQTHV.TenTruong = tbxQuaTrinhHocTap_TenTruong.Value;
+            dtoQTHV.ChuyenNganh = tbxQuaTrinhHocTap_ChuyenNganh.Value;
+            dtoQTHV.BangCap = cbxQuaTrinhHocTap_BangCap.Value;
+            dtoQTHV.NamTotNghiep = DateTime.Parse(tbxNgayTotNghiep.Text).Year;
+            int idQTHV = busQTHV.Insert(dtoQTHV);
+
+            CV_KinhNghiemLamViecDTO dtoKNLV = new CV_KinhNghiemLamViecDTO();
+            dtoKNLV.MoTa = tbxKNLV_MoTa.Value;
+            dtoKNLV.TenCongTy = tbxKNLV_TenCongTy.Value;
+            dtoKNLV.TinhTP = cbxKNLV_TinhTP.Value;
+            dtoKNLV.ViTri = tbxKNLV_ViTriCongViec.Value;
+            dtoKNLV.ThoiGianBatDau = new DateTime(int.Parse(cbxKNLV_Begin_Year.Value), int.Parse(cbxKNLV_Begin_Month.Value), 1);
+            dtoKNLV.ThoiGianKetThuc = new DateTime(int.Parse(cbxKNLV_End_Year.Value), int.Parse(cbxKNLV_End_Month.Value), 1);
+            int idKNLV = busKNLV.Insert(dtoKNLV);
+
+            CV_ThongTinBoSungDTO dtoTTBS = new CV_ThongTinBoSungDTO();
+            dtoTTBS.KyNang = tbxKynang.Value;
+            dtoTTBS.MucTieuNgheNghiep = tbxMucTieu.Value;
+            dtoTTBS.NangKhieuSoThich = tbxNangKhieuSoThich.Value;
+            dtoTTBS.UuDiemKhuyetDiem = tbxUuDiemNhuocDiem.Value;
+            int idTTBS = busTTBS.Insert(dtoTTBS);
+
+            CV_NewDTO newCV = new CV_NewDTO();
+            newCV.IDKinhNghiem = idKNLV;
+            newCV.IDNguoiTimViec = CurrentUser.ID;
+            newCV.IDQuaTrinhHocTap = idQTHV;
+            newCV.IDThongTinBoSung = idTTBS;
+            newCV.IDThongTinUngDung = idTTUD;
+            newCV.IDViecLamMongMuon = idVLMM;
+            int kq = busCV.Insert(newCV);
+
         }
     }
 }

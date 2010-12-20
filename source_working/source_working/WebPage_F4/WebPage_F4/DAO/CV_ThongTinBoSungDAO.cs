@@ -20,7 +20,7 @@ namespace WebPage_F4.DAO
             connect.Open();
             try
             {
-                string strcmd = "insert into CV_THONG_TIN_BO_SUNG(MucTieuNgheNghiep,KyNang,UuDiemKhuyetDiem,NangKhieuSoThich) values(@MucTieuNgheNghiep,@KyNang,@UuDiemKhuyetDiem,@NangKhieuSoThich) SET @ID = SCOPE_IDENTITY()";
+                string strcmd = "insert into CV_THONG_TIN_BO_SUNG(MucTieuNgheNghiep,KyNang,UuDiemKhuyetDiem,NangKhieuSoThich) values(@MucTieuNgheNghiep,@KyNang,@UuDiemKhuyetDiem,@NangKhieuSoThich) SET @IDR = SCOPE_IDENTITY()";
                 SqlCommand cmd = new SqlCommand(strcmd, connect);
                 SqlParameter muctieuParam = new SqlParameter("@MucTieuNgheNghiep", SqlDbType.NVarChar, 50);
                 muctieuParam.Value = record.MucTieuNgheNghiep;
@@ -30,7 +30,7 @@ namespace WebPage_F4.DAO
                 uukhuyetParam.Value = record.UuDiemKhuyetDiem;
                 SqlParameter nangkhieuParam = new SqlParameter("@NangKhieuSoThich", SqlDbType.NText);
                 nangkhieuParam.Value = record.NangKhieuSoThich;
-                SqlParameter IDParam = new SqlParameter("@ID", SqlDbType.Int);
+                SqlParameter IDParam = new SqlParameter("@IDR", SqlDbType.Int);
                 IDParam.Direction = ParameterDirection.Output;
                 //MoTaParam.Value = record.MoTa;
                 cmd.Parameters.Add(muctieuParam);

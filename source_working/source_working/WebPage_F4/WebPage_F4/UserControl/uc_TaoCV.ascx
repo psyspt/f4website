@@ -501,25 +501,26 @@
             <td class="style5" style="text-align: right">
                 Mục tiêu nghề nghiệp:</td>
             <td>
-                <textarea id="TextArea3" name="S3" cols="20" rows="1"  runat = "server"></textarea></td>
+                <textarea id="tbxMucTieu" name="S3" cols="20" rows="1"  runat = "server"></textarea></td>
         </tr>
         <tr>
             <td class="style5" style="text-align: right">
                 Kỹ năng:</td>
             <td>
-                <textarea id="TextArea4" name="S4" cols="20" rows="1" runat = "server"></textarea></td>
+                <textarea id="tbxKynang" name="S4" cols="20" rows="1" runat = "server"></textarea></td>
         </tr>
         <tr>
             <td class="style5" style="text-align: right">
                 Ưu điểm - nhược điểm:</td>
             <td>
-                <textarea id="TextArea5" name="S5" cols="20" rows="1" runat = "server"></textarea></td>
+                <textarea id="tbxUuDiemNhuocDiem" name="S5" cols="20" rows="1" runat = "server"></textarea></td>
         </tr>
         <tr>
             <td class="style5" style="text-align: right">
                 Năng khiếu - sở thích:</td>
             <td>
-                <textarea id="TextArea6" name="S6" cols="20" rows="1" runat = "server"></textarea></td>
+                <textarea id="tbxNangKhieuSoThich" name="S6" cols="20" rows="1" 
+                    runat = "server"></textarea></td>
         </tr>
     </table>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

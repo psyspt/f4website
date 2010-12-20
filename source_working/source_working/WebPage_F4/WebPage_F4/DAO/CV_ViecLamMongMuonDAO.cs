@@ -29,11 +29,11 @@ namespace WebPage_F4.DAO
                 nganhngheParam.Value = record.NganhNgheMongMuon;
                 SqlParameter vitriParam = new SqlParameter("@ViTriMongMuon", SqlDbType.NVarChar, 50);
                 vitriParam.Value = record.ViTriMongMuon;
-                SqlParameter mucluongParam = new SqlParameter("@MucLuong", SqlDbType.Int);
+                SqlParameter mucluongParam = new SqlParameter("@MucLuong", SqlDbType.NVarChar, 50);
                 mucluongParam.Value = record.MucLuong;
                 SqlParameter hinhthucParam = new SqlParameter("@HinhThucLamViec", SqlDbType.NVarChar, 50);
                 hinhthucParam.Value = record.HinhThucLamViec;
-                SqlParameter loaihinhParam = new SqlParameter("@LoaiHinhCongViec", SqlDbType.Int);
+                SqlParameter loaihinhParam = new SqlParameter("@LoaiHinhCongViec", SqlDbType.NVarChar, 50);
                 loaihinhParam.Value = record.LoaiHinhCongViec;
                 SqlParameter noilamviecParam = new SqlParameter("@NoiLamVIec", SqlDbType.NVarChar, 50);
                 noilamviecParam.Value = record.NoiLamViec;

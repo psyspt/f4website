@@ -19,30 +19,30 @@ namespace WebPage_F4.DTO
             get { return _iD; }
             set { _iD = value; }
         }
-        private int _kinhNghiem;
+        private string _kinhNghiem;
 
-        public int KinhNghiem
+        public string KinhNghiem
         {
             get { return _kinhNghiem; }
             set { _kinhNghiem = value; }
         }
-        private int _bangCap;
+        private string _bangCap;
 
-        public int BangCap
+        public string BangCap
         {
             get { return _bangCap; }
             set { _bangCap = value; }
         }
-        private int _capBac;
+        private string _capBac;
 
-        public int CapBac
+        public string CapBac
         {
             get { return _capBac; }
             set { _capBac = value; }
         }
-        private int _ngoaiNgu;
+        private string _ngoaiNgu;
 
-        public int NgoaiNgu
+        public string NgoaiNgu
         {
             get { return _ngoaiNgu; }
             set { _ngoaiNgu = value; }
@@ -71,13 +71,13 @@ namespace WebPage_F4.DTO
 
         public CV_ThongTinUngDungDTO()
         {
-            this.BangCap = 0;
-            this.CapBac = 0;
+            this.BangCap = "";
+            this.CapBac = "";
             this.ChuyenChoO = "";
             this.DiCongtac = "";
-            this.KinhNghiem = 0;
+            this.KinhNghiem = "";
             this.LamNgoaiGio = "";
-            this.NgoaiNgu = 0;
+            this.NgoaiNgu = "";
         }
     }
 }

@@ -20,7 +20,7 @@ namespace WebPage_F4.DAO
             connect.Open();
             try
             {
-                string strcmd = "insert into CV_KINH_NGHIEM_LAM_VIEC"+
+                string strcmd = "insert into CV_NEW"+
                     "(IDNguoiTimViec,ID_CV_KinhNghiem,ID_CV_QuaTrinhHocTap,ID_CV_ThongTinBoSung,ID_CV_ThongTinUngDung,ID_CV_ViecLamMongMuon)"
                     + " values(@IDNguoiTimViec,@ID_CV_KinhNghiem,@ID_CV_QuaTrinhHocTap,@ID_CV_ThongTinBoSung,@ID_CV_ThongTinUngDung,@ID_CV_ViecLamMongMuon)"
                 +" SET @ID = SCOPE_IDENTITY()";

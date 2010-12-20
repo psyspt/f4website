@@ -446,40 +446,40 @@ namespace WebPage_F4.UserControl {
         protected global::System.Web.UI.HtmlControls.HtmlTextArea tbxKNLV_MoTa;
         
         /// <summary>
-        /// TextArea3 control.
+        /// tbxMucTieu control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlTextArea TextArea3;
+        protected global::System.Web.UI.HtmlControls.HtmlTextArea tbxMucTieu;
         
         /// <summary>
-        /// TextArea4 control.
+        /// tbxKynang control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlTextArea TextArea4;
+        protected global::System.Web.UI.HtmlControls.HtmlTextArea tbxKynang;
         
         /// <summary>
-        /// TextArea5 control.
+        /// tbxUuDiemNhuocDiem control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlTextArea TextArea5;
+        protected global::System.Web.UI.HtmlControls.HtmlTextArea tbxUuDiemNhuocDiem;
         
         /// <summary>
-        /// TextArea6 control.
+        /// tbxNangKhieuSoThich control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlTextArea TextArea6;
+        protected global::System.Web.UI.HtmlControls.HtmlTextArea tbxNangKhieuSoThich;
         
         /// <summary>
         /// butCV control.
